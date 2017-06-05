@@ -1,0 +1,95 @@
+.ui-fan-total > div{
+    padding: 10px 0 10px 20px;
+    float: left;
+    width: 50%;
+    border-right: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    height: 80px;
+    color: #333;
+}
+.ui-fan-total > div > div:last-of-type{
+    color: #fc3f43;
+    font-size: 23px;
+    padding-top: 10px;
+}
+.ui-fan-type{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    border-bottom: 2px solid #f1f1f1;
+}
+.ui-fan-type > div{
+    float: left;
+    width: 33.3%;
+    border-right: 1px solid #f1f1f1;
+}
+.ui-fan-type > div.active{
+    color: #fc3f43;
+}
+.ui-fan-type div:last-of-type{
+    float: none;
+    width: auto;
+    overflow: hidden;
+}
+.ui-list{
+    background-color: #f1f1f1;
+}
+.ui-list-detail{
+    margin-bottom: 10px;
+    background-color: white;
+    display: block;
+}
+.ui-list-detail > div {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.ui-list-detail > div {
+    height: 40px;
+    line-height: 40px;
+    color: #333;
+}
+.ui-list-detail > div > div.ui-status{
+    color: #999;
+    float: right;
+}
+.ui-list-detail > div > div.ui-status.ui-err, .ui-list-detail > div > div > span{
+    color: #fc3f43;
+}
+.ui-list-detail > div:nth-child(2){
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+    box-sizing: border-box;
+}
+.ui-list-detail > div > div.ui-d-num{
+    float: left;
+}
+.ui-list-detail > div > div.ui-d-fan{
+    float: right;
+}
+.ui-list-detail > div:nth-child(2) > div:nth-child(2){
+    text-align: right;
+}
+.ui-fanhuo-button{
+    padding: 10px 0;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    border-top: 1px solid #f1f1f1;
+}
+.ui-fan-detail a.button{
+    display: block;
+}
+.ui-total-price{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fc6060;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}

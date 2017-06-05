@@ -1,0 +1,51 @@
+{{#extend "header"}}
+	<title>完善资料</title>
+	<link type="text/css" rel="stylesheet" href="/css/info.css"/>
+    <script src="../js/lib/require.js" defer async="true" data-main="../js/ziliao.js"></script>
+{{/extend}}
+	<div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>完善资料</nav>
+        </header>
+   </div>
+   <div class="container">
+		<div class="photoname">
+			<p class="photo"><img src="/images/default.png" alt="" id="watch_photo"></p>
+			<p class="account" style="display:none">昵称：<span id="nick_name"></span></p>
+		</div>
+		<div class="infolist">
+			<ul>
+				<li>
+					<p class="titp">买买</p>
+				</li>
+				<li>
+					<span class="infotype">真实姓名</span>
+					<input type="text" placeholder="务必填写真实姓名" id="real_name"/>
+				</li>
+				<li id="phoneli">
+					<span class="infotype">手机号码</span>
+					<input type="tel" maxlength="11" placeholder="务必填写真实手机号码" readonly="readonly" />
+					<!--<a href="javascript:void(0)" class="bindbtn" id="bindbtn">绑定</a>-->
+				</li>
+				<!--<li>-->
+					<!--<span class="infotype">微信账号</span>-->
+					<!--<input type="text" placeholder="您的微信账号（为了方便您与客户联系）" id="weixin" style="width: 72%;"/>-->
+				<!--</li>-->
+				<li>
+					<span class="infotype">推荐人</span>
+					<span class="recommend_name" id="recommend_name"></span>
+				</li>
+				<li>
+					<span class="infotype">登录密码</span>
+					<input type="password" placeholder="请输入登录密码" id="password"/>
+				</li>
+				<li>
+					<span class="infotype">确认密码</span>
+					<input type="password" placeholder="确认登录密码" minlength="5" maxlength="10" id="confirmPass"/>
+				</li>
+			</ul>
+		</div>
+    <div class="error_info" id="error_info"></div>
+    <div class="button" id="payButton"><a href="javascript:void(0)">去付款</a></div>
+		
+   </div>

@@ -1,0 +1,24 @@
+{{#extend "header"}}    
+    <title>账户余额</title>
+    <link rel="stylesheet" href="/css/buy/yue.css" />
+{{/extend}}
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>账户余额<span><a href="./yuemingxi.html">明细</a></span></nav>
+    </header>
+    <div class="balance">
+    	<p>您当前账户总余额（元）</p>
+    	<p class="m_balance"></p>
+    </div>
+    <div class="button recharge" id="recharge">充值</div>   
+    <div class="recharge_box">
+    	<h2>充值卡充值</h2>
+    	<input type="text" value="" class="card_num" placeholder="请输入充值卡卡号" />    	
+    	<input type="password" value="" class="card_pass" placeholder="请输入充值卡密码"  />
+    	<div class="Error"></div>
+    	<div class="button zh_btn" id="zh_btn">确定</div>
+    	<div class="close"></div>
+    </div>
+    <div class="recharge_bg"></div>
+</div>
+<script  data-main="/js/buy/zhanghuyue" src="/js/lib/require.js" ></script>

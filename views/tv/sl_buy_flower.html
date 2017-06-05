@@ -1,0 +1,71 @@
+{{#extend "header"}}
+    <title>购买鲜花</title>
+    <link rel="stylesheet" href="/css/miss_world/sl_buy_flower.css" />
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px';
+        window.onresize = function() {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px';
+        };
+    </script>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:void(0);" class="back _goback"></a>购买鲜花</nav>
+</header>
+<div class="main">
+    <div class="head_box">
+        <div class="player_photo" id="cover_photo">
+            <img id="player_head">
+            <span id="title"></span>
+            <div class="player_info">
+                <span id="player_number"></span>
+                <span id="flower_number"></span>
+                <span id="vote_number"></span>
+            </div>
+        </div>
+    </div>
+    <div class="buy_flower">
+        <a id="give_flower" href="javascript:void(0);"></a>
+        <div class="context">
+            <div class="buy_context">
+                <span class="sl_title">购买鲜花</span>
+                <div class="buy_flower_item">
+                    <span class="selected" data-id="58154">购买9鲜花<br>送红包9元</span>
+                    <span data-id="25679">购买99鲜花<br>送红包99元</span>
+                    <span data-id="25679">购买999鲜花<br>送红包999元</span>
+                    <span data-id="25679">购买666鲜花<br>送红包666元</span>
+                    <span data-id="25679">购买520鲜花<br>送红包520元</span>
+                    <span data-id="25679">购买1314鲜花<br>送红包1314元</span>
+                </div>
+            </div>
+            <div class="buy_context">
+                <span class="sl_title">支付方式</span>
+                <div class="pay_type">
+                    <div id="wx">
+                        <span data-name="wx"></span><br>
+                        微信支付
+                    </div>
+                    <div id="alipay">
+                        <span data-name="alipay"></span><br>
+                        支付宝支付
+                    </div>
+                    <div id="yl">
+                        <span data-name="yl"></span><br>
+                        银联支付
+                    </div>
+                </div>
+                <div class="sure_btn">
+                    <a id="sure_confirm"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog_box">
+        <div class="b1">
+            <span>您没有选择购买鲜花！</span>
+            <div class="v_confirm">
+                <a id="confirm"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/lib/require.js" data-main="/js/tv/miss_world/sl_buy_flower.js"></script>

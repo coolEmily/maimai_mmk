@@ -1,0 +1,52 @@
+{{#extend "header"}}
+<title id="title">退款进度</title>
+<link type="text/css" rel="stylesheet" href="/css/buy/refund.css">
+<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/tuikuan.js"></script>
+{{/extend}}
+
+<body class="main_bg m50">
+<header class="main_head" headId="processBack">
+	<nav class="nav"><a href="javascript:;" class="back _goback"></a>退款进度</nav>
+</header>
+<div class="refund">
+	<div class="refund_ph">
+		全国统一客服电话。 <p>400-815-0988</p>
+	</div>
+	<div class="refund_mold">
+		<span>退款进度:</span>
+		<p class="re" id="backStatus">已退款</p>
+	</div>
+	<div class="refund_ex clearfix" id="refund_ex" style="display:none">
+		<span>拒绝理由:</span>
+		<textarea class="area" readonly="">因买家打开并饮用，无法进行二次销售，故无法退款。</textarea>
+	</div>
+	<div class="refund_mold">
+		<span>退款金额:</span>
+		<input type="text" value="￥136" class="txt" readonly id="moneyInput"/>
+	</div>
+</div>
+<div class="refund_schedule" id="refund_schedule" style="display:none">
+	<ul>
+		<li class="new">
+			<i></i>
+			<div>
+				<p>欧阳夏星已签收。</p>
+				<p>2016年1月30日 下午3 : 10 : 55</p>
+			</div>
+		</li>
+		<li>
+			<p>离开 [河北 - 秦皇岛分拨站] 发往 [河北秦皇岛分拨站 - 南区加盟商]</p>
+			<p>2016年1月30日 下午1 : 10 : 55</p>
+		</li>
+		<li>
+			<p>离开 [北京运转中心] 发往 [河北 - 秦皇岛分拨站]</p>
+			<p>2016年1月28日 下午1 : 10 : 55</p>
+		</li>
+		<li>
+			<p>已取件，到达 [北京运转中心]</p>
+			<p>2016年1月28日 下午1 : 10 : 55</p>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

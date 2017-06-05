@@ -1,0 +1,20 @@
+{{#extend "header"}}
+    <title>分类</title>
+    <link rel="stylesheet" href="/css/swiper.min.css" />
+    <link rel="stylesheet" href="/css/buy/fenlei.css" />
+{{/extend}}
+
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>分类</nav>
+    </header>
+    <div class="ui-body main" style="height: 100%;">
+        <div id="ui-left-type" class="ui-left-type swiper-container">
+            <div class="swiper-wrapper" id="ui-goods-type"></div>
+        </div>
+        <div id="ui-right-detail" class="ui-right-detail swiper-container">
+            <div class="swiper-wrapper">
+                <div id="ui-goods-list" class="swiper-slide" style="height: auto;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/buy/fenlei"></script>

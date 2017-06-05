@@ -1,0 +1,21 @@
+{{#extend "header"}}
+    <title id="title">领取红包</title>
+    <link type="text/css" rel="stylesheet" href="/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="/css/hongbao.css" />
+{{/extend}}
+
+<div class="main">
+    <header class="main_head"  headId="lqhongbao">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>领取红包</nav>
+    </header>
+</div>
+
+<div class="phone_body">
+    <div class="phone_btn">
+        <label class="phone_btn_label"></label>
+        <input type="tel" maxlength="11" value="" placeholder="请输入手机号" id="tel_input"/>
+    </div>
+    <div class="button1" id="getBtn">领取</div>
+</div>
+
+<script src="/js/lib/require.js" data-main="/js/hongbao.js"></script>

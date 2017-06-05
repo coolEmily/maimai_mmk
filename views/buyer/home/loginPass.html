@@ -1,0 +1,52 @@
+{{#extend "header"}}
+<title>浏览记录</title>
+<link rel="stylesheet" href="/css/safetyCenter.css">
+<style>
+.safetyIcon{
+	background: url("/images/safetyCenter/loginPass1.png")no-repeat center center;
+	background-size: 80%;
+}
+.icon{
+		background: #ccc url("/images/safetyCenter/pass.png")no-repeat center center;
+		background-size: 70%;
+}
+.icon1{
+		background: #ccc url("/images/safetyCenter/pass.png") no-repeat center center;
+		background-size: 70%;
+}
+.icon2{
+		background: #ccc url("/images/safetyCenter/pass.png")no-repeat center center;
+		background-size: 70%;
+}
+</style>
+{{/extend}}
+<header class="main_head">
+	<nav class="nav"><a href="javascript:;" class="back _goback"></a><span id="addr_title">更改登陆密码</span></nav>
+</header>
+<section class="safety">
+	<h1 class="safetyIcon"></h1>
+	<div class="safetyFrom">
+	<span class="title">恭喜主人，你的密码修改成功</span>
+	<ul class="formList">
+		<span class="message">111111111111111111111111</span>
+		<li>
+			<span class="icon"></span>
+			<input data-index="1" autofocus="autofocus" maxlength="18" type="password" value="" placeholder="请输入旧的密码"/>
+			<span class="btn"></span>
+		</li>
+		<li>
+			<span class="icon icon1"></span>
+			<input data-index="1" type="password" value="" placeholder="请输入新的密码"/>
+			<span class="btn"></span>
+		</li>
+		<li>
+			<span class="icon icon2"></span>
+			<input data-index="2" type="password" value="" placeholder="请输入确认密码"/>
+			<span class="btn"></span>
+		</li>
+	</ul>
+
+	</div>
+	<button class="address">下一步</button>
+</section>
+<script  data-main="/js/loginPass" src="/js/lib/require.js" ></script>

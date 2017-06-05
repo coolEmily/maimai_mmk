@@ -1,0 +1,114 @@
+{{#extend "header"}}
+    <title id="title">捆绑详情</title>
+    <meta name="keywords" id="keywords" content="">
+    <meta name="description"id="description"  content="">
+    <link type="text/css" rel="stylesheet" href="/css/buy/detail.css">
+    <script src="/js/lib/require.js" defer async="true" data-main="/js/buy/detail_kun.js"></script>
+    <style type="text/css">
+      .fixed_index {
+        bottom: 7%;
+      }
+    </style>
+{{/extend}}
+{{> loading}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>捆绑详情</nav>
+        </header>
+   </div>
+   <div class="container" id="container" style="display:none">
+       <div class="sale_out" id="sale_out"><img src="/images/buy/dk_none.png" alt=""></div>
+      <div id="slider_big" class="slider_big"></div>
+      <div class="slider" id="slider">
+           <div id="slider_Img">
+              <ul>
+                  <!--  <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li> -->
+              </ul>
+          </div>
+          <div class="serial_number" id="serial_number">
+           <!--    <span class="point selected"></span>
+              <span class="point"></span>
+              <span class="point"></span>
+              <span class="point"></span>
+              <span class="point"></span>
+              <span class="point"></span> -->
+          </div>
+      </div>
+      <div class="textbox textbox_kun">
+         <ul>
+           <li id="goods_name"><!-- <span>宾利凤凰赤霞珠红葡萄酒</span><span class="red_text">￥306</span> --></li>
+           <li id="goods_ename"><!-- <span>Penley Estate Phoenix Cabernet </span><span class="through">市场价:￥788</span> --></li>
+           <!--<li><span class="sign">实体店认证</span><span class="activity">满赠: 满360元赠购物券一张</span></li>-->
+         </ul>
+      </div>
+       <div class="goods_list" id="goods_list">
+           <ul>
+               <!--<li>-->
+                   <!--<dl>-->
+                       <!--<dt><a href="#"><img src="http://img1.maim9.com/file/20160301/default/34558837925282164" alt=""></a></dt>-->
+                       <!--<dd>-->
+                           <!--<a href="#">小霸王困奶粉</a>-->
+                           <!--<span>X1</span>-->
+                       <!--</dd>-->
+                   <!--</dl>-->
+               <!--</li>-->
+           </ul>
+       </div>
+      <div class="infobox infobox_kun" id="infobox">
+        <!--  <p>信息</p>
+         <span>已售: 7782瓶</span>
+         <span>库存: 6682瓶</span>
+         <span>收藏: 992瓶</span> -->
+      </div>
+<!--       <div class="address">
+          <p>送至</p>
+          <div>
+            <section></section>
+            <p><span class="red_text">现货,</span>19:00以前完成订单，预计后天(2月3号)送达。</p>
+          </div>
+      </div> -->
+      <div class="img_text">
+          <p class="ui-transd-999 show_transd">图文详情</p>
+          <div class="img_text_show" id="img_info">
+           <!--  <img src="../public/images/buy/introduce.jpg" alt=""/>      
+            <img src="../public/images/buy/introduce.jpg" alt=""/>  -->     
+          </div>
+      </div>
+      <!--<div class="specification">-->
+          <!--<p class="ui-transd-999">规格参数</p>            -->
+          <!--<div class="specification_show">-->
+             <!--<ul id="specification">                                                                 -->
+               <!--&lt;!&ndash; <li><span>国家</span><span>西班牙</span></li> &ndash;&gt;-->
+             <!--</ul>-->
+          <!--</div>-->
+      <!--</div>-->
+      <div class="service">
+          <p class="ui-transd-999">售后服务</p>
+          <div class="service_show">
+              <img src="" alt="---暂无信息---" id="service_img"/>
+          </div>
+      </div>
+   </div>
+   <footer class="footer">
+     <ul>
+       <li class="cur" id="collect"><span class="signimg"></span>收藏</li>
+       <li><a href="#">购物车</a><span class="cartNum" id="cartNum">0</span>
+           <a href="/buyer/gouwuche.html" style="position: absolute;width: 100%;height: 100%;top:0;left: 0;"></a>
+       </li>
+       <li id="cart_bind">加入购物车</li>
+       <li id="ui-buy-now">立即购买</li>
+     </ul>
+  </footer>
+  <!--飞入购物车图片-->
+   <img class="flyImg" id="flyImg" src="">
+   <div class="fixed_index">
+      <a href="/buyer/shouye.html"><img src="/images/buy/fixed_top.png" /></a>
+  </div>
+<script>
+    var objGid = {{{params}}};
+</script>

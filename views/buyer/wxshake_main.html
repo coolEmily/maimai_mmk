@@ -1,0 +1,67 @@
+{{#extend "header"}}
+<title></title>
+<link rel="stylesheet" href="/css/buy/wxshake_main.css" />
+<link rel="stylesheet" href="/css/animate.min.css" />
+{{/extend}}
+
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a></nav>
+    </header>
+    <div class="container">
+        <!-- 排期ID在这里 -->
+        <input type="hidden" value="2" id="active_id">
+        <div class="active_animate">
+            <div class="active_title">
+                <div>
+                    <img id="gestures" src="/images/buy/shake_gestures.gif">
+                    <img id="title_png" src="/images/buy/shake_active_title.png">
+                </div>
+            </div>
+            <div class="small_person">
+                <div>
+                    <img id="person_png" src="/images/buy/shake_small_person.png">
+                </div>
+            </div>
+            <div class="active-time">
+                <div>
+                    <span>距离结束</span>
+                    <span><i>00</i>&#58;<i>00</i>&#58;<i>00</i></span>
+                </div>
+                <span>参与人数&#58;0人</span>
+            </div>
+        </div>
+        <div class="winning_bar">
+            <div class="fixed_bar">
+                <div id="drawInfoBar"></div>
+            </div>
+            <div class="scroll">
+                <div class="scroll_box"></div>
+            </div>
+        </div>
+    </div>
+    <div id="fixedTitle"></div>
+    <audio id="audio" preload="auto">
+        <source src="/media/842443.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="warn_tone" preload="auto">
+        <source src="/media/5012.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<div id="dailog_box"></div>
+<div id="dailog_context"></div>
+<div id="dailog_title">
+    <div>
+        <span>已领取成功</span>
+        <div class="title_btn">
+            <a id="ontinuec_active">继续摇一摇</a> |
+            <a id="employ">立刻使用</a>
+        </div>
+    </div>
+</div>
+<!--<script src="/js/lib/vconsole.min.js"></script>-->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+<script src="/js/lib/require.js" data-main="/js/buy/wxshake_main"></script>
+<script type="text/javascript">
+    var _czc = _czc || [];
+</script>

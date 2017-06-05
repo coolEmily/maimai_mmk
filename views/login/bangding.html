@@ -1,0 +1,50 @@
+{{#extend "header"}}
+<title>手机绑定</title>
+<link rel="stylesheet" type="text/css" href="/css/bangding.css" />
+<script src="/js/lib/rem.js"></script>
+{{/extend}}
+<header class="main_head">
+	<nav class="nav"><a href="javascript:;" class="back _goback"></a><span class="nav-title">手机绑定</span></nav>
+</header>
+
+<div class="cox">
+	<div class="form">
+		<div class="f1">
+			<section class="phone">
+				<span class="icon"></span>
+				<input type="tel" value="" placeholder="请输入手机号" maxlength="11"/>
+				<span class="icon1"></span>
+				<span class="mes"></span>
+			</section>
+			<section>
+				<span class="icon"></span>
+				<input type="tel" value="" placeholder="请输入图形验证码" maxlength="4"/>
+				<span class="icon3"></span>
+				<span class="mes"></span>
+			</section>
+			<section>
+				<span class="icon"></span>
+				<input type="tel" value="" placeholder="请输入手机验证码" maxlength="6"/>
+				<span class="yan" data-ngfa='true'>获取验证码</span>
+				<span class="mes"></span>
+			</section>
+			<a href="javascript:void(0);" class="btn" data-ng="false" data-bg="f1" data-qu=false>提交</a>
+		</div>
+	</div>
+	<div class="link">
+		<span class="iconpan"></span>
+		<p>已阅读并同意以下协议<a href="/buyer/login/agreement.html">《买买商城用户协议》</a></p>
+	</div>
+	<div class="alert">
+		验证码已发送，注意查收
+	</div>
+	<div class="comiform">
+		<div class="con">
+			<span class="cdel"></span>
+			<p>亲~这个手机号已经绑定过哦，快去登录吧！</p>
+			<a href="javascript:void(0);" class="btn">去登录</a>
+		</div>
+	</div>
+</div>
+
+<script data-main="/js/bangding" src="/js/lib/require.js" ></script>

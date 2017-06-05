@@ -1,0 +1,294 @@
+/*.packet_list{min-height:380px}*/
+.balanceItem{position:absolute;
+             right:20px;
+             top:0;
+             color:#ff3c3c}
+
+.packet_list .gray {background:url(../images/buy/walletbg1.png) no-repeat ;
+                    background-size:100% 100px }/*列表置灰*/
+
+.packet_unit{height:100px;
+             margin:0 4% 10px 4%;
+             background:url(../images/buy/hongbao_bg.png) no-repeat ;
+             background-size:100% 100px;
+             color:#fff;
+             padding-left: 8%;
+            position: relative}
+
+.packet_unit span{display:inline-block;
+                  margin-right:30px;
+                  float:left;}
+
+.packet_unit .first_d{height:27px;
+                      line-height:27px;
+                      padding:15px 0 10px 0;}
+
+.packet_unit .first_d span:last-child{font-size:14px;margin-top:4px;}
+
+.packet_unit .first_d :first-child{font-size:18px;}
+
+.packet_unit .second_d{line-height:20px;font-size:14px;margin-bottom:3px;}
+
+.use-now{
+    float: right;
+    width: 14px;
+    height: 64px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right:5%;
+    margin-top: -32px;
+}
+.use-now a{
+    color: #fff;
+}
+@media all and (max-width: 320px){
+    .packet_unit {
+        padding-left: 3%;
+    }
+}
+/*按钮*/
+.button1{background:-webkit-linear-gradient(top, #ff7900,#ff9f00);
+         background:linear-gradient(top, #ff7900,#ff9f00);
+         position:absolute;
+         left:4%;
+         bottom:20px;
+         width:92%;
+         border-radius: 6px;
+         text-align: center;
+         line-height: 40px;
+         color: #fff;
+         letter-spacing: 2px;}
+
+.dealBtn{
+    min-width: 320px;
+    max-width: 640px;
+    width:100%;
+    overflow:hidden;
+    position:fixed;
+    bottom:0
+}
+
+.dealBtn>ul li{width:49.8%;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#fff;
+    background:#dc3c3c;
+    float: right;}
+
+.dealBtn>ul li:first-child{float:left;
+    background:#ec7e41;}
+
+/*买家tab*/
+.tab_item{height:35px;
+          background:#fff;
+          border-bottom:solid #ccc 1px;
+          margin-bottom:10px;}
+
+.tab_item li{width:33.333%;
+             float:left;
+             height:35px;
+             overflow: hidden;
+             line-height:35px;
+             text-align:center;
+             color:#666;
+            -webkit-box-sizing: border-box;
+             box-sizing: border-box;
+             border-right:solid #ccc 1px;}
+
+.tab_item li.cur{color:#ff3c3c}
+
+.noMore{line-height:30px;
+        text-align:center}
+
+/*无红包*/
+.ui-nothing-find1>div{margin:8vh auto 8vh;}
+
+.ui-nothing-find1>div>dl>dd{ width:100px;
+                            height:70px;
+                            background: url(/images/sg_icon.png) no-repeat;
+                            background-size: 250px auto;
+                            background-position: -149px -65px;
+                            margin:0 auto}
+
+.ui-nothing-find1>div>dl>dt{line-height: 24px}
+
+.ui-nothing-find1 > div > dl > dt{
+    line-height: 20px;
+    color: #999;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/*余额明细*/
+.tab_item1{margin-bottom:5px;}
+.tab_item1 li{width:50%;}
+
+.item_list{background:#fff;
+           box-shadow:1px 1px 3px #cacaca;}
+
+.item_list li{height:45px;
+              border-bottom:solid #ddd 1px;
+              padding:0 4%}
+
+.item_list li p{float:left}
+
+.item_list li p span:first-child{font-size:14px;display:block;line-height:24px;}
+.item_list li p span:last-child{color:#999}
+.item_list li p:last-child{float:right;color:#46c364;font-size:14px;line-height:45px;}
+
+/*领取红包页面*/
+.phone_body{background:url(../images/buy/hongbaobg.png) center top no-repeat;
+            background-size:cover;
+            height:calc(100% - 40px);
+            width:100%;
+            overflow:hidden}
+
+.phone_btn{position:absolute;
+           bottom:70px;
+            left:4%;
+            width:92%;
+            height:32px;
+            border-radius:6px;
+            border:solid #ccc 1px;
+            background:rgba(255,255,255,0.3)}
+
+.phone_btn .phone_btn_label{    float: left;
+                                width: 19%;
+                                border-right: 1px solid #ddd;
+                                display: block;
+                                height: 32px;}
+
+.phone_btn .phone_btn_label:before {
+                        content: "";
+                        background: url(/images/op_icon_1.png) no-repeat 1px -43px;
+                        background-size: 150px auto;
+                        width: 16px;
+                        height: 20px;
+                        margin: 8px auto 0;
+                        display: block; }
+
+.phone_btn input{height: 32px;
+                line-height: 32px;
+                width:80%;
+                border: 0;
+                background:none;
+                color:#fff;
+                text-align:center}
+
+.phone_btn input::-webkit-input-placeholder{color:#fff;text-align:center}
+
+/*成功领取红包页面*/
+.success_box{height:70px;
+             box-shadow: 0px 1px 1px #ccc;
+             background:#fff;
+             margin-bottom:10px;
+             text-align:center;
+             padding:20px 0}
+
+.success_box p{line-height:22px;}
+
+.success_box :first-child{line-height:30px;
+                          color:#ff3c3c;
+                          font-size:18px;}
+
+.success_box :last-child{font-size:16px;}
+
+/*分享红包--卖*/
+.pocket_pic li{margin-bottom:10px;
+               position:relative;
+               border:solid transparent 1px; }
+
+.pocket_pic li.cur{border:solid red 1px;}
+
+.pocket_pic li.cur:before{
+                          content:"";
+                          width:20px;
+                          height:20px;
+                          display:block;
+                          background:url(../images/op_icon_1.png) -130px 0 no-repeat;
+                          background-size:150px auto;
+                          position:absolute;
+                          top:0;
+                          right:0;}
+
+.fixed{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*激活红包*弹窗*/
+.dialog_wrap{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display:none;
+}
+.dialog{width:84%;
+        height:150px;
+        background:#e2e2e2;
+        border-radius: 16px;
+        margin: 65% auto;}
+
+.dialog .box_input{height:100px;border-bottom:solid #b5b5b5 1px;}
+
+.dialog p{height:50px;
+    line-height:50px;
+    font-size:16px;
+    text-align:center;
+    color:#000}
+
+.dialog input{width:90%;
+    margin:0 auto;
+    height:30px;
+    background:#fff;
+    line-height:30px\9;
+    padding-left:5px;
+    border:solid #b5b5b5 1px;
+    border-radius:5px;
+    display:block;
+    font-size:14px;}
+
+.dialog .box_btn{height:50px;}
+.dialog .box_btn span{display:block;
+    float:left;
+    width:49%;
+    color:#1484fd;
+    font-size:16px;
+    line-height:50px;
+    text-align:center;
+}
+.dialog .box_btn span:first-child{border-right:solid #b5b5b5 1px;}
+
+/*激活成功*弹窗*/
+.dialog .text{display:block;
+    height:100px;
+    border-bottom:solid #b5b5b5 1px;
+    line-height:100px;
+    font-size:16px;
+    text-align:center;
+}
+.dialog .go_mall{display:block;
+    height:50px;
+    line-height:50px;
+    color:#1484fd;
+    font-size:16px;
+    text-align:center;
+}
+
+
+
+
+

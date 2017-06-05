@@ -1,0 +1,59 @@
+{{#extend "header"}}
+<title id="title">关注买买</title>
+<style>
+	.box{
+		background:#fff;
+		padding:0.82rem;
+	}
+	.imgs{
+		margin:0.6rem auto;
+		margin-top: 0rem;
+		width: 3.5rem;
+		height:3.5rem;
+	}
+	p{
+		line-height: 0.4rem;
+		font-size: 14px;
+		color:#333;
+	}
+	.btn{
+		margin-top: 4.8rem;
+		display: block;
+		padding:0.24rem 1.8rem;
+		background:#ff3a34;
+		font-size:12px;
+		color:#fff;
+		-moz-border-radius:5px;
+    	-webkit-border-radius:5px;
+		border-radius: 5px;
+	}
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>关注买买</nav>
+</header>
+<section class="box">
+	<div class="imgs"><img src="/images/qrcode_for_gh_online_258.jpg" alt=""></div>
+	<p>长按识别二维码关注买买商城,随时查看，使用红包</p>
+	<a class="btn" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.example.maimai">下载买买商城app</a>
+</section>
+<script src="/js/lib/require.js" data-main="/js/buy/xyyh"></script>
+<script>
+	 (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>

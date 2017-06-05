@@ -1,0 +1,167 @@
+{{#extend "header"}}    
+    <title>确认订单</title>
+    <link rel="stylesheet" href="/css/buy/addr.css" />
+    <link rel="stylesheet" href="/css/buy/confirm_receipt.css" />
+    <style>
+        .ui-transr-999:before{
+            right: 9px;
+            top: 50%;
+            margin-top: -8px;
+        }.ui-transr-999:after{
+            right: 10px;
+            top: 50%;
+            margin-top: -8px;
+        }
+        .cart_list_mj {
+            padding: 3%;
+            border-bottom: 1px solid #f1f1f1;
+            color: #ff3c3c;
+        }
+        .ui-settlement > div:nth-child(2) > div > span:nth-child(2){
+            float: right;
+            color: #333;
+        }
+        .ui-yunfei-detail{
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 999999;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .ui-yunfei-bc{
+            position: fixed;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 999998;
+            width: 100%;
+            height: 100%;
+        }
+        .ui-yunfei-detail > div:nth-child(1){
+            text-align: center;
+            line-height: 50px;
+            color: #ff3c3c;
+            font-size: 16px;
+            
+        }
+        .ui-per-shop{
+            text-align: right;
+            color: #333333;
+            line-height: 40px;
+        }
+        .ui-per-shop span{
+            float: left;
+        }
+        .ui-settlement-freight{
+            background: url(/images/buy/yfs.png) no-repeat center left;
+            background-size: 16px auto;
+            background-position: 27px 7px;
+        }
+        .ui-order-list .ui-jihuo-a{
+          float: right;
+          color: #ff3c3c;
+        }
+        .dialog_wrap{
+          background: rgba(0,0,0,0.6);
+          width: 100%;
+          height: 100%;
+          z-index: 999;
+          position: fixed;
+          top: 0;
+          left: 0;
+          display:none;
+        }
+        .dialog{width:84%;
+          height:160px;
+          background: white;
+          border-radius: 16px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+          }
+        
+        .dialog .box_input{height:110px;border-bottom:solid #e4e4e4 1px;}
+        
+        .dialog p{height:50px;
+            line-height:50px;
+            font-size:16px;
+            text-align:center;
+            color:#000}
+        
+        .dialog input{width:90%;
+          margin:0 auto;
+          height:30px;
+          background:#eee;
+          line-height:30px\9;
+          padding-left:5px;
+          border:solid #e4e4e4 1px;
+          border-radius:5px;
+          display:block;
+          font-size:14px;}
+        
+        .dialog .box_btn{height:50px;}
+        .dialog .box_btn span,.dialog .box_btn a{display:block;
+          float:left;
+          width:49%;
+          color:#1484fd;
+          font-size:16px;
+          line-height:50px;
+          text-align:center;
+        }
+        .dialog .box_btn span:first-child{border-right:solid #e4e4e4 1px;}
+    </style>
+{{/extend}}  
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>确认订单</nav>
+        </header>
+    </div>
+    <div class="ui-body main" style="padding-bottom: 40px;">
+
+    </div>
+    
+    <footer class="ui-confirm-order">
+        <div class="ui-confirm-pay">确认支付</div>
+        <div style="float: none;text-align: left;">应付款:<span class="ui-pay-total" style="display: inline-block;">￥0</span></div>
+    </footer>
+    <div class="ui-yunfei-bc" style="display: none;">
+        <div class="ui-yunfei-detail">
+            <div class="ui-yunfei-detail-h">运费详情</div>
+            <div class="button ui-yunfei-hide" style="margin: 20px 0;">我知道了</div>
+        </div>
+    </div>
+    <!--支付确认弹窗-->
+    <div class="dialog_wrap" id="ui-input-pass">
+        <div class="dialog">
+            <div class="box_input">
+                <p>支付确认</p>
+                <input type="password" id="ui-pass-value" placeholder="请输入支付密码"/>
+                <div style="line-height: 30px;padding: 0 5%">
+                  <a href="/buyer/home/payPass.html" style="float: right;color: #368fff;text-decoration: underline;">忘记密码</a>
+                  <div id="ui-pass-error" style="overflow: hidden;color: #ff3c3c;white-space: nowrap;overflow: hidden;"></div>
+                  <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="box_btn">
+                <span class="close">取消</span>
+                <span id="active_btn">确认</span>
+            </div>
+        </div>
+    </div>
+    
+    <!--支付确认弹窗-->
+    <div class="dialog_wrap" id="ui-no-pass">
+        <div class="dialog">
+            <div class="box_input" style="line-height: 100px;text-align: center;font-size: 16px;">您还没有设置支付密码哦！</div>
+            <div class="box_btn">
+                <span class="close">取消</span>
+                <a href="/buyer/home/payPass.html">去设置</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui-error-dialog" style="display:none;background-color: rgba(0,0,0,0.7);color: white;position: fixed;top:50%;left:50%;-webkit-transform: translate(-50%,-50%);transform: translate(-50%,-50%);padding: 15px 20px;"></div>
+    {{> loading}}
+    <script data-main="/js/buy/dingdanqr" src="/js/lib/require.js"></script>

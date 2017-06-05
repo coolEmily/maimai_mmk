@@ -1,0 +1,79 @@
+{{#extend "header"}}
+    <title>审核未通过</title>
+    <link type="text/css" rel="stylesheet" href="/css/shangou.css" />
+{{/extend}}
+
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>审核未通过</nav>
+        </header>
+        <!-- 122 -->
+        <div class="orderunit not_pass">
+            <p>尊敬的用户，由于修改的闪购价格高于促销价，审核未通过，请重新修改后提交。</p>
+        </div>
+        <!-- 133 -->
+        <div class="orderunit not_pass" style="display:none">
+            <p>尊敬的用户，由于修改的大咖馆价格过于高，审核未通过，请重新修改后提交。</p>
+        </div>
+        <!-- 139 -->
+        <div class="orderunit not_pass" style="display:none">
+            <p>尊敬的用户，由于修改的促销价格过于高，审核未通过，请重新修改后提交。</p>
+        </div>
+
+        <div class="orderunit" id="orderunit">
+            <!--&lt;!&ndash; 122.添加闪购丶审核未通过 &ndash;&gt;-->
+            <!--<div class="goodslist">-->
+                <!--<dl>-->
+                    <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                    <!--<dd>-->
+                        <!--<ul>-->
+                            <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                            <!--<li><a href="#">LES VENTURONS</a></li>-->
+                            <!--<li class="ui-goods-p">闪购价<input type="text" value="430" class="txt" /> <span>数量<input type="text" value="20" class="txt" /></span></li>-->
+                        <!--</ul>-->
+                    <!--</dd>-->
+                <!--</dl>-->
+            <!--</div>-->
+            <!--<div class="goodslist">-->
+                <!--<dl>-->
+                    <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                    <!--<dd>-->
+                        <!--<ul>-->
+                            <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                            <!--<li><a href="#">LES VENTURONS</a></li>-->
+                            <!--<li class="ui-goods-p">闪购价<input type="text" value="430" class="txt" /> <span>数量<input type="text" value="20" class="txt" /></span></li>-->
+                        <!--</ul>-->
+                    <!--</dd>-->
+                <!--</dl>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; 133.大咖馆商品丶审核未通过 &ndash;&gt;-->
+            <!--<div class="goodslist">-->
+                <!--<dl>-->
+                    <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                    <!--<dd>-->
+                        <!--<ul>-->
+                            <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                            <!--<li><a href="#">LES VENTURONS</a></li>-->
+                            <!--<li class="ui-goods-p">大咖价<input type="text" value="4309" class="txt" /> <span>库存：</span><span class="ys">20件</span></li>-->
+                        <!--</ul>-->
+                    <!--</dd>-->
+                <!--</dl>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; 139.平台满减活动丶审核未通过 &ndash;&gt;-->
+            <!--<div class="goodslist">-->
+                <!--<dl>-->
+                    <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                    <!--<dd>-->
+                        <!--<ul>-->
+                            <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                            <!--<li><a href="#">LES VENTURONS</a></li>-->
+                            <!--<li class="ui-goods-p"><span>促销价：</span><span class="ys">￥430</span> <span>库存：</span><span class="ys">20件</span></li>-->
+                        <!--</ul>-->
+                    <!--</dd>-->
+                <!--</dl>-->
+            <!--</div>-->
+
+        </div>
+        <div class="wd_btn">提交</div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/shangouwtg.js"></script>

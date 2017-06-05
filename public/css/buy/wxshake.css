@@ -1,0 +1,61 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.main {
+    width: 100%;
+    height: 93%;
+    text-align: center;
+    position: relative;
+}
+.main .main_head {
+    display: none;
+}
+.main .active-btn {
+    width: 100%;
+    position: relative;
+    top: 61.47%;
+}
+@keyframes heartbeat {
+    0% { transform: scale(0.8, 0.8); opacity: 1; }
+    25% { transform: scale(1, 1); opacity: 1; }
+    100% { transform: scale(0.8, 0.8); opacity: 1; }
+}
+.main .active-btn #activeBtn {
+    width: 45%;
+    display: inline-block;
+    animation-name: heartbeat;
+    animation: heartbeat 1s normal infinite;
+    -webkit-animation: heartbeat 1s normal infinite;
+    -moz-animation: heartbeat 1s normal infinite;
+}
+.main .active-time {
+    color: white;
+    position: relative;
+    width: 100%;
+    top: 65%;
+    letter-spacing: 3px;
+    line-height: 2em;
+}
+.main #timeBox span i {
+    border: 1px solid white;
+    padding: 1px 3px;
+    letter-spacing: 0;
+    margin: 0 4px 0 1px;
+    border-radius: 3px;
+}
+#div_subscribe_area {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (min-width: 414px) and (max-width: 639px) {
+    .main .active-time { font-size: 15px; }
+}
+@media screen and (min-width: 750px) {
+    .main .active-time { font-size: 25px; }
+}

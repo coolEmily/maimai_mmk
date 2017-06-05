@@ -1,0 +1,89 @@
+{{#extend "header"}}
+    <title>自营店经营申请</title>
+    <link rel="stylesheet" href="/css/apply.css" />
+    <link href="/css/mobiscroll.css" rel="stylesheet" type="text/css">
+    <style>
+        .ui-date-limit{
+            float: right;
+            width: 30px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .ui-date-limit:before{
+            content: " ";
+            background: url(/images/op_icon.png) -60px -111px no-repeat;
+            background-size: 150px auto;
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            top: 13px;
+            left: 0;
+        }
+        
+        .ui-date-limit.active:before{
+            background-position: -62px -20px;
+        }
+    </style>
+{{/extend}}
+{{> loading}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>品牌授权</nav>
+        </header>
+    </div>
+    <div class="ui-body main">
+        <div class="ui-title-input">
+            <!--<div>
+                <div class="ui-t">授权类型：</div>
+                <div class="ui-input ui-transd-999 ui-type-list">
+                    <select name="classId">
+                        <option>酒水</option>
+                    </select>
+                </div>
+            </div>-->
+            <input name="sellerTrademarkVerifyPictureId" type="hidden" value=""/>
+            <div>
+                <div class="ui-t">品牌中文名：</div>
+                <div class="ui-input"><input type="text" name="trdemarkVerifyName" placeholder="请填写品牌的中文名称"></div>
+            </div>
+        </div>
+        
+        <div class="ui-shop-img ui-title-input">
+            <div class="ui-img-type-tishi">
+                <div class="ui-t" style="color: #333;width: 90px;">上传授权证书：</div>
+                <div class="ui-input" style="color: #ff3c3c;">支持jpg、jpeg、bmp格式图片，大小不超 过1M</div>
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureA_input" id="" data-width="640" data-target=".trademarkPictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureB_input" id="" data-width="640" data-target=".trademarkPictureB" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureC_input" id="" data-width="640" data-target=".trademarkPictureC" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureD_input" id="" data-width="640" data-target=".trademarkPictureD" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureE_input" id="" data-width="640" data-target=".trademarkPictureE" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureF_input" id="" data-width="640" data-target=".trademarkPictureF" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div calss='ui-img-type-tishi'>
+                <div class="ui-t" style="color: #333;width: 50px">到期日：</div>
+                <!--<div class="ui-date-limit">永久</div>-->
+                <div class="ui-input" style="color: #ff3c3c;"><input type="text" name="effectiveDate" class="ui-date" placeholder="请输入日期例如2016-04-01" style="border: 2px solid #f1f1f1;width: 95%;height: 30px;"/></div>
+            </div>
+        </div>
+        <div class="ui-submit button" style="margin:30px 20px;">提交</div>
+    </div>
+    
+    <script src="/js/lib/require.js" data-main="/js/admin_shouquan" ></script>

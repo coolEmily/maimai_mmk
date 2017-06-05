@@ -1,0 +1,96 @@
+body {
+	background: #fff;
+	font-size: 62.5%;
+}
+
+.shouquan {
+	position: relative;
+}
+.button {
+	margin: 4%;
+	font-size: 14px;
+}
+.sq_logo {
+	position: absolute;
+	z-index: 9999;
+}
+.sq_1 {
+	position: relative;
+}
+.sq_1 span.txt1 {
+	position: absolute;
+	bottom: 0;
+	left: 39%;
+	font-size: 12px;
+}
+.sq_1 span.txt2 {
+	left: 42%;
+}
+.sq_1 span.txt3 {
+	left: 42%;
+}
+.sq_1 span.txt4 {
+	left: 40.5%;
+}
+.sq_1 span.txt5 {
+	left: 56.5%;
+}
+.sq_1 span.txt6 {
+	left: 69%;
+}
+@media  (min-width: 374px){
+	.sq_1 span.txt1 {
+		font-size: 14px;
+	}
+	.sq_1 span.txt4, .sq_1 span.txt5, .sq_1 span.txt6 {
+		font-size: 12px;
+	}
+}
+@media (min-width: 413px){
+	.sq_1 span.txt1 {
+		font-size: 16px;
+	}
+	.sq_1 span.txt4, .sq_1 span.txt5, .sq_1 span.txt6 {
+		font-size: 14px;
+	}
+}
+@media (min-width: 450px){
+	.sq_1 span.txt1 {
+		font-size: 16px;
+	}
+	.sq_1 span.txt4, .sq_1 span.txt5, .sq_1 span.txt6 {
+		font-size: 14px;
+	}
+}
+@media (min-width: 500px){
+	.sq_1 span.txt1 {
+		font-size: 20px;
+	}
+	.sq_1 span.txt4, .sq_1 span.txt5, .sq_1 span.txt6 {
+		font-size: 14px;
+	}
+}
+@media (min-width: 550px){
+	.sq_1 span.txt1 {
+		font-size: 22px;
+	}
+	.sq_1 span.txt4, .sq_1 span.txt5, .sq_1 span.txt6 {
+		font-size: 16px;
+	}
+}
+@media (min-width: 600px){
+	.sq_1 span.txt1 {
+		font-size: 24px;
+	}
+	.sq_1 span.txt4, .sq_1 span.txt5, .sq_1 span.txt6 {
+		font-size: 18px;
+	}
+}
+@media (min-width: 650px){
+	.sq_1 span.txt1 {
+		font-size: 24px;
+	}
+	.sq_1 span.txt4, .sq_1 span.txt5, .sq_1 span.txt6 {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,26 @@
+{{#extend "header"}}
+    <title>自营管理</title>
+    <link rel="stylesheet" href="/css/ziying.css" />
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:history.go(-1);" class="back _goback" id="ui-go-back"></a>自营管理</nav>
+        </header>
+    </div>
+    <div class="ziying">
+        <ul>
+            <li><a href="shangpin.html">商品管理</a></li>
+            <li><a href="/order/ziyingdd.html">自营订单</a></li>
+            <li><a href="/order/fahuo.html">发货中心</a></li>
+            <li><a href="tuihuo.html">退货管理</a></li>
+            <li><a href="shouquanzt.html">授权管理</a></li>
+            <li><a href="tousu.html">投诉管理</a></li>
+            <li><a href="yunfei.html">运费管理</a></li>
+            <li><a href="activity/huodonggl.html">活动管理</a></li>
+        </ul>
+    </div>
+    <script>
+        if(document.referrer.indexOf("/admin/shenqing") > -1 && sessionStorage.shenQingStatus === "1"){
+            document.getElementById("ui-go-back").setAttribute("href","javascript:history.go(-2)");
+        }
+    </script>

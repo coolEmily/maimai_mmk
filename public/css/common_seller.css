@@ -1,0 +1,86 @@
+.ui-seller_qr_code{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3,3,3,0.2);
+}
+
+.ui-seller_qr_code > div{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+}
+.ui-seller_qr_code > div > div{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    background-color: white;
+}
+
+.ui-seller_qr_code .ui-qr_code-info{
+    position: relative;
+    margin: 0 auto;
+    width: 140px;
+    height: 100%;
+}
+.ui-qr_code-info > div{
+    line-break: 30px;
+    text-align: center;
+}
+.ui-qr_code-info .ui-seller-name{
+    padding-left: 33px;
+    position: relative;
+    line-height: 40px;
+    margin-left: -10px;
+}
+.ui-qr_code-info .ui-seller-name:before{
+    content: " ";
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    left: 11px;
+    top: -2px;
+    background: url(/images/op_icon.png) no-repeat;
+    background-size: 150px auto;
+    background-position: -128px -88px;
+}
+.ui-qr_code-info > #weixinpay-erweima{
+    height: 140px;
+}
+.ui-qr_code-info > .ui-zhiwen{
+    width: 70px;
+    height: 70px;
+    margin: 20px auto 10px;
+    left: 11px;
+    background: url(/images/big_icon.png) no-repeat;
+    background-size: 250px auto;
+    background-position: -173px -98px;
+}
+
+.ui-qr_code-info > .ui-img{
+    padding: 20px 0;
+}
+
+.fixed_wrap > ul > li:nth-of-type(n+2) .bgImg{
+    background-image: url(/images/op_icon_1.png);
+    background-size: 150px auto;
+}
+.fixed_wrap > ul > li .bgImg2{
+    background-position: 1px 0 !important;
+}
+
+.fixed_wrap > ul > li .bgImg3{
+    background-position: -24px 0 !important;
+}
+
+.fixed_wrap > ul > li .bgImg4{
+    background-position: -49px 0 !important;
+}

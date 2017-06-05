@@ -1,0 +1,57 @@
+{{#extend "header"}}
+    <title>自营订单</title>
+    <link type="text/css" rel="stylesheet" href="/css/order.css">
+    <link type="text/css" rel="stylesheet" href="/css/dingdan.css">
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>
+                <div class="titword" id="titword">
+                    <span id="titword_text">自营全部订单</span>
+                     <div class="triangle" id="triangle">
+                        <span class="triangle_s1"></span>
+                        <span class="triangle_s2"></span>
+                     </div>
+                     <div class="trianglered" id="trianglered">
+                        <span class="triangle_s1"></span>
+                        <span class="triangle_s2"></span>
+                    </div> 
+
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="detail_wrap_none"  style="display:none">
+              <div class="ui-nothing-find">
+                <div>
+                    <dl>
+                        <dd style=""></dd>
+                        <dt style="">近期无订单</dt>
+                    </dl>
+                </div>
+             </div>
+            <div class="guess_like"></div>
+        </div>
+        <div class="select_box" id="select_box">
+            <div class="itemcon" id="itemcon">
+                <ul>
+                    <li class="cur">全部订单<span class="radioimg"></span></li>
+                    <li>已取消订单</li>
+                    <li>未付款订单</li>
+                    <li>已完成订单</li>
+                    <li>待发货订单</li>
+                    <li>已发货订单</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-body main" style="padding-bottom: 50px;">
+        <div class="ui-fan-detail">
+            <div class="ui-list">
+            </div>
+        </div>
+    </div>
+    
+    <a href="/money/huokuanmx.html" class="ui-total-price">累计总货款：<span>0</span>元</a>
+    <script src="/js/lib/require.js" data-main="/js/ziyingdd"></script>

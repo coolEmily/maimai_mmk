@@ -1,0 +1,112 @@
+{{#extend "header"}}
+<title id="title">营养保健 惊爆5折起</title>
+<style type="text/css">
+    .box{
+        width:100%;
+    }
+    .box > a{
+        float: left;
+        display: block;
+    }
+    .box .half{
+        width: 50%;
+    }
+    #return_top{
+        bottom: 60px;
+        right: 6px;
+        width: 46px;
+        height: 46px;
+        background:url("/images/buy/return_top.png") no-repeat;
+        background-size: cover;
+        opacity: 0;
+        position: fixed;
+        z-index: 9999999;
+        border-radius: 23px;
+    }
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="http://m.maimaicn.com/buyer/shouye.html" class="back"></a>营养保健 惊爆5折起</nav>
+</header>
+<div class="box">
+    <a href="javascript:;"><img src="/images/activities/012/mh_01.jpg"></a>
+    <a href="http://m.maimaicn.com/buyer/egghit.html?luckyId=12"><img src="/images/activities/012/mh_02.jpg"></a>
+    <a href="/g?gId=41070"><img src="/images/activities/012/mh_04.jpg"></a>
+    <a class="half" href="/g?gId=45415"><img src="/images/activities/012/mh_05.jpg"></a>
+    <a class="half" href="/g?gId=40983"><img src="/images/activities/012/mh_06.jpg"></a>
+    <a href="/g?gId=41012"><img src="/images/activities/012/mh_07.jpg"></a>
+    <a class="half" href="/g?gId=41006"><img src="/images/activities/012/mh_08.jpg"></a>
+    <a class="half" href="/g?gId=40989"><img src="/images/activities/012/mh_09.jpg"></a>
+    <a href="/g?gId=41073"><img src="/images/activities/012/mh_10.jpg"></a>
+    <a class="half" href="/g?gId=41008"><img src="/images/activities/012/mh_11.jpg"></a>
+    <a class="half" href="/g?gId=41030"><img src="/images/activities/012/mh_12.jpg"></a>
+    <a href="/g?gId=41065"><img src="/images/activities/012/mh_13.jpg"></a>
+    <a class="half" href="/g?gId=40383"><img src="/images/activities/012/mh_14.jpg"></a>
+    <a class="half" href="/g?gId=41011"><img src="/images/activities/012/mh_15.jpg"></a>
+    <a class="half" href="/buyer/activities/014.html"><img src="/images/activities/012/mh_16.jpg"></a>
+    <a class="half" href="/buyer/activities/008.html"><img src="/images/activities/012/mh_17.jpg"></a>
+    <a class="half" href="/buyer/activities/009.html"><img src="/images/activities/012/mh_18.jpg"></a>
+    <a class="half" href="/buyer/activities/010.html"><img src="/images/activities/012/mh_19.jpg"></a>
+    <a class="half" href="/buyer/activities/011.html"><img src="/images/activities/012/mh_20.jpg"></a>
+    <a class="half" href="/buyer/activities/013.html"><img src="/images/activities/012/mh_21.jpg"></a>
+    <a class="go-top" id="go-top" href="javascript:;"><img src="/images/activities/012/mh_22.jpg"></a>
+</div>
+<div id="return_top"></div>
+<script src="/js/lib/require.js"></script>
+<script>
+    require.config({baseUrl: '/js/lib',urlArgs: "v0.0.1", paths:{swiper: "swiper.min"}});
+    require(['zepto', 'lib','visitor-logs'], function($, lib, vl){
+        vl.setLog(window.location.href, 2);
+        lib = new lib();
+        var Oheight=$("body").height()/2;
+        scroll(Oheight);
+        click();
+        function click(){
+            $.fn.scrollTo =function(options){
+                var defaults = {
+                    toT : 0,    //滚动目标位置
+                    durTime : 500,  //过渡动画时间
+                    delay : 30,     //定时器时间
+                    callback:null   //回调函数
+                };
+                var opts = $.extend(defaults,options),
+                        timer = null,
+                        _this = this,
+                        curTop = _this.scrollTop(),//滚动条当前的位置
+                        subTop = opts.toT - curTop,    //滚动条目标位置和当前位置的差值
+                        index = 0,
+                        dur = Math.round(opts.durTime / opts.delay),
+                        smoothScroll = function(t){
+                            index++;
+                            var per = Math.round(subTop/dur);
+                            if(index >= dur){
+                                _this.scrollTop(t);
+                                window.clearInterval(timer);
+                                if(opts.callback && typeof opts.callback == 'function'){
+                                    opts.callback();
+                                }
+                                return;
+                            }else{
+                                _this.scrollTop(curTop + index*per);
+                            }
+                        };
+                timer = window.setInterval(function(){
+                    smoothScroll(opts.toT);
+                }, opts.delay);
+                return _this;
+            };
+            $("#return_top,#go-top").on("click",function(){
+                $("body").scrollTo({toT:0});
+            });
+        }
+        function scroll(Oheight){
+            $(window).on("scroll",function () {
+                if($(this).scrollTop()>Oheight){
+                    $("#return_top").css({"opacity":1});
+                }else{
+                    $("#return_top").css({"opacity":0});
+                }
+            });
+        }
+    });
+</script>

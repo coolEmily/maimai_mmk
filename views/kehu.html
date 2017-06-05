@@ -1,0 +1,60 @@
+{{#extend "header"}}
+    <title>客户数量</title>
+    <link type="text/css" rel="stylesheet" href="/css/client_num.css">
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>客户总数</nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="numbox" style="height: 66px;">
+            <div class="number cur">
+                <p>直接人数</p>
+                <span name="directMemberNum">0</span>
+           </div>
+           <div class="number">
+                <p>间接人数</p>
+                <span name="indirectMemberNum">0</span>
+           </div>
+        </div>
+        <div class="phonenum" style="box-shadow: 0px 2px 2px #ccc;">
+            <div class="tabselect" id="tabselect">
+                 <p>查询手机号</p>
+            </div>
+            <div class="phoneinput">
+                <span></span>
+                <div class="button">查询</div>
+                <div><input name="mobile" type="tel" maxlength="11" placeholder="请输入手机号"/></div>
+            </div>
+            <div class="ui-show-info" style="text-align:center;line-height: 30px;height: 30px;background-color: #46c364;color: white;display: none;"></div>
+        </div>
+        
+        <div class="datalist" style="margin-top: 15px;padding: 0;">
+            <ul class="ui-date-list">
+                <li class="cur">本周</li>
+                <li>本月</li>
+                <li>本年</li>
+            </ul>
+             <div class="titp">
+                 <p>客户详情<span class="ui-num-total">（0）</span></p>
+                 <p>受邀时间</p>
+                 <p>客户类型</p>
+             </div>
+             <div class="listul">
+                 <ul>
+                    <!-- <li>
+                        <span>18310770993</span>
+                        <span>2016-03-02</span>
+                        <span>大咖</span>
+                    </li>
+                    <li>
+                        <span>18310770993</span>
+                        <span>2016-03-02</span>
+                        <span>大咖</span>
+                    </li>-->
+                 </ul>
+             </div>
+        </div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/kehu"></script>

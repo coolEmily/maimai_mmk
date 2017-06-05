@@ -1,0 +1,119 @@
+{{#extend "header"}}
+    <title id="title">{{title}}</title>
+<style>
+    body{
+        font-size:0px;
+    }
+    .pictureSort{
+        width:100%;
+        -webkit-box-shadow: 0px 2px 0px 2px  #ddd;
+        -moz-box-shadow: 0px 2px 0px 2px  #ddd;
+        box-shadow: 0px 2px 0px 2px  #ddd;
+        height:6.78rem;
+        position:relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin:0.08rem 0px;
+    }
+    .pictureSort>a{
+        width:2.13rem;
+        height:3.6rem;
+        float:left;
+    }
+    .pictureSort>a>img{
+        width:2.13rem;
+        height:3.6rem;
+        float:left;
+    }
+    /*****************************************/
+    .pictureSort>a:nth-child(4){
+        width:2.13rem;
+        height:3.16rem;
+        float:left;
+    }
+    .pictureSort>a:nth-child(4)>img{
+        width:2.13rem;
+        height:3.16rem;
+        float:left;
+    }
+    .pictureSort>a:nth-child(5){
+        width:2.13rem;
+        height:3.16rem;
+        float:left;
+    }
+    .pictureSort>a:nth-child(5)>img{
+        width:2.13rem;
+        height:3.16rem;
+        float:left;
+    }
+    .pictureSort>a:nth-child(6){
+        width:2.13rem;
+        height:3.16rem;
+        float:left;
+    }
+    .pictureSort>a:nth-child(6)>img{
+        width:2.13rem;
+        height:3.16rem;
+        float:left;
+    }
+    /************************************************/
+    .arr_list{
+        width:100%;
+        height:1.2rem;
+        overflow: hidden;
+    }
+    .arr_list>a>img{
+        float:left;
+        width:2.2rem;
+        height: 1.2rem;
+    }
+     .arr_list>a:nth-child(2n)>img{
+        width:1.5rem;
+    }
+    .arr_list>a:nth-child(3)>img{
+        width:1.1rem;
+    }
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav>
+</header>
+{{>channel_top banner=topMap}}
+<section class="pictureSort" >
+    {{#each adMap.[0].list}}
+    <a href="{{this.htmlUrl}}"><img src="http://image.maimaicn.com/{{this.designImgUrl}}">
+        </a>
+        <!--<a href="javascript:void(0);"><img src="../../images/尚新季1.png" alt=""></a>-->
+        {{/each}}
+</section>
+<section class="arr_list">
+    {{#each adMap.[1].list}}
+    <a href="{{this.htmlUrl}}"><img src="http://image.maimaicn.com/{{this.designImgUrl}}">
+    </a>
+    <!--<a href="javascript:void(0);"><img src="../../images/尚新季1.png" alt=""></a>-->
+    {{/each}}
+</section>
+{{>channel_roll_img_list_1 rollImgMap=recomMap.[0] id="ui-row_img_list_0"}}
+
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>

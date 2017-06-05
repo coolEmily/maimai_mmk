@@ -1,0 +1,121 @@
+{{#extend "header"}}
+    <title>卖家后台</title>
+    <link rel="stylesheet" href="/css/common_seller.css" />
+    <link rel="stylesheet" href="/css/seller.css" />
+    <style>
+        body{
+            display: none;
+        }
+    </style>
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>卖家后台</nav>
+        </header>
+    </div>
+    <div class="ui-body main" style="padding-bottom: 50px;">
+        <div class="ui-person-info" style="height:88px">
+            <div class="ui-person-head-portrait" id="img-sel-box">
+                <div style="width:60px;height:60px;"><img name="picture" src=""/></div>
+                <a href="javascript:void(0)" style="color: #02aefe;">修改头像</a>
+            </div>
+            <div class="ui-person-base-portrait">
+                <p class="ui-user-name" name="nickName"><span>买买</span><a href="/login/xiugai.html" style="float: right;padding-right: 20px;color: #02aefe;font-size: 12px;">修改密码</a></p>
+                <p class="ui-team-info"> 直接数量:&nbsp;<span name="directMemberNum" class="ui-last-name">0</span>间接数量:&nbsp;<span name="indirectMemberNum" class="ui-team-name">0</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="ui-income-info ui-about-money">
+            <div>
+                <div class="ui-income-title">累计返佣(元):</div>
+                <div class="ui-income-amount" name="totalRebate">0.00元</div>
+                <a href="/money/fanyong.html">查看</a>
+            </div>
+            <div>
+                <div class="ui-income-title">账户余额(元):</div>
+                <div class="ui-income-amount" name="balance">0.00元</div>
+                <a href="money/shouye.html">查看</a>
+            </div>
+        </div>
+        
+        <div class="ui-income-info" style="height: auto;">
+            <div class="ui-income-title" style="margin-bottom: 15px;">七日营收:</div>
+            <div class="ui-income-amount">
+                <canvas id="myChart" width="400" height="200" style="width: 320px; height: 200px;max-width: 600px"></canvas>
+            </div>
+        </div>
+        <div class="ui-user-ops">
+            <a href="shezhi.html" class="ui-user-ops-detail">
+                <span class="ui-op-icon"></span><span class="ui-op-name">店铺设置</span>
+            </a>
+            <a href="/order/fanyongdd.html" class="ui-user-ops-detail">
+                <span class="ui-op-icon"></span><span class="ui-op-name">返利订单</span>
+            </a>
+            <a href="kehu.html" class="ui-user-ops-detail">
+                <span class="ui-op-icon"></span><span class="ui-op-name">客户总数</span>
+            </a>
+            <a href="fangke.html" class="ui-user-ops-detail">
+                <span class="ui-op-icon"></span><span class="ui-op-name">今日访客</span>
+            </a>
+            <a href="/admin/shenqing.html" class="ui-user-ops-detail ui-daka-zx">
+                <span class="ui-op-icon"></span><span class="ui-op-name">自营管理</span>
+            </a>
+            <a href="/money/shouye.html" class="ui-user-ops-detail">
+                <span class="ui-op-icon"></span><span class="ui-op-name">我要提现</span>
+            </a>
+            <a href="javascript:;" class="ui-user-ops-detail ui-show-shop-qr">
+                <span class="ui-op-icon"></span><span class="ui-op-name">店铺二维码</span>
+            </a>
+            <a href="tuijian.html" class="ui-user-ops-detail">
+                <span class="ui-op-icon"></span><span class="ui-op-name">代理商品</span>
+            </a>
+            <a href="shengji.html" class="ui-user-ops-detail ui-maika-zx">
+                <span class="ui-op-icon"></span><span class="ui-op-name">升级大咖</span>
+            </a>
+            <a href="shouquan.html" class="ui-user-ops-detail">
+                <span class="ui-op-icon"></span><span class="ui-op-name">查看授权</span>
+            </a>
+            <a href="javascript:;" class="ui-user-ops-detail">
+                <span class="ui-op-icon" style="background-image: url(/images/op_icon_1.png); background-position: -78px 0;"></span>
+                <span class="ui-op-name">广告管理</span>
+            </a>
+            <a href="/share/shouye.html" class="ui-user-ops-detail">
+                <span class="ui-op-icon" style="background-image: url(/images/op_icon_1.png); background-position: -105px 0;"></span>
+                <span class="ui-op-name">推广中心</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="ui-seller_qr_code">
+        <div style="height: 216px;">
+            <div>
+                <div class="ui-qr_code-info">
+                    <div style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                        <span class="ui-seller-name"></span>
+                    </div>
+                    <div id="weixinpay-erweima"></div>
+                    <div>长按保存二维码</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--图片剪裁-->
+<div class="image-cropper-bg" id="image-cropper-bg">
+    <div class="image-cropper-wrap">
+        <span class="remodal-close" id="remodal-close"></span><!-- 关闭弹窗按钮 -->
+        <div id="image-cropper">
+            <input type="file" class="cropit-image-input" />
+            <div class="cropit-preview"></div>
+
+            <div class="cropit-image-zoom-input-wrap"><span>缩放</span><input type="range" class="cropit-image-zoom-input" /></div>
+
+            <div style="padding-bottom: 16px">
+                <button class="rotate-ccw btn">逆时针旋转</button>&nbsp;
+                <button class="rotate-cw btn">顺时针旋转</button>
+            </div>
+            <button class="export btn" id="exportClick">上传图片</button>
+        </div>
+    </div>
+</div>
+    <script src="/js/lib/require.js" data-main="/js/mjzhongxin"></script>

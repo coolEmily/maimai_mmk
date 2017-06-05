@@ -1,0 +1,243 @@
+.container{max-width:640px;
+    min-width:320px;
+    margin:0 auto;
+    overflow-x: hidden;}
+
+.header{height:35px;
+        background:#fff;
+        margin-bottom:10px;
+        border-bottom:solid #ddd 1px;
+        position:relative}
+
+.header div:first-child{height:35px;
+                        width:25%;
+                        color:#999;
+                        text-align:center;
+                        line-height: 35px;
+                        float:left;}
+
+.header .sort_span{line-height:35px;}
+
+.header select{width:75%;
+               line-height:35px;
+               color:#333;
+               font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;}
+
+
+/*every order unit*/
+.orderunit{background:#fff;
+    overflow: hidden;
+    margin-bottom:10px;
+    box-shadow: 0px 2px 2px #ccc;}
+
+.orderunit .unithead{height:25px;
+    padding:10px 4% 0;
+    line-height: 25px;
+    border-bottom:solid #ddd 1px;}
+
+.orderunit .ordernum{float:left;}
+
+.orderunit .orderstate{float:right;
+    color:#999;}
+
+.orderunit .nopay{color:#fc3f43;}
+.goodslist{
+    position: relative;
+}
+.goodslist dl{overflow: hidden;
+    padding:10px 4%;
+    border-bottom:solid #ddd 1px;
+}
+
+.goodslist dt{
+    width: 30.75%;
+    /*height:120px;*/
+    float:left;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.goodslist dt:before{
+    content: " ";
+    width: 20px;
+    height: 17px;
+    top: 50px;
+    left: 5px;
+    position: absolute;
+    background: url(../../images/op_icon.png) no-repeat;
+    background-size: 150px auto;
+    background-position: -59px -111px;
+}
+
+/*选中状态*/
+.goodslist dt.on:before{
+    background-position: -59px -20px;
+}
+
+.goodslist dd{overflow:hidden;
+    padding-left:5px;}
+
+.goodslist dd li a{overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;}
+
+.goodslist dd li:nth-child(1) a{line-height:20px;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    white-space:normal;
+    font-size:12px;
+    color:#333;
+    width:79%}
+
+.goodslist dd li:nth-child(2) a{line-height:20px;
+                                color:#a9a9a9;
+                                font-size:10px;
+                                display: block;
+                                width:79%}
+
+.goodslist dd li:nth-child(3){color:#a9a9a9;
+    font-size:12px;
+    margin-top:18px;}
+.unitfoot{height:57px;
+    line-height:57px}
+
+.unitfoot li{float:left;
+    width:30%;
+    text-align: center}
+
+.unitfoot li span{color:#fc3f43;}
+
+/*select item*/
+.select_box{height:800px;
+    width:100%;
+    position:absolute;
+    background:rgba(0,0,0,0.5);
+    top:40px;
+    left:0;
+    z-index: 999;
+    display: none;}
+
+.select_box .itemcon{background:#fff;}
+
+.select_box .itemcon li.cur{color:#333;}
+
+.select_box .itemcon li{background:#fff;
+    height:40px;
+    line-height:40px;
+    font-size:12px;
+    border-bottom:solid 1px #ddd;
+    color:#999;
+    padding-left:5%;
+    position:relative;}
+
+.select_box .radioimg{right:5%;
+    top:10px;
+    position:absolute;
+    width:17px;
+    height:17px;
+    display:block;
+    background:url(/images/op_icon.png) -62px -20px no-repeat;
+    background-size:150px auto;}
+
+
+/*triangle*/
+.titword{display:inline-block;
+    position:relative;}
+
+.triangle,.trianglered{position: absolute;
+    top:17px;
+    right:-20px;}
+
+.trianglered{top:9px;
+    display:none}
+
+.triangle .triangle_s1{border:solid transparent 8px;
+    border-top:solid #333 8px;
+    display: block}
+
+.triangle .triangle_s2{border:solid transparent 7px;
+    border-top:solid #fff 7px;
+    display: block;
+    margin-top:-18px;}
+
+.trianglered .triangle_s1{border:solid transparent 8px;
+    border-bottom:solid #333 8px;
+    display: block}
+
+.trianglered .triangle_s2{border:solid transparent 7px;
+    border-bottom:solid #fff 7px;
+    display: block;
+    margin-top:-12px;}
+
+.tri_sort,.tri_sorted{right:20px}
+.tri_sort .triangle_s1{border-top-color:#666}
+.tri_sort .triangle_s2{border-top-color:#fff}
+
+.tri_sorted .triangle_s1{border-bottom-color:#dc3c3c}
+.tri_sorted .triangle_s2{border-bottom-color:#fff}
+
+
+/*订单详情*/
+.detail_wrap{background:#fff;
+    margin-bottom:35px;
+    box-shadow: 0px 2px 2px #ccc}
+
+.info_1{height:35px;
+    line-height:35px;
+    padding:0 4%;
+    border-bottom:solid #ddd 1px;}
+
+.info_1 p{float:left;}
+.info_1 .statep{float:right}
+.info_1 .grey{color:#999;}
+.info_1 .red{color:#ff3c3c;display:none;}
+
+.info_1 .time{float:right;}
+.info_1 .person{color:#999;}
+
+.info_2{line-height:35px;
+    padding:0 4% 10px 4%;
+    border-bottom:solid #ddd 1px;}
+
+.info_2 .phone{float:right;
+    margin-right:20%;}
+
+.info_2 .address{line-height:20px;}
+
+/*商品*/
+.goodslist .price{color:#fc3f43;}
+.goodslist .counts{float:right;
+    margin-right:14%;}
+
+/*无订单*/
+.ui-nothing-find>div{margin:8vh auto 8vh;}
+
+.ui-nothing-find>div>dl>dd{background-position: -70px 4px;
+    width:80px;}
+
+.ui-nothing-find>div>dl>dt{line-height: 24px}
+
+/*返利筛选*/
+.back_benefit{height:35px;
+              line-height:35px;
+              color:#fc3f43;
+              text-align:center;
+              background:#fff;
+              border-bottom:solid #ddd 1px;  }
+
+.back_benefit span{display:inline-block;
+                   position:relative}
+
+.back_benefit span:after{content: "";
+                        width: 8px;
+                        height: 17px;
+                        margin-top: 10px;
+                        margin-left: 5px;
+                        background: url(../../images/buy/list_icon.png) no-repeat;
+                        background-position: -8px 0px;
+                        float: right;
+                        background-size: 15px auto;}
+
+.back_benefit span:nth-child(2){display:none}
+.back_benefit span:nth-child(2):after{background-position: 0px 0px;}

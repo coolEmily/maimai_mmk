@@ -1,0 +1,25 @@
+{{#extend "header"}}    
+    <title>我的卡劵</title>
+    <link rel="stylesheet" href="/css/buy/mycards.css" />
+{{/extend}}
+<div class="main">
+    <header class="main_head" headId="mycards">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>我的卡劵</nav>
+    </header>
+    <div class="nocards" id="nocards">
+        <div>
+            <img src="/images/buy/nocards.png" alt="">
+        </div>
+        您还没有卡卷哦！
+    </div>
+    <div class="cards-list" id="cards-list">
+        <!--<dl>-->
+            <!--<dt><img src="" alt=""></dt>-->
+            <!--<dd>-->
+                <!--<span></span>-->
+                <!--<span></span>-->
+            <!--</dd>-->
+        <!--</dl>-->
+    </div>
+</div>
+<script  data-main="/js/buy/mycards.js" src="/js/lib/require.js" ></script>

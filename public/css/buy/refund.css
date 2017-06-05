@@ -1,0 +1,405 @@
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #999;
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #333; 
+} 
+.m20 {
+	margin-top: 20px;
+}
+.refund {
+	background: #fff;
+	box-shadow: 0px 2px 2px #ccc;
+}
+.refund_ph {
+	padding: 3%;
+	border-bottom:1px solid #ddd;
+	font-size: 14px;
+}
+.refund_ph p {
+	color: #ff3c3c;
+	font-size: 24px;
+	margin-top: 2%;
+}
+.refund_mold {
+	height: 40px;
+	position: relative;
+	border-bottom:1px solid #ddd;
+	line-height: 40px;
+	padding: 0 3%;
+}
+.refund_mold span {
+	color: #999;
+	font-size: 14px;
+	float: left;
+}
+.refund_mold .select select {
+	font-size: 14px;
+	color: #333;
+	font-family: "微软雅黑";
+	width: 78%;
+	position: relative;
+	margin-left: 5px;
+}
+.refund_mold .select:before {
+	content: " ";
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent #ff3c3c transparent;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -10px;
+}
+.refund_mold .select:after {
+	content: " ";
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -8px;
+}
+.refund_mold .txt{
+	overflow: hidden;
+	width: 53%;
+	margin-left: 2%;
+}
+.refund_mold p.money {
+	color: #ff3c3c;
+	float: right;
+}
+.refund_mold .area {
+	width: 80%;
+}
+.refund_ex {
+	position: relative;
+	border-bottom:1px solid #ddd;
+	padding: 0 3%;
+}
+.refund_ex span {
+	color: #999;
+	font-size: 14px;
+	float: left;
+	line-height: 40px;
+}
+.refund_ex .area {
+	width: 75%;
+	line-height: 20px;
+	margin-left: 2%;
+	margin-top: 10px;
+	font-family: "微软雅黑";
+}
+.refund_apply {
+	margin: 10% 4%;
+	font-size: 14px;
+}
+.refund_mold p.re {
+	color: #ff3c3c;
+	margin-left: 2%;
+	overflow: hidden;
+	float: left;
+}
+.refund_schedule {
+	background: #fff;
+	box-shadow: 0px 2px 2px #ccc;
+	margin-top: 4%;
+	padding-top: 5%;
+}
+.refund_schedule ul {
+	margin-left: 4%;
+}
+.refund_schedule ul li {
+	border-left:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding: 5px 0;
+	position: relative;
+	padding-left: 20px;
+	line-height: 20px;
+}
+.refund_schedule ul li:after{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px; 
+	background: #ddd;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -6px;
+	top: 10px;
+}
+.refund_schedule ul li.new {
+	color: #ff3c3c;
+	padding-left: 70px;
+}
+.refund_schedule ul li.new i:before {
+	background: url(../../images/refund.png) no-repeat;
+	background-size: 100% 100%;
+	width: 35px;
+	display: inline-block;
+	height: 15px;
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 9px;
+}
+.refund_schedule ul li.new:after{
+	border-radius: 50%;
+	width: 13px;
+	height: 13px; 
+	background: #ff3c3c;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -7px;
+	top: 0;
+}
+/* 投诉 */
+.complaint {
+	background: #fff;
+	box-shadow: 0px 2px 2px #ccc;
+}
+.complaint_1 {
+	border-bottom: 1px solid #ddd;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 3%;
+	font-size: 14px;
+}
+.complaint_1 span {
+	float: left;
+	color: #999;
+	margin-right: 10px;
+}
+.complaint_2 {
+	height: 40px;
+}
+.complaint_2 p {
+	float: left;
+	color: #999;
+	line-height: 40px;
+	padding-left: 3%;
+	font-size: 14px;
+}
+.complaint_2 p span {
+	color: #333;
+	margin-left: 10px;
+}
+.complaint_2 a {
+	display: block;
+	float: right;
+	width: 30%;
+	background: #ff3c3c;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+}
+.com_none {
+	width: 40%;
+	margin: 30px auto 0;
+}
+.refund_ex .area1 {
+	height: 150px;
+}
+.mana_gl_6 {
+	padding: 3%;
+	width: 94%;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+.mana_gl_6 .mana_gl_l {
+	float: left;
+	color: #999;
+	line-height: 20px;
+}
+.mana_gl_6 .mana_gl_r {
+	overflow: hidden;
+	height: 100%;
+	line-height: 20px;
+	padding-left: 10px;
+}
+.mana_gl_6 .mana_gl_i {
+	float: left;
+	color: #999;
+	line-height: 20px;
+}
+.mana_gl_6 .mana_gl_img {
+	overflow: hidden;
+	height: 100%;
+	line-height: 20px;
+}
+.mana_gl_6 .mana_gl_img p {
+	width: 35%;
+	float: left;
+	margin:0 10px;
+}
+.com_succ {
+	background: #fff;
+    box-shadow: 0px 2px 2px #ccc;
+    position: relative;
+    margin-top: 10px;
+    padding: 5% 0;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+}
+.com_succ i {
+	display: inline-block;
+	width: 75px;
+}
+.com_succ i:before{
+	background: url(../../images/op_icon.png) no-repeat -105px -19px;
+	background-size: 150px auto;
+	width: 44px;
+	display: inline-block;
+	height: 44px;
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 24%;
+}
+.com_succ_t {
+	margin-top: 20px;
+	text-align: center;
+}
+.com_succ_logo {
+	margin: 100px auto 0;
+	width: 30%;
+}
+
+.view_log {
+	background: #fff;
+	box-shadow: 0px 2px 2px #ccc;
+	padding: 3%;
+}
+.view_img {
+	float: left;
+	width: 120px;
+	margin-right:10px;
+}
+.view_r {
+	overflow: hidden;
+	padding-top: 10px;
+}
+.view_r p {
+	font-size: 16px;
+	line-height: 25px;
+}
+.view_r ul li {
+	 color: #666;
+	 line-height: 25px;
+	 font-size: 14px;
+}
+.ui-nothing-find > div > dl > dd {
+	background-position: -78px -177px;
+	height: 70px;
+	width: 72px;
+}
+/*投诉 图片*/
+.ui-upload-img > .ui-t{
+	width:20%;
+	color: #999;
+	float:left;
+	font-size: 14px;
+	line-height: 40px;
+}
+.ui-upload-img .ui-input {
+	overflow: hidden;
+}
+.ui-add-img-button > .ui-add-button{
+	width:35%;
+	padding-top:35%;
+}
+.ui-add-img-button > .ui-img-guige{
+	clear: both;
+	color: #999;
+	font-size: 14px;
+	line-height: 40px;
+}
+/*投诉列表*/
+.m20b{
+	margin-bottom: 20px;
+}
+.complaint-wrap{
+	margin-bottom: 90px;
+}
+.fixed-bottom {
+	  width: 100%;
+	  height: 40px;
+	  position: fixed;
+	  bottom: 40px;
+	  left: 0px;
+  }
+.fixed-bottom > .add-button{
+	height:40px;
+	margin: 0 4%;
+	border-radius: 6px;
+	line-height: 40px;
+	text-align: center;
+	color:#fff;
+	background: -webkit-linear-gradient(top, #ff5959,#ff3d3d);
+	background: -moz-linear-gradient(top, #ff5959,#ff3d3d);
+}
+/*投诉详情*/
+.m10b{
+	margin-bottom: 10px;
+}
+/*查看*/
+.refund_mold > div{
+	font-size: 14px;
+	color: #333;
+	font-family: "微软雅黑";
+	position: relative;
+	padding-left: 10px;
+	overflow:hidden;
+}
+.refund_ex > div{
+	line-height: 20px;
+	padding-left: 2%;
+	padding-top: 10px;
+	font-family:'微软雅黑';
+	overflow:hidden;
+	font-size:14px;
+}
+.refund_ex > .img-container{
+	height: 150px;
+	overflow: hidden;
+}
+.img-container > .img-wrap{
+	width:30%;
+	margin: 0 25px;
+	float:left;
+	text-align: center;
+}
+.img-wrap a{
+	font-size: 12px;
+	color:#02AEFE;
+}
+.img-wrap img{
+	height:110px;
+	margin-bottom: 5px;
+}
+
+/*买买logo*/
+.ui_nothing_find{
+	margin-top: 20vh;
+}
+.ui_nothing_find > div > dl > dd {
+	width: 100px;
+	height: 70px;
+	background: url(/images/sg_icon.png) no-repeat;
+	background-size: 250px auto;
+	background-position: -149px -65px;
+	margin: 0 auto
+}
+.ui_nothing_find > div > dl > dt {
+	line-height: 24px
+}
+
+.ui_nothing_find > div > dl > dt {
+	line-height: 20px;
+	color: #999;
+	text-align: center;
+	margin-top: 15px;
+}

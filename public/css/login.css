@@ -1,0 +1,247 @@
+@media screen and (orientation: portrait){
+	.login_auto {
+	  position: absolute;
+	  top: 50%;
+	  left: 0;
+	  margin-top: -128px;
+	  width: 100%;
+	}
+}
+@media screen and (orientation: landscape){
+	.login_auto {
+	  position: absolute;
+	  top:80px;
+	  left: 0;
+	  width: 100%;
+	}
+}
+.button {
+	margin: 0;
+}
+.main_bg {
+	background: #f1f1f1;
+}
+.m5 {margin: 0 5%;}
+.line {
+	height: 1px;
+	background:#ddd;
+}
+.line-x {
+	height: 1px;
+	background: #ddd;
+	-webkit-box-shadow: 0px 1px 0px #eaeaea;
+	box-shadow: 0px 1px 0px #eaeaea;
+}
+
+/* .login_auto {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -148px;
+	width: 100%;
+} */
+.login_select .page_title {
+	font-size: 16px;
+	text-align: center;
+	padding-bottom: 15px;
+	
+}
+.login_form {
+	background: #fff;
+	margin-top: 15px;
+	border:2px solid #fff;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 5px #eaeaea;
+	box-shadow: 2px 2px 5px #eaeaea;
+	padding:0 2%;
+}
+.login_form_w {
+	border:2px solid #ff3c3c;
+}
+.login_form_c {
+	border:2px solid #70d070;
+}
+.login_hd {
+	height: 32px;
+	padding: 2px 0;
+	position: relative;
+}
+
+.login_hd .login_hd_label {
+	float: left;
+	width: 19%;
+	border-right: 1px solid #ddd;
+	display: block;
+	height: 32px;
+}
+.login_hd .login_hd_label:before, .login_hd .login_make, .login_hd .login_hd_i, .login_hd .login_make_c {
+	content: "";
+	background: url(/images/op_icon.png) no-repeat 1px -42px;
+	background-size: 150px auto;
+	width: 16px;
+	height: 20px;
+	margin:8px auto 0;
+	display: block;
+}
+
+.login_hd .login_pass:before {
+	background-position: -17px -42px;
+	width: 16px;
+	height: 20px;
+}
+.login_hd .login_tel {
+	height: 20px;
+	line-height: 20px;
+	width: 48%;
+	border: 0;
+	padding: 6px 0 6px 2%;
+}
+.login_hd .login_make{
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	background-position: -32px -42px;
+}
+.login_hd .login_make_c {
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	background-position: -72px -42px;
+}
+.login_bott {
+	width: 90%;
+	margin: 80px auto 0;
+}
+.login_bott_a {
+	padding-top: 15px;
+	line-height: 36px;
+	width: 100%;
+    text-align: center;
+}
+.login_bott_a .login_for, .login_bott_a .login_mod {
+	color: #666;
+}
+
+/* 找回密码 */
+.login_hd .login_icon:before {
+   background-position: -51px -42px;
+   width: 21px;
+   height: 20px;
+}
+.login_bott_a .login_back {
+	display: block;
+	width: 100px;
+	color: #666;
+	margin: 0 auto;
+	text-align: center;
+}
+.login_hd .login_code {
+	width: 50px;
+	height: 22px;
+	float: right;
+	margin-top: 7px;
+	
+}
+.login_hd .login_code img {
+	border-radius: 3px;
+}
+.login_hd .login_obt {
+	background: #ff3c3c;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	border-radius: 3px;
+	width: 24%;
+	display: block;
+	float: right;
+	color: #fff;
+	margin-top: 5px;
+}
+.login_hd .login_hd_i {
+	background-position: -32px -42px;
+	float: right;
+}
+.login_hd .login_obt_h {
+	width: 50px;
+	background: #666;
+}
+
+/*注册*/
+.reg_tab {
+	text-align: center;
+	padding-bottom: 15px;
+}
+.reg_tab span {
+	font-size: 15px;
+	padding: 0 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+.reg_tab span.active {
+	color: #ff3c3c;
+}
+.reg_tab span.line_r {
+	border-right:2px solid #787878;
+}
+.reg_box .reg_cont {
+	display: none;
+}
+.reg_box .on {
+	display: block;
+}
+.login_agree {
+	padding: 0 3%;
+	width: 94%;
+}
+.login_agree h1 {
+	text-align: center;
+	font-size: 16px;
+	padding: 30px 0;
+}
+.login_agree p {
+	line-height: 24px;
+}
+.agree_btn {
+	margin: 30px 0;
+}
+.login_agree1 {
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 10px;
+	display: none;
+}
+.login_agree1 i {
+	width: 17px;
+	content: "";
+	background: url(/images/op_icon.png) no-repeat -62px -20px;
+	background-size: 150px auto;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.login_agree1 a {
+	display: inline-block;
+	padding: 0 10px;
+	color: #333;
+
+}
+.login_agree1 a.ys {
+	color: #02aefe;
+}
+
+.login_about {
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    width: 94%;
+    padding: 0 3%;
+    text-align:  center;
+}
+.login_about a {
+    color: #666;
+    padding: 0 10px;
+}
+.login_about a.about {
+    border-right: 2px solid #666;
+}

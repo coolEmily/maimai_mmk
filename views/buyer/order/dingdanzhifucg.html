@@ -1,0 +1,39 @@
+{{#extend "header"}}
+    <title>订单支付</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/buy/dingdanzhifucg.css">
+{{/extend}}
+
+
+    <div class="main" style="z-index: 11;position: relative;">
+        <header class="main_head" >
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>订单支付<a href="/buyer/follow_wechat.html" style="position: absolute;right: 15px;font-size: 14px;color: #1fb0fb;">关注买买</a></nav>
+        </header>
+   </div>
+   <div class="bott40" style="display: none;z-index: 11;position: relative;">
+        <div class="status_s">
+            <div class="status_s5">
+                <p id="pay_suc" style="display:none;">亲爱的用户，您已支付成功！<i style="position: absolute;width: 40px;height: 40px;top:10px;left: -50px;background: url(/images/b_d.png)no-repeat;background-size: 100% auto;"></i></p>
+                <p id="pay_err" style="display:none;">订单支付失败（订单支付超时）<i style="position: absolute;width: 40px;height: 40px;top:10px;left: -50px;background: url(/images/buy/close.png)no-repeat;background-size: 100% auto;"></i></p>
+                
+            </div>
+            <div id="splitList" class="status_s6">
+                <p id="orderNo_p">订单编号:&nbsp;&nbsp;<strong></strong></p>
+            </div>
+            <div class="status_s4">
+                <a href="/buyer/order/dingdan.html" id="viewOder" style="border-right: 1px solid #f1f1f1;box-sizing: border-box;color: #1fb0fb;">查看订单详情</a>
+                <a href="/" id="conShop">继续购物</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <ul>
+                <li>买买电商官方公众号</li>
+                <li><img src="/images/buy/wechat.jpg" alt=""/></li>
+                <li>长按二维码，识别后即可关注</li>
+            </ul>
+        </div>
+    </div>
+    <a class="ui-app-hide" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.example.maimai" style="z-index:11;height: 40px;line-height: 40px;text-align: center;position: absolute;width: 90%;left: 5%;bottom: 10px;border-radius: 5px;background-color: #ff3c3c;color: white;">下载买买电商APP</a>
+    <script data-main="/js/buy/dingdanzhifucg" src="/js/lib/require.js" ></script>

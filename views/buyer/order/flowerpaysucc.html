@@ -1,0 +1,91 @@
+{{#extend "header"}}
+    <title>订单支付</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <style>
+      body{
+        min-height: 24rem;
+        display: none;
+      }
+      .container ul{
+          text-align:center;
+          font-size:12px;
+          position: absolute;
+          bottom: 5.4rem;
+          width: 100%;
+          display: none;
+      }
+      @media screen and (min-height: 450px) {
+        .container ul{
+              display: block;
+          }
+      }
+      .container ul li:first-child{
+          font-size: 0.68rem;
+          color: #ff3c3c;
+          margin-bottom:10px;
+      }
+      .container img{
+          width: 5.8rem;
+          margin:15px auto;
+      }
+      
+      
+      .ui-other-op a{
+        display: block;
+        width: 4.2rem;
+        height: 100%;
+        line-height: 1.4rem;
+        box-sizing: border-box;
+        border: 1px solid #333;
+        font-size: 0.6rem;
+        float: left;
+        text-align: center;
+        color: #333;
+        border-radius: 4px;
+      }
+      .ui-other-op > li:nth-child(2) > a{
+        margin: 0 0.6rem;
+      }
+      .ui-result{
+        margin-left: 4.2rem;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0.5rem 0;
+      }
+      .ui-result li{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+{{/extend}}
+
+
+    <div class="main" style="z-index: 11;position: relative;">
+        <header class="main_head" >
+            <nav class="nav"><a href="javascript:history.back();" class="back _goback" ></a>订单支付<a class="ui-go-index" href="#" style="position: absolute;right: 15px;font-size: 14px;color: #333;">返回首页</a></nav>
+        </header>
+   </div>
+   <div style="height: 6.4rem;background-color: white;">
+     <div style="height: 3.8rem;background: url(/images/b_d.png) no-repeat center center;background-size: 2rem;background-position-x: 1.1rem;">
+       <ul class="ui-result">
+         <li style="font-size: 0.64rem;">亲爱的用户，您已支付成功！</li>
+         <li style="color: #cc3333;font-size: 0.56rem;line-height: 1.2rem;" class="ui-order-desc"></li>
+         <li style="color: #666;font-size: 0.56rem;" class="ui-order-id">订单编号: </li>
+       </ul>
+     </div>
+     <ul style="height: 1.4rem;border-top: 1px solid #f1f1f1;padding: 0.6rem;" class="ui-other-op">
+       <li><a href="#">查看订单详情</a></li><li><a href="#">继续送花</a></li><li><a href="#">逛逛商城</a></li>
+     </ul>
+   </div>
+    <div class="container">
+        <div>
+            <ul>
+                <li>关注公众号</li>
+                <li><img src="/images/buy/wechat.jpg" alt=""/></li>
+                <li style="font-size: 0.48rem;">长按二维码，识别后即可关注</li>
+            </ul>
+        </div>
+    </div>
+    <a class="ui-app-hide" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.example.maimai" style="font-size: 0.68rem;z-index:11;height: 1.8rem;line-height: 1.8rem;text-align: center;position: absolute;width: 90%;left: 5%;bottom: 1.2rem;border-radius: 5px;background-color: #cc3333;color: white;">下载APP (注册赠送红包200元)</a>
+    <script data-main="/js/buy/flowerpaysucc" src="/js/lib/require.js" ></script>

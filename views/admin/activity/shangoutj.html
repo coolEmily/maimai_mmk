@@ -1,0 +1,97 @@
+{{#extend "header"}}
+    <title>添加闪购商品</title>
+    <link type="text/css" rel="stylesheet" href="/css/shangou.css" />
+    <style>
+        .grey{
+            background-color:#999;
+        }
+    </style>
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>添加闪购商品</nav>
+        </header>
+
+        <div class="add_sg">
+            <div class="orderunit">
+                <div class="login_error" style="display: none">未查询到该款商品！</div>
+                <div class="add_sg_search">
+                    <div class="add_sg_search1">
+                        <i class="search1_s"></i>
+                        <a href="javascript:;" class="search1_btn">查询</a>
+                        <div class="search1_txt">
+                            <input type="text" value="" placeholder="请输入商品名称" class="txt" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="orderunit" id="sg-goods-list">
+                <!-- 116,117,145,146 -->
+                <!--<div class="goodslist">-->
+                   <!--<dl>-->
+                      <!--<span class="select_btn"></span>-->
+                      <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                      <!--<dd>-->
+                         <!--<ul>-->
+                            <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                            <!--<li><a href="#">LES VENTURONS</a></li>-->
+                            <!--<li class="ui-goods-c">￥306<span>库存：300件</span></li>-->
+                         <!--</ul>-->
+                      <!--</dd>-->
+                   <!--</dl>-->
+                <!--</div>-->
+                <!--<div class="goodslist">-->
+                   <!--<dl>-->
+                      <!--<span class="select_btn cur"></span>-->
+                      <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                      <!--<dd>-->
+                         <!--<ul>-->
+                            <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                            <!--<li><a href="#">LES VENTURONS</a></li>-->
+                            <!--<li class="ui-goods-c">￥306<span>库存：300件</span></li>-->
+                         <!--</ul>-->
+                      <!--</dd>-->
+                   <!--</dl>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; 121.我的闪购丶闪购进行中 &ndash;&gt;-->
+                <!--<div class="goodslist">-->
+                   <!--<dl>-->
+                      <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                      <!--<dd>-->
+                         <!--<ul>-->
+                            <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                            <!--<li><a href="#">LES VENTURONS</a></li>-->
+                            <!--<li><a href="#">市场价：￥888</a><span class="yshou">已售10件</span></li>-->
+                            <!--<li class="ui-goods-p">闪购价：￥999 <span>数量：20件</span></li>-->
+                         <!--</ul>-->
+                      <!--</dd>-->
+                   <!--</dl>-->
+                   <!--<div class="sg_list">-->
+                      <!--<span>审核未通过</span>-->
+                   <!--</div>-->
+                <!--</div>-->
+                <!---->
+                <!--<div class="goodslist">-->
+                   <!--<dl>-->
+                      <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                      <!--<dd>-->
+                         <!--<ul>-->
+                            <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                            <!--<li><a href="#">LES VENTURONS</a></li>-->
+                            <!--<li><a href="#">市场价：￥888</a></li>-->
+                            <!--<li class="ui-goods-p">闪购价：￥<input type="text" value="430" class="txt" /> <span>库存：20件</span><span>数量<input type="text" value="20" class="txt" /></span></li>-->
+
+                         <!--</ul>-->
+                      <!--</dd>-->
+                   <!--</dl>-->
+                   <!--<div class="sg_list">-->
+                      <!--<span class="hs">审核通过</span>-->
+                   <!--</div>-->
+                <!--</div>-->
+
+            </div>
+        </div>
+        <div class="wd_btn">提交</div>
+   </div>
+    <script src="/js/lib/require.js" data-main="/js/shangoutj.js"></script>

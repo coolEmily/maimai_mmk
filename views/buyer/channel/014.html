@@ -1,0 +1,55 @@
+{{#extend "header"}}
+    <title id="title">{{title}}</title>
+    <style>
+        .ui-tuijian a{
+            float: left;            
+        }
+        .ui-tuijian img {
+            width: 100%;
+        }
+    </style>
+{{/extend}}
+
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback" ></a>{{title}}</nav>
+</header>
+
+<!--
+          搜索+轮播 = topMap 
+-->
+{{>channel_top banner=topMap}}
+<div style="padding: 0 2%;background-color: white;" class="ui-tuijian">
+    {{#if adMap.[0].title}}
+        {{#each adMap.[0].title}}
+            <a href="{{htmlUrl}}" style="width: 100%;"><img src="http://image.maimaicn.com/{{designImgUrl}}"></a>
+        {{/each}}
+    {{/if}}
+    
+    {{#if adMap.[0].list}}
+        {{#each adMap.[0].list}}
+            <a href="{{htmlUrl}}" style="width: 50%;"><img src="http://image.maimaicn.com/{{designImgUrl}}"></a>
+        {{/each}}
+    {{/if}}
+    <div class="clearfix"></div>
+</div>
+<!--
+    rollItemMap： 滚动商品列表  
+           按下标取值时注意是 rollItemMap.[index] 
+    id为该页面唯一否则页面swiper会报错
+-->
+{{> channel_roll_item_list rollItemMap=rollItemMap.[0] id="roll_item_list_0"}}
+
+<!--
+    rollImgMap： 滚动图片列表
+          按下标取值时注意是 rollImgMap.[index] 
+    id为该页面唯一否则页面swiper会报错
+
+{{>channel_roll_img_list_1 rollImgMap=recomMap.[0] id="ui-row_img_list_0"}}
+-->
+<!--
+    itemListMap： 可排序商品列表    
+    id为后台返回，用于排序、分页  
+    listType为不同模板的，例如 1，2现在只有这两种（注意：不要加引号）
+-->
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}
+

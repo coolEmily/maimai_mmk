@@ -1,0 +1,40 @@
+{{#extend "header"}}
+<title id="title">平台介入</title>
+<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/tuikuan.js"></script>
+	<style type="text/css">
+		/*投诉拒绝*/
+		.sue_refuse{height:265px;
+			background:#fff;
+			box-shadow: 0px 2px 2px #ccc;
+			margin-bottom:10px;}
+
+		.sue_text{height:190px;
+			border-bottom:solid #ddd 1px;}
+
+		.sue_text p{line-height:35px;
+			padding-left:4%;}
+
+		.sue_text textarea{width:92%;
+			padding:12px 4% 0 4%;
+			font-size:12px;}
+
+		.button{margin:15px 4%;}
+	</style>
+{{/extend}}
+
+<body>
+<div class="main">
+	<header class="main_head" headId="platform">
+		<nav class="nav"><a href="javascript:;" class="back _goback" ></a>平台介入</nav>
+	</header>
+</div>
+<div class="container">
+	<div class="sue_refuse">
+		<div class="sue_text">
+			<textarea rows="10" placeholder="还能输入600个字" id="textCon"></textarea>
+		</div>
+		<div class="button" id="platSubmit">提交</div>
+	</div>
+</div>
+</body>
+</html>

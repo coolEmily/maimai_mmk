@@ -1,0 +1,96 @@
+{{#extend "header"}}
+    <title>返佣订单</title>
+    <link type="text/css" rel="stylesheet" href="/css/order.css">
+    <link type="text/css" rel="stylesheet" href="/css/dingdan.css">
+    
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>
+                <div class="titword" id="titword">
+                    <span id="titword_text">返佣全部订单</span>
+                     <div class="triangle" id="triangle">
+                        <span class="triangle_s1"></span>
+                        <span class="triangle_s2"></span>
+                     </div>
+                     <div class="trianglered" id="trianglered">
+                        <span class="triangle_s1"></span>
+                        <span class="triangle_s2"></span>
+                    </div> 
+
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="detail_wrap_none"  style="display:none">
+              <div class="ui-nothing-find">
+                <div>
+                    <dl>
+                        <dd style=""></dd>
+                        <dt style="">近期无订单</dt>
+                    </dl>
+                </div>
+             </div>
+            <div class="guess_like"></div>
+        </div>
+        <div class="select_box" id="select_box">
+            <div class="itemcon" id="itemcon">
+                <ul>
+                    <li class="cur">全部订单<span class="radioimg"></span></li>
+                    <li>已取消订单</li>
+                    <li>未付款订单</li>
+                    <li>已完成订单</li>
+                    <li>待发货订单</li>
+                    <li>已发货订单</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ui-body main">
+        <div class="ui-fan-total">
+            <div>
+                <div>累计返佣（元）：</div>
+                <div class="ui-get-price">0</div>
+            </div>
+            <div>
+                <div>待返金额（元）：</div>
+                <div class="ui-dai-price">0</div>
+            </div>
+            <p style="clear: both;"></p>
+        </div>
+        
+        <div class="ui-fan-detail">
+            <div class="ui-fan-type">
+                <div class="active">全部订单</div>
+                <div>直接返佣订单</div>
+                <div>间接返佣订单</div>
+            </div>
+            <div class="ui-list">
+                <!--<a class="ui-list-detail">
+                    <div>
+                        <div class="ui-status">已完成</div>
+                        <div class="ui-dingdan-code">订单号：201613100001</div>
+                    </div>
+                    <div>
+                        <div class="ui-d-num">共有2件商品</div>
+                        <div class="ui-d-fan">间接返利: <span>￥100</span></div>
+                        <div class="ui-d-price">合计: <span>￥306</span></div>
+                    </div>
+                </a>
+                
+                <a class="ui-list-detail">
+                    <div>
+                        <div class="ui-status">已完成</div>
+                        <div class="ui-dingdan-code">订单号：201613100001</div>
+                    </div>
+                    <div>
+                        <div class="ui-d-num">共有2件商品</div>
+                        <div class="ui-d-fan">间接返利: <span>￥100</span></div>
+                        <div class="ui-d-price">合计: <span>￥306</span></div>
+                    </div>
+                </a>-->
+            </div>
+        </div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/fanyongdd"></script>

@@ -1,0 +1,131 @@
+{{#extend "header"}}
+<title id="title">个性化</title>
+<style>
+    .gap{
+        width:100%;
+        height:0.14rem;
+        -moz-box-shadow:0px -1px 2px 0px #bbb;
+        -webkit-box-shadow:0px -1px 2px 0px #bbb;
+        box-shadow:0px -1px 2px 0px #bbb;
+        background: #f1f1f1;
+    }
+    .box{
+        overflow: hidden;
+        width:100%;
+        background:#fff;
+    }
+    .title{
+        width:100%;
+        height:0.76rem;
+        border-bottom:1px solid #d3d3d3;
+        border-top:1px solid #d3d3d3;
+        padding:0px 0.3rem 0px 0.34rem;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+    }
+   .title .bold{
+        line-height: 0.76rem;
+        float:left;
+        font-weight: 600;
+        font-size:14px; 
+        color:#e32b30;
+    }
+    .border{
+        border:1px solid #e32b30;
+        border-radius:0.46rem;
+        padding:3px 14px;
+        color:#e32b30;
+        height:0.26rem;
+        float: right;
+        font-size:12px;
+        line-height: 0.26rem;
+        margin-top:0.14rem;
+    }
+    .sort{
+        width: 100%;
+        min-height: 100px;
+        margin-bottom: 3px;
+        overflow: hidden;
+    }
+    .sort div{
+        float: left;
+        height:1.88rem;
+        width:25%;
+         box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+        border:0.2rem solid #fff;
+        position: relative;
+    }
+     .sort div .js-remove{
+         position: absolute;
+         top:0;
+         right:0;
+         height:0.6rem;
+         width:0.6rem;
+     }
+     .showsort .iconx{
+         background:url("/images/iconx.png") no-repeat left top; 
+          background-size:80% ;
+     }
+     .title1{
+         border-top: 0;
+     }
+     .ghost {
+  opacity: 0;
+}
+.showbold{
+    color:#999;
+    font-size: 12.5px;
+    display: inline-block;
+    margin-top:0.18rem;
+    transform: scale(0.8);
+    -ms-transform: scale(0.8); /* IE 9 */
+    -webkit-transform: scale(0.8);
+}
+.hide{
+    display: none;
+}
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:void(0);" class="back _goback"></a>个性化</nav>
+</header>
+<p class="gap"></p>
+<div class="box">
+    <h3 class="title title1">
+        <a class="bold Btitle" href="javascript:void(0);">我的频道</a>
+        <a class="showbold hide" href="javascript:void(0);">拖拽可以排序</a>
+        <a class="border" href="javascript:void(0);">排序删除</a>
+    </h3>
+    <div class="sort showsort">
+    </div>
+    <h3 class="title">
+        <a class="bold" href="javascript:void(0);">点击添加更多栏目</a>
+    </h3>
+       <div class="sort list">
+            <div><span class="js-remove"></span></div>
+    </div>
+    <p class="gap"></p>
+</div>
+<script>
+     (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script src="/js/lib/require.js" data-main="/js/buy/compile.js"></script>

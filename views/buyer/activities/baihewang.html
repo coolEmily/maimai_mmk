@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百合网联手买买，七夕献礼！</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .act-box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-image: url("/images/activities/baihe_bg.png");
+        }
+
+        .act-box a {
+            display: block;
+        }
+
+        .goods-box {
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: #f9f9f9;
+        }
+
+        .goods-box a {
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+<div class="act-box">
+    <img src="/images/activities/baihe_01.png">
+    <a href="#" class="use-now" id="use-now"><img src="/images/activities/baihe_02.png"></a>
+    <img src="/images/activities/baihe_03.png">
+    <a href="/buyer/lqhongbao.html?cgId=4&mId=13308"><img src="/images/activities/baihe_04.png"></a>
+</div>
+<div class="goods-box">
+    <a href="/buyer/order/dingdanqr_new.html?mId=13308&gId=10011&acId=2&gType=1"><img
+            src="/images/activities/goods_01.png"></a>
+    <a href="/buyer/order/dingdanqr_new.html?mId=13308&gId=10025&acId=2&gType=1"><img
+            src="/images/activities/goods_02.png"></a>
+</div>
+<script src="/js/lib/zepto.js"></script>
+<script type="text/javascript">
+    $(document).on("click", "#use-now", function () {
+        $(".act-box").hide();
+        $(".goods-box").show(600);
+    })
+</script>
+</body>
+</html>

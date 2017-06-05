@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/swiper.min.css" />
+<link rel="stylesheet" href="/css/buy/activity.css" />
+{{#if banner.bannerList}}
+	<div class="ind_search">    
+	        <div class="ind_search_1 clearfix">
+	            <div class="ind_search_left">
+	                <i class="ind_search_s"></i>
+	                <a href="javascript:void(0);" class="ind_search_r">搜索</a>
+	                <div class="ind_search_cen">
+	                    <form action="javascript:return true" method="get" id="searchForm">
+	                        <input type="search" class="txt" placeholder="{{banner.text}}" />
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="ind_search_bg"></div>
+	    </div>
+    <div class="slider" id="slider">   
+    	     
+        <div id="slider_Img">
+            <ul class="swiper-wrapper">
+                {{#each banner.bannerList}}
+                <li class="swiper-slide"><a href="{{htmlUrl}}"><img src="http://image.maimaicn.com/{{designImgUrl}}" /></a></li>
+                {{/each}}
+            </ul> 
+        </div>
+        <div class="serial_number" id="serial_number">
+        </div>
+    </div>
+{{/if}}
+<div id="return_top"></div>
+<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/channel/channel"></script>

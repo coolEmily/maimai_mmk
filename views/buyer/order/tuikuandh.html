@@ -1,0 +1,43 @@
+{{#extend "header"}}
+<title id="title">退货运单号</title>
+<link type="text/css" rel="stylesheet" href="/css/buy/refund.css">
+<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/tuikuan.js"></script>
+{{/extend}}
+
+<body class="main_bg m50">
+<header class="main_head" headId="deliverNum">
+	<nav class="nav"><a href="javascript:;" class="back _goback"></a>退货运单号</nav>
+</header>
+<div class="refund">
+	<div class="refund_ph">
+		全国统一客服电话。 <p>400-815-0988</p>
+	</div>
+	<div class="refund_mold">
+		<span>快递公司:</span>
+		<div class="select">
+			<select id="deliverCom">
+				<option>圆通速递</option>
+				<option>申通速递</option>
+			</select>
+		</div>
+	</div>
+	<div class="refund_mold">
+		<span>快递单号:</span>
+		<input type="text" value="" class="txt" placeholder="请输入货物快递单号。" id="sendNumber"/>
+	</div>
+
+	<!-- 快递单号信息
+    <div class="refund_mold">
+        <span>快递单号:</span>
+        <input type="text" value="20160218001032" class="txt" readonly />
+    </div> -->
+	<div class="refund_mold">
+		<span>退款金额:</span>
+		<input type="text" value="￥136" class="txt" readonly id="moneyInput"/>
+	</div>
+</div>
+<div class="refund_apply button" id="submitNum">
+	<a href="javascript:;">确认</a>
+</div>
+</body>
+</html>

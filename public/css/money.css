@@ -1,0 +1,259 @@
+.ui-account-cash > div{
+    padding: 0 20px;
+    background-color: white;
+}
+.ui-account-cash {
+    padding: 10px 0;
+    border: 1px #f1f1f1 solid;
+}
+.ui-acc-info{
+    background-color: #f1f1f1 !important;
+}
+.ui-acc-info > div{
+    position: relative;
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 0 10px;
+}
+.ui-acc-info > div > a{
+    width: 30px;
+    float: right;
+    line-height: 80px;
+    color: #02aefe;
+}
+.ui-acc-info > div > div{
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+}
+.ui-acc-info > div > div.ui-complete{
+    display: table-cell;
+    vertical-align: middle;
+    text-indent: 35px;
+}
+.ui-acc-info > div > div.ui-complete:before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(/images/op_icon.png) -60px -111px no-repeat;
+    background-size: 150px auto;
+    position: absolute;
+    left: 11px;
+    top: 32px;
+}
+.ui-acc-info > div > div.ui-complete.active:before{
+    background-position: -62px -20px;
+}
+.ui-nothing{
+    background: url(/images/zfb_b.png) no-repeat left center;
+    background-position: 30px -54px;
+    background-size: 150px auto;
+}
+.ui-bank .ui-nothing{
+    background-position: 34px 10px;
+}
+
+/*index.html*/
+.ui-body.main > div{
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px #ddd;
+}
+.ui-choose-style > div, .ui-account-info > div{
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    padding: 0 20px;
+    line-height: 40px;
+    height: 40px;
+}
+.ui-choose-style > div > div:last-child{
+    overflow: hidden;
+    font-size: 14px;
+}
+.ui-choose-style > div > div:first-child{
+    width: 18px;
+    height: 18px;
+    margin-top: 11px;
+    float: right;
+}
+.ui-choose-style > .active > div:first-child{
+    background: url(/images/op_icon.png) no-repeat;
+    background-size: 150px auto;
+    background-position: -61px -19px;
+} 
+.ui-account-info > div:first-child > div:first-child{
+    font-size: 14px;
+    color: #333333;
+}
+.ui-account-info{
+    display: none;
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+.ui-account-info.active{
+    display: block;
+}
+.ui-account-info > div:first-child > div:last-child{
+    color: #ff6262;
+}
+.ui-account-info > div > div:first-child{
+    float: left;
+    width: 80px;
+    color: #333;
+}
+.ui-public-info > div > div:nth-child(2){
+    float: right;
+}
+.ui-account-info > div > div:last-child{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.ui-account-info > div > div:last-child > input{
+    width: 100%;
+    height: 100%;
+}
+.ui-account-info > div > div:last-child > select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+select::-ms-expand { display: none; }
+.ui-trans-999:before{
+    content: " ";
+    border-width: 8px;
+    border-style: solid;
+    border-color: #999 transparent transparent   transparent; 
+    position: absolute;
+    right: 0px;
+    top: 18px;
+}
+.ui-trans-999:after{
+    content: " ";
+    border-width: 8px;
+    border-style: solid;
+    border-color:  white transparent transparent transparent; 
+    position: absolute;
+    right: 0px;
+    top: 17px;
+}
+.ui-nothing.ui-complete{
+    overflow: auto !important;
+    display: block !important;
+}
+.ui-undo{
+    background: #999 !important;
+    min-width: 30px;
+    text-align: center;
+}
+
+
+
+
+/*tixian.html*/
+.ui-body > div{
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px #ddd;    
+}
+.ui-account-balance > div{
+    padding: 10px 20px;
+    background-color: white;
+}
+   
+.ui-balance-show{
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.ui-user-mobile{
+    height: 40px;
+    margin: 10px 0 20px;
+    border: 2px solid #f1f1f1;
+    padding: 0;
+    border-radius: 5px;
+}
+.ui-balance-op{
+   margin: 0;
+}
+.ui-mobile-icon{
+    margin: 0 20px;
+    width: 18px;
+    height: 23px;
+    background: url(/images/op_icon.png) no-repeat;
+    background-size: 150px auto;
+    background-position: -110px 4px;;
+    float: left;
+    margin-top: 8px;
+}
+.ui-mobile-num{
+    height: 100%;
+    overflow: hidden;
+    border-left: 1px solid #f1f1f1;
+}
+.ui-mobile-num > input{
+    height: 100%;
+    width: 100%;
+     padding: 2.5% 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.ui-account-history > div, .ui-reward-detail{
+   background-color: white;
+   border: 1px solid #f1f1f1;
+   padding: 0 20px;
+   line-height: 50px;
+   height: 50px;
+}
+.ui-account-history > div > div:nth-of-type(1), .ui-reward-detail > div:first-child{
+   float: left;
+   padding: 5px 0;
+   box-sizing: border-box;
+   line-height: 20px;
+}
+.ui-acc-cash > div:nth-of-type(2), .ui-reward-detail > div:last-child{
+   overflow: hidden;
+   text-align: right;
+   height: 100%;
+   color: #46c364;
+   font-size: 14px;
+}
+.ui-reward-detail > a{
+   display: block;
+   width: 20px;
+   height: 100%;
+   float: right;
+   position: relative;
+}
+.ui-acc-cash >div:first-child >span:first-child{
+    margin-left: 25px;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+.ui-acc-cash >div:first-child >span{
+    color: #999;
+}
+.ui-err{
+    color: #ff3c3c !important;
+}
+.ui-ing{
+    color: #02aefe !important;
+}
+.ui-err-p{
+    border-color: #ff3c3c;
+    position: relative;
+}
+.ui-err-p:after{
+    content: "";
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    background: url(/images/op_icon.png) no-repeat -32px -42px;
+    background-size: 150px auto;
+}

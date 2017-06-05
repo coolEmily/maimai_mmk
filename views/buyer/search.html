@@ -1,0 +1,35 @@
+{{#extend "header"}}
+<title>搜索</title>
+<link rel="stylesheet" type="text/css" href="/css/buy/index.css" />
+<link rel="stylesheet" href="/css/buy/search.css">
+{{/extend}}
+<div class="main">
+    <div class="search">
+        <div class="s-box">
+            <i class="s-btn"></i>
+            <form action="javascript:return true" method="get" id="searchForm">
+                <input type="text" class="s-key" placeholder="" data-url="">
+            </form>
+            <i class="s-del"></i>
+        </div>
+        <span class="s-cancel">取消</span>
+    </div>
+
+    <div class="hot">
+        <h2>热门搜索</h2>
+        <div id="hot-tag"></div>
+    </div>
+
+    <div id="history">
+        <div class="history" >
+            <h2>搜索历史</h2>
+            <div id="history-tag"></div>
+        </div>
+
+        <div class="history-clr">
+            <div id="his-clear"><i class="his-clr"></i>清除历史记录</div>
+        </div>
+    </div>
+
+</div>
+<script src="/js/lib/require.js" data-main="/js/buy/search"></script>

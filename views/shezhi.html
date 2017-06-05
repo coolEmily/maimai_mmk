@@ -1,0 +1,130 @@
+{{#extend "header"}}
+    <title>店铺设置</title>
+    <link rel="stylesheet" href="/css/seller.css" />
+    <link rel="stylesheet" href="/css/apply.css" />
+    <link rel="stylesheet" href="/css/shop_set.css" />
+    <style>
+        .ui-transd-999:before,.ui-transd-999:after {
+            z-index: 99;
+        }
+        .ui-shop-name > input, .ui-shop-name > textarea, .ui-shop-name > select {
+            position: relative;
+            width: 100%;
+            z-index: 100;
+        }
+        .ui-wc .ui-delete-image-button{
+            width: 30px;
+            height: 30px;
+            top: 0;
+            right: 0; 
+            z-index: 99999;
+            position: absolute;
+        }
+        .ui-wc .ui-delete-image-button:after{
+            content: " ";
+            width: 18px;    
+            height: 18px;
+            background: url(/images/op_icon.png) no-repeat;
+            background-size: 153px auto;
+            background-position: -41px -130px;   
+            position: absolute;
+            top: 0;
+            right: 2px; 
+            z-index: 99999;
+        }
+    </style>
+{{/extend}}
+{{> loading}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>店铺设置</nav>
+        </header>
+    </div>
+    <div class="ui-body main" style="padding-bottom: 50px;">
+        <div class="ui-person-info">
+            <div class="ui-person-head-portrait">
+                <img src="/images/default.png" name="memberPicture"/>
+            </div>
+            <div class="ui-person-base-portrait">
+                <p class="ui-user-name"><span>昵称:&nbsp;</span><span id="ui-account-name" name='nickName'></span></p>
+                <p class="ui-team-info">
+                    手机:&nbsp;<span class="ui-last-name" name="mobile"></span>
+                </p>
+            </div>
+        </div>
+        <!--店铺信息-->
+        <div class="ui-shop-info">
+            <div class="ui-m-t">店铺信息</div>
+            <div>
+                <div class="ui-shop-t">店铺名字</div>
+                <div class="ui-shop-name" style="overflow: hidden;">
+                    <input name="mallName" maxlength="20" value="" placeholder="最多20个字"/>
+                </div>
+            </div>
+            <!--<div>-->
+                <!--<div class="ui-shop-t">微信号</div>-->
+                <!--<div class="ui-shop-name ui-user-weixin" name="weixinNumber"></div>-->
+            <!--</div>-->
+        </div>
+        <!--店铺描述-->
+        <div class="ui-shop-img ui-title-input">
+            <div class="ui-img-type-tishi ui-m-t">首页轮播图</div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                        <span class="ui-delete-image-button"></span>
+                        <input name="playPicture_input" id="" data-width="640" data-target=".playPicture" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <p class="ui-img-guige">所上传图片不得超过500k,尺寸为640x300.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <div class="ui-shop-img ui-title-input">
+            <div class="ui-img-type-tishi ui-m-t">首页主题馆左</div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                        <span class="ui-delete-image-button"></span>
+                        <input name="mallPictureA_input" id="" data-width="320" data-target=".mallPictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <p class="ui-img-guige">所上传图片不得超过500k,尺寸为320x320.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="ui-shop-t">设置链接</div>
+                <div class="ui-shop-name ui-url-set ui-user-weixin ui-transd-999">
+                    <select name="mallPictureAURL"></select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-shop-img ui-title-input">
+            <div class="ui-img-type-tishi ui-m-t">首页主题馆右</div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                        <span class="ui-delete-image-button"></span>
+                        <input name="mallPictureB_input" id="" data-width="320" data-target=".mallPictureB" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <p class="ui-img-guige">所上传图片不得超过500k,尺寸为320x320.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="ui-shop-t">设置链接</div>
+                <div class="ui-shop-name ui-url-set ui-user-weixin ui-transd-999">
+                    <select name="mallPictureBURL"></select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button" id="saveShopInfo" style="margin: 30px 5% 0">保存</div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/shop_set"></script>
+    

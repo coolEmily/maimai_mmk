@@ -1,0 +1,55 @@
+{{#extend "header"}}
+    <title>优惠方式</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="" >
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/buy/youhui.css" />
+{{/extend}}
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>优惠方式</nav>
+    </header>
+    <div class="youhui">
+        <div class="yh_add">
+            <div class="yh_add_r"><i></i>添加</div>
+            <div class="yh_add_r" style="display:none"><i class="error"></i>添加</div>
+            <div class="yh_add_l">优惠券</div>
+        </div>
+        <div class="yh_tan" style="display:none">
+            <div class="ui-message" style="display: none;">优惠券券号不能为空</div>
+            <div class="yh_tan_add">
+                <div class="yh_tan_add_l"></div>
+                <div class="yh_tan_add_r">
+                    <input type="text" name="youhuiN" value="" placeholder="请输入优惠券券号" class="txt" />
+                    <i></i>
+                </div>
+            </div>
+            <div class="button yh_btn">绑定</div>
+        </div>
+    </div>
+    <div class="lipin">
+        <div class="yh_add">
+            <div class="yh_add_r"><i></i>添加</div>
+            <div class="yh_add_r" style="display:none"><i class="error"></i>添加</div>
+            <div class="yh_add_l">礼品卡</div>
+        </div>
+        <div class="yh_tan" style="display:none">
+            <div class="ui-message" style="display: none;">礼品卡卡号不能为空</div>
+            <div class="login_form m5">
+                <div class="login_hd">
+                    <label class="login_hd_label"></label>
+                    <input type="text" name="cardN" class="login_tel" placeholder="请输入礼品卡卡号" />
+                    <i class=""></i>
+                </div>
+                <div class="line"></div>
+                <div class="login_hd">
+                    <label class="login_hd_label login_pass"></label>
+                    <input type="text" name="cardP" class="login_tel" placeholder="请输入礼品卡密码" />
+                    <i class=""></i>
+                </div>              
+            </div>
+
+            <div class="button yh_btn">绑定</div>
+        </div>
+    </div>
+    <div class="button fs_btn">确认</div>
+    <script data-main="/js/buy/youhui" src="/js/lib/require.js"></script>

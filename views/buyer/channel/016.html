@@ -1,0 +1,14 @@
+{{#extend "header"}}
+<title>{{title}}</title>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav>
+</header>
+{{>channel_top banner=topMap}}
+<div id="ui-16-goodslist" style="display: none;">
+{{>channel_item_list goodsList=itemListMap listType=1 id=modelActiveId}}
+{{> channel_roll_item_list rollItemMap=rollItemMap.[0] id="roll_item_list_0"}}
+{{> channel_roll_item_list rollItemMap=rollItemMap.[1] id="roll_item_list_1"}}
+{{> channel_roll_item_list rollItemMap=rollItemMap.[2] id="roll_item_list_2"}}
+</div>
+

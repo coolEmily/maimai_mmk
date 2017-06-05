@@ -1,0 +1,73 @@
+{{#extend "header"}}
+<title id="title">退款申请</title>
+<link type="text/css" rel="stylesheet" href="/css/buy/refund.css">
+<link type="text/css" rel="stylesheet" href="/css/apply.css">
+<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/tuikuan.js"></script>
+<style>
+	.ui-input.ui-add-img-button{padding-top:0}
+	.upImg{padding-top:10px;}
+</style>
+{{/extend}}
+
+<body class="main_bg m50">
+<header class="main_head" headId="backApply">
+	<nav class="nav"><a href="javascript:;" class="back _goback"></a>退货退款</nav>
+</header>
+<div class="refund">
+	<div class="refund_ph">
+		全国统一客服电话。 <p>400-815-0988</p>
+	</div>
+	<div class="refund_mold">
+		<span>退款类型: </span>
+		<div class="select" id="backType">
+			<select>
+				<option value="1">退货退款</option>
+				<option value="2">我要退款</option>
+			</select>
+		</div>
+	</div>
+	<div class="refund_mold">
+		<span>退款原因:</span>
+		<div class="select" id="backReason">
+			<select>
+				<option value="0">七天无理由退货</option>
+				<option value="1">收到商品破损</option>
+				<option value="2">收到商品与描述不符</option>
+				<option value="3">商品质量问题</option>
+				<option value="4">未收到货</option>
+				<option value="5">未按约定时间发货</option>
+			</select>
+		</div>
+	</div>
+	<div class="refund_mold">
+		<span>退款金额:</span>
+		<!--<p class="money">最多￥136.00</p>-->
+		<input type="number" value="" class="txt" readOnly="true" id="moneyInput" min="0"/>
+	</div>
+	<div class="refund_ex clearfix">
+		<span>退款说明:</span>
+		<textarea maxlength="50" class="area" placeholder="请输入退款退货说明。" id="explain"></textarea>
+	</div>
+	<div class="refund_mold" style="height:auto">
+		<span>上传图片: </span>
+		<div class="upImg">
+			<div class="ui-input ui-add-img-button">
+				<div class="ui-add-button">
+					<input id="" data-width="640" data-target=".playPicture0" type="file" accept="image/*"
+						   name="file1"/>
+				</div>
+			</div>
+			<div class="ui-input ui-add-img-button">
+				<div class="ui-add-button">
+					<input id="" data-width="640" data-target=".playPicture1" type="file" accept="image/*"
+						   name="file1"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="refund_apply button" id="submitApply">
+	<a href="javascript:;">提交申请</a>
+</div>
+</body>
+</html>

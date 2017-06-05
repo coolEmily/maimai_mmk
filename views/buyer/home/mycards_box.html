@@ -1,0 +1,35 @@
+{{#extend "header"}}    
+    <title>我的卡包</title>
+    <link rel="stylesheet" href="/css/buy/mycards.css" />
+{{/extend}}
+<div class="main">
+    <header class="main_head" headId="mycards_box">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>我的卡包</nav>
+    </header>
+    <div class="cards-box">
+        <ul>
+            <li class="list0">
+                <a href="/buyer/home/hongbao.html">
+                    <span></span>
+                    <span>红包余额</span>
+                    <span id="redBalance"></span>
+                </a>
+            </li>
+            <li class="list1">
+                <a href="/buyer/home/bean/jindoumxview.html">
+                    <span></span>
+                    <span>金豆余额</span>
+                    <span id="goldCoin"></span>
+                </a>
+            </li>
+            <li class="list2">
+                <a href="/buyer/home/mycards.html">
+                    <span></span>
+                    <span>我的卡券</span>
+                    <span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script  data-main="/js/buy/mycards.js" src="/js/lib/require.js" ></script>

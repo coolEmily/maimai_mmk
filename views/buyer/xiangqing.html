@@ -1,0 +1,213 @@
+{{#extend "header"}}
+    <title id="title">产品详情</title>
+    <meta name="keywords" id="keywords" content="">
+    <meta name="description"id="description"  content="">
+    <link type="text/css" rel="stylesheet" href="/css/buy/detail.css">
+    <link type="text/css" rel="stylesheet" href="/css/buy/qianrenqianmian.css">
+    <script src="/js/lib/require.js" defer async="true" data-main="/js/buy/detail.js"></script>
+{{/extend}}
+{{> loading}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>商品详情</nav>
+        </header>
+   </div>
+   <div class="container" id="container" style="display:none">
+      <div class="sale_out" id="sale_out"><img src="/images/buy/dk_none.png" alt=""></div> <!--售罄图片-->
+      <div id="slider_big" class="slider_big"></div>
+      <div class="slider1" id="slider">
+           <div id="slider_Img">
+              <ul>
+                  <!--  <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li>
+                   <li><img src="http://img3.maim9./photo/20150507/8705912392842015_D"/></li> -->
+              </ul>
+          </div>
+          <div class="serial_number1" id="serial_number">
+           <!--    <span class="point selected"></span>
+              <span class="point"></span>
+              <span class="point"></span>
+              <span class="point"></span>
+              <span class="point"></span>
+              <span class="point"></span> -->
+          </div>
+      </div>
+      <div class="textbox">
+         <ul>
+           <li id="goods_name">
+               <!--<img src="/images/buy/detail/promise.png"  alt="">-->
+               <!--<span class="sign">旗舰店</span>-->
+               <!--宾利凤凰赤霞珠红葡萄酒宾利凤凰赤霞珠红葡萄酒宾利凤凰赤霞珠红葡萄酒-->
+           </li>
+           <li id="goods_ename">
+               <!--<span class="price price_gcoin">￥306</span>-->
+               <!--<span class="gray">已售423545笔</span>-->
+           </li>
+           <li id="price_reduce" class="price_reduce">
+               <!--<span>红包立减127.1元</span>-->
+               <!--<span>实付金额127.1元</span>-->
+           </li>
+         </ul>
+      </div>
+       <div class="comparePrice" id="comparePrice">
+            <p>参考</p>
+             <ul>
+                 <li>京东￥<span id="jingdong"></span></li>
+                 <li>一号店￥<span id="suning"></span></li>
+                 <li>苏宁易购￥<span id="yihaodian"></span></li>
+             </ul>
+       </div>
+       <div class="comparePrice activity" id="activity">
+            <p>促销</p>
+            <div class="activity_list" id="activity_list">
+                <!--满200元减30元；满400元减60元；满800元减120元；满200元减30元；满400元减60元；满800元减120元-->
+            </div>
+           <div class="activity_list" id="flash_buy" style="display:none">
+               <img src="" alt="" />
+               距离结束仅剩  <span>19:30:20</span>
+           </div>
+       </div>
+       <div class="guarantee ui-transr-999" id="guarantee">
+            <ul>
+                <li class="shippers"></li>
+                <li>正品保证</li>
+                <li>售后无忧</li>
+                <li class="seven">七天退换</li>
+            </ul>
+       </div>
+       <div class="guarantee ui-transr-999" id="selectItem">
+            规格选择
+       </div>
+
+      <div class="img_text">
+          <p>图文详情</p>
+          <div class="img_text_show" id="img_info">
+           <!--  <img src="../public/images/buy/introduce.jpg" alt=""/>
+            <img src="../public/images/buy/introduce.jpg" alt=""/>  -->
+          </div>
+      </div>
+
+       <div class="ads_guess" id="ads_guess">
+           <div class="ads" id="ads">
+
+               <!--<div>-->
+                   <!--<p>妮维雅男士水活小蓝管商务 男士首选用品持久滋润</p>-->
+                   <!--<p class="ads_txt"><span>广告</span><span>5345浏览</span></p>-->
+               <!--</div>-->
+               <!--<div><img src="http://image.maimaicn.com/png/20170110/default/18986555348678645" alt=""></div>-->
+
+           </div>
+           <div class="guess">
+               <p class="tit"><img src="/images/buy/detail/liketitle.png" alt=""></p>
+               <ul id="guess_container">
+                   <!--<li>-->
+                       <!--<a href="">-->
+                           <!--<img src="http://image.maimaicn.com/img/20160707/2817649432620888_C" alt=""/>-->
+                           <!--<span class="gname">芬帝北美蓝莓干芬帝北美蓝莓干芬帝北美蓝莓干芬帝北美蓝莓干（罐装）238g</span>-->
+                           <!--<p><span>￥306</span><span>红包立减0.87元</span></p>-->
+                       <!--</a>-->
+                   <!--</li>-->
+               </ul>
+           </div>
+
+       </div>
+
+      
+   </div>
+   <footer class="footer" id="footer">
+
+     <ul>
+         <li><a class="signimg" href="/buyer/home/complaint/tousu.html"></a>客服</li>
+         <li id="collect"><span class="signimg"></span>收藏</li>
+       <li>
+           <a href="/buyer/gouwuche.html">购物车</a>
+           <a href="/buyer/gouwuche.html" style="position: absolute;width: 100%;height: 100%;top:0;left: 0;"></a>
+           <span id="cartNum" class="cartNum"></span>
+       </li>
+       <li class="show_pop cart_bind">加入购物车</li>
+       <li class="show_pop ui-buy-now">立即购买</li>
+     </ul>
+
+    <div class="coinbox"><!--金豆详情页-->
+        <span class="price_gcoin"><!--<em>售价：</em>200<em>金豆</em>--></span>
+        <span class="price_reduce"><!--参考价：￥338--></span>
+        <a href="/buyer/bank/exchange_zone.html">返回/兑换</a>
+    </div>
+
+  </footer>
+
+  <!--商品参数选择弹窗-->
+    <div class="selectParameter" id="selectParameter">
+        <div class="pop_blank"></div>
+        <div class="pop_main">
+            <div class="info" id="infomation">
+                <div class="goodsImg"><img src="" alt=""></div>
+                <div class="price">
+                    <!--<span>¥38.00</span><br/>-->
+                    <!--<span>红包立减 5.7元</span>-->
+                </div>
+                <div class="close_btn"><img src="/images/buy/detail/close.png" alt=""></div>
+            </div>
+
+            <div class="parameter conditions">
+                <ul id="con_list">
+                    <!--<li><p>品种</p><span class="select">葡萄酒</span><span>洋酒</span><span>烈酒</span></li>-->
+                    <!--<li><p>容量</p><span class="select">375ml</span><span>750ml</span></li>-->
+                </ul>
+                <div class="counts_wrap">
+                    <p>数量</p>
+                    <div class="counts">
+                        <em id="numnext">-</em>
+                        <input type="tel" value="1" id="num"/>
+                        <em id="numprev">+</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <span id="cart_bind" class="cart_bind">加入购物车</span>
+                <span id="ui-buy-now" class="ui-buy-now">立即购买</span>
+            </div>
+        </div>
+    </div>
+   <!--服务说明弹窗-->
+    <div class="selectParameter" id="serviceInstruction">
+        <div class="pop_blank" style="height:40%"></div>
+        <div class="pop_main" style="height:60%">
+            <div class="service_tit">
+                <img src="/images/buy/detail/servicetitle.png" alt=""/>
+                <span class="close_btn"><img src="/images/buy/detail/close.png" alt=""></span>
+            </div>
+            <div class="service_con">
+                    <ul>
+                        <li>
+                            <span><em class="shippers"></em>:<br/></span>
+                            <span>由<em class="shippers"></em></span>
+                        </li>
+                        <li>
+                            <span>正品保障：<br/></span>
+                            <span>遵守执行国家相关法律法规，接受所有消费者的监督。</span>
+                        </li>
+                        <li>
+                            <span>售后无忧：<br/></span>
+                            <span>快速的响应率、多元化的服务内容</span>
+                        </li>
+                        <li>
+                            <span>七天退换货：<br/></span>
+                            <span>不影响二次销售7天内无理由退换货</span>
+                        </li>
+                    </ul>
+            </div>
+            <div class="confirm close_btn">确定</div>
+        </div>
+    </div>
+   <div class="fixed_index" id="upBtn">
+      <a href="javascript:void(0)"></a>
+  </div>
+<script>
+    var objGid = {{{params}}};
+    var _czc = _czc || [];
+</script>

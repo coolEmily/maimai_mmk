@@ -1,0 +1,113 @@
+{{#extend "header"}}
+<title id="title"></title>
+<style type="text/css">
+    body{overflow: hidden;}
+    .container{ width:100%;
+                height:100%;
+                margin:0 auto;
+                overflow-x: hidden;}
+                /*background:url(../images/eggImg/entrance.png) no-repeat;*/
+                /*background-size:100% 100%*/
+
+    .result_tip b{font-size:14px;line-height:24px;}
+
+    .marqueeDiv{background:rgba(0,0,0,0.5);
+                height:40px;
+                line-height:40px;
+                position:absolute;
+                bottom:0;
+                overflow:hidden;
+                width:100%;}
+
+    .marqueeDiv marquee{overflow:hidden;display:block;}
+
+    .marqueeUl{color:#fff;
+               overflow:hidden;}
+
+    .marqueeUl li{float:left}
+
+    .marqueeUl img{width:25px;
+                   height:25px;
+                   border-radius:25px;
+                   float:left;
+                   margin-left:40px;
+                   margin-right:5px;
+                   margin-top:5px;}
+
+    .dialogWrap div{width:80%;
+                     margin-top:40%;
+                     margin-left:11%;
+                     display:block;
+                     color:#ffd862;
+                     font-size:14px;
+                     position:relative;}
+
+    .dialogWrap span{position:absolute;
+                     top:26%;
+                     left:-5px;
+                     color: #ff3c3c;
+                     width:90%;
+                     padding:0 5%;
+                     text-align:center;}
+
+    .dialogWrap a{  display: block;
+                    width: 70%;
+                    height: 15%;
+                    position: absolute;
+                    font-size: 0;
+                    left:15%}
+
+    .dialogWrap a.atOnce{top: 41%;}
+    .dialogWrap a.checkWallet{top:59%}
+            
+    @media screen and (orientation: landscape) {
+       /*横屏 css*/
+        body{
+            height: 700px;
+            overflow: auto;
+        }
+    }
+
+     /*4个链接*/
+    .linkBox a{display:block;
+               font-size:0;
+               position:absolute;
+               width:40%;
+               height:10%;}
+
+    .linkBox a:first-child{left:10%;
+    bottom:31%}
+
+    .linkBox a:nth-child(2){right:10%;
+        bottom:31%}
+
+    .linkBox a:nth-child(3){left:10%;
+        bottom:18%}
+
+    .linkBox a:last-child{right:10%;
+        bottom:18%}
+
+</style>
+{{/extend}}
+<div class="container" id="container" htmlT="2" bg-img="{{result.designImgUrl}}">
+    <div class="linkBox">
+        <a href="javascript:void(0)" id="redEnvelope">抢红包</a>
+        <a href="javascript:void(0)" id="freeBuy">0元购</a>
+        <a href="/buyer/follow_wechat.html">公众号</a>
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.example.maimai">APP</a>
+    </div>
+
+    <div class="marqueeDiv">
+       <ul class="marqueeUl" id="marquee">
+            <!--<li>-->
+                <!--<img src="/images/default.png" alt=""/>-->
+                <!--<span>恭喜133***抽中200元现金</span>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<img src="/images/default.png" alt=""/>-->
+                <!--<span>恭喜133***抽中200元现金</span>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>
+<script src="/js/lib/require.js" data-main="/js/buy/egghit.js"></script>

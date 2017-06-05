@@ -1,0 +1,50 @@
+{{#extend "header"}}
+    <title>买赠活动</title>
+    <link type="text/css" rel="stylesheet" href="/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="/css/shangou.css">
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>买赠活动</nav>
+        </header>
+
+    <div class="container" style="padding-bottom: 30px;">
+        <div class="titword" id="titword">
+            <span id="titword_text">全部商品</span>
+            <div class="triangle" id="triangle">
+                <span class="triangle_s1"></span>
+                <span class="triangle_s2"></span>
+            </div>
+            <div class="trianglered" id="trianglered">
+                <span class="triangle_s1"></span>
+                <span class="triangle_s2"></span>
+            </div> 
+        </div>
+
+        <div class="ui-nothing-find">
+          <div style="margin-top: 10px;">
+              <dl>
+                  <dd style="background-position:-66px 0px;"></dd>
+                  <dt>您还没有任何商品参加买赠活动</dt>
+              </dl>
+          </div>
+        </div>
+
+
+        <div class="select_box" id="select_box">
+            <div class="itemcon" id="itemcon">
+                <ul>
+                    <li class="cur">全部商品<span class="radioimg"></span></li>
+                    <li>审核中</li>
+                    <li>审核通过</li>
+                    <li>审核未通过</li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        
+    </div>
+    <a href="maizengtj.html"  class="wd_btn" style="position: fixed;width: 100%;display: block;bottom:0">添加商品</a>
+    <script data-main="/js/maizeng" src="/js/lib/require.js" ></script>

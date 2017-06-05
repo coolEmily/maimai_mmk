@@ -1,0 +1,211 @@
+body{background:#f8f8f8}
+
+.nocards{font-size:16px;
+margin:0 auto;
+color:#666;
+text-align:center;
+line-height:50px;
+display:none;}
+
+.nocards div{width:26%;
+margin:180px auto 0 auto}
+
+.cards-list{padding-top:20px;}
+
+.cards-list dl{background: #fff;
+                border-radius: 7px;
+                box-shadow: 1px 2px 4px #ddd;
+                width: 92%;
+                height: 80px;
+                margin: 0px 4% 15px 4%;}
+
+.cards-list dt{width:35%;
+              height:80px;
+              float:left; }
+
+.cards-list dt img{width:80px;margin-left:10%;height:80px}
+
+.cards-list dd{width:65%;float: right;}
+
+.cards-list dd span{
+    line-height:40px;
+    font-size:15px;
+    color:#999;
+    height:40px;
+    display: -webkit-box;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: 92%;}
+
+.cards-list dd span:first-child{color:#666;
+    font-size:17px;
+border-bottom:dashed 1px #efefef}
+
+
+/*卡片展示*/
+.cards-detail{width:92%;
+margin:50px 4% 0 4%;
+border-radius:3px;
+background:#fff;
+overflow:hidden;}
+
+.cards-detail div:first-child{width:20%;
+margin:30px auto 15px auto;
+}
+
+.cards-detail div:first-child img{overflow:hidden;
+    border-radius:40px;
+    border:solid #ebebeb 1px;}
+
+.cards-detail div:nth-child(2){height:40px;
+font-size:16px;
+text-align:center;}
+
+.cards-detail div:nth-child(3){
+    font-size:15px;
+    text-align:center;
+    height: 22px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    text-align: center;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;}
+
+.cards-detail div:nth-child(4){height:44px;
+    font-size:15px;
+    text-align:center;
+    color:#cc3333;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;}
+
+.cards-detail .useImmediately{
+    display:block;
+    background:#cc3333;
+    height:40px;
+    width:40%;
+    margin:0 auto 15px auto;
+    color:#fff;
+    font-size:15px;
+    border-radius:4px;
+    line-height:40px;
+    text-align:center;
+}
+
+.cards-detail .date{text-align:center;
+color:#999}
+
+.cards-detail .to-detail{display:block;
+    width:82%;
+    margin:40px auto 0 auto;
+    border-top:solid #ebebeb 1px;
+    height:50px;
+    line-height:50px;
+    font-size:15px;
+    color:#3a3a3a;
+    position:relative
+}
+
+.to-detail span{
+    width: 30px;
+    height: 35px;
+    display: block;
+    float: left;
+    background: url(/images/buy/card_icon2.png) 0px 17px no-repeat;
+    background-size: 60%;}
+
+.to-detail:before{    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #7d7d7d;
+    position: absolute;
+    top: 14px;
+    right: 0px;}
+
+.to-detail:after{    content: "";
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 13px;
+    right:0px;}
+
+/*卡片信息*/
+
+.cards-info{padding:0 3%;}
+.cards-info .tit{height:50px;
+line-height:50px;
+font-size:14px;}
+
+.cards-info .txt{color:#999;text-indent:2em}
+
+/*卡包列表*/
+
+.cards-box{
+    padding-top:20px;
+    overflow:hidden;
+    }
+
+.cards-box li{position:relative}
+
+.cards-box li a{overflow:hidden;display:block}
+
+.cards-box li:before{    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #999;
+    position: absolute;
+    top: 30px;
+    right: 5px;}
+
+.cards-box li:after{    content: "";
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 29px;
+    right:6px;}
+
+.cards-box ul li{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px #ddd;
+    width: 92%;
+    height: 80px;
+    margin: 0px 4% 15px 4%;
+}
+.cards-box ul li span{
+    display:block;
+    float:left;
+    font-size:15px;
+    line-height:80px;
+    color:#333
+}
+
+.cards-box ul li span:first-child{
+    width:50px;
+    height:50px;
+    background:url(/images/buy/card_icon3.png) no-repeat;
+    background-size:300%;
+    margin:15px 20px 0 10px;}
+
+.cards-box ul li span:last-child{
+    float:right;
+    margin-right:12%;}
+
+.cards-box ul li:nth-child(2) span:first-child{
+    background-position: -50px 0;
+}
+.cards-box ul li:last-child span:first-child{
+    background-position: -100px 0;
+}
+

@@ -1,0 +1,75 @@
+{{#extend "header"}}
+	<title>生成H5</title>
+	<link rel="stylesheet" href="/css/swiper.min.css" />
+	<link rel="stylesheet" href="/css/animate.min.css">
+	<link rel="stylesheet" href="/css/h5.css"  />
+{{/extend}}
+{{> loading}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>生成H5</nav>
+        </header>
+    </div>
+    <div class="ui-music" style="display: none;">
+        <audio loop="" src="" id="media" preload=""></audio>
+    </div>
+    <div class="swiper-container" style="height: 100%;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide ui-first-sreen">
+                <div id="ui-big-div">
+                    <div class="ui-shop-name ani" swiper-animate-effect="rubberBand" swiper-animate-duration="0.5s" swiper-animate-delay="0s">买买官方旗舰店</div>
+                    <div class="ui-edit-div ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s" style="margin-top: 30px;">
+                        <div class="ui-tap-edit"></div>
+                        <div class="ui-edit-area">
+                            <input max="20" class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s" readonly="readonly"/>
+                            <input max="20" class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.4s" readonly="readonly"/>
+                            <input max="20" class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s" readonly="readonly"/>
+                            <input max="20" class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s" readonly="readonly"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-desc-shuru" style="z-index: 99;position: fixed;bottom: 0;left:0;width:100%;height:100%;background-color: rgba(0,0,0,0.7);display: none;">
+                    <div style="position: fixed;bottom: 0;left:0;width:100%;height: 40px">
+                        <div class="ui-shuru-wc" style="text-align:center;float: right;width: 50px;line-height: 40px;background-color: #FF3C3C;color: white;">完成</div>
+                        <div style="height: 100%;overflow: hidden;">
+                            <input placeholder="请输入描述，20字之内" maxlength="20" style="width:100%;height: 100%;padding: 0 10px;max-height: 20;" value="">
+                        </div>
+                    </div>                    
+                </div>
+                <span class="ui-next-step" style="display: none;">下一步</span>
+            </div>
+            <div class="swiper-slide ui-add-goods ui-goods-bc">
+                <div class="ui-add-button">
+                    
+                </div>
+            </div>
+            <!--<div class="swiper-slide ui-goods-bc">
+                <div class="ui-goods-show">
+                    <div>
+                        <img src="/images/buy/index_l2.jpg"/>
+                    </div>
+                    <div>宾利红土壤1988红葡萄酒</div>
+                    <div>Penley Estate Kingdom Cabernet </div>
+                    <div><del>市场价：￥3388</del></div>
+                    <div>￥688</div>
+                </div>
+                <a href="" class="ui-buy-button"></a>
+                <span class="ui-all-wc">完成</span><span class="ui-next-step">下一步</span>
+            </div>-->
+        </div>
+    </div>
+    <div class="ui-h5-share">
+        <div id="ui-h5-share">
+            <div class="ui-shop-name">买买官方旗舰店</div>
+            <div class="weixinpay-erweima" style="margin: 30px; 0"><img style="width:45%;margin: 0 auto;" src="http://image.maimaicn.com/qr_code/2766921313294423.png"></div>
+            <div class="ui-shop-link">
+                <p>http://www.feichangshuaiqi dewangzhan.com/nizazhida onicaine.com</p>
+                <div style="text-align: center;margin-top: 10px;">复制链接进行分享！</div>
+            </div>
+            <div class="button ui-share-button" style=";width: 58%;margin: 0 auto;bottom: 20px;background: url(/images/h5_8.png);background-repeat-y:no-repeat;background-size: auto 100%;">分享</div>
+        </div>
+    </div>
+    <div class="fixed">
+        <img src="/images/fenxiang2.png" />
+    </div>
+    <script data-main="/js/h5.js" src="/js/lib/require.js"></script>

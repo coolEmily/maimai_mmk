@@ -1,0 +1,70 @@
+{{#extend "header"}}    
+    <title>提现</title>
+    <style>
+        .ui-success-t{
+            position: relative;
+            padding: 20px;
+            box-sizing: border-box;
+           
+        }
+        .ui-success-t:after{
+            content: " ";
+            clear: both; 
+        }
+        
+        .ui-success-t > div:first-child{
+            position: relative;
+            float: left;
+            padding-right: 20px;
+        }
+        
+        .ui-success-t > div:first-child:after{
+            content: " ";
+            clear: both; 
+        }
+        
+        .ui-success-t > div:first-child > span{
+            width: 45px;
+            height: 45px;
+            display: inline-block;
+            background: url(/images/op_icon.png) no-repeat;
+            background-size: 150px auto;
+            background-position: -104px -18px;
+        }
+        .ui-success-t > div:last-of-type{
+            display: table-cell;
+            vertical-align: middle;
+            height: 45px;
+        }
+        .ui_nothing_find > div > dl > dd {
+            width: 100px;
+            height: 70px;
+            background: url(/images/sg_icon.png) no-repeat;
+            background-size: 250px auto;
+            background-position: -149px -65px;
+            margin: 10vh auto 0;
+        }
+    </style>
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>提现</nav>
+        </header>
+    </div>
+    <div class="ui-body main">
+        <div class="ui-success-t">
+            <div>
+                <span></span>
+            </div>
+            <div>提现成功，我们会在3-5个工作日审核，请您耐心等待</div>
+        </div>
+    </div>
+<div class="ui_nothing_find" id="noneList" style="display:block">
+    <div>
+        <dl>
+            <dd></dd>
+            <dt id="noneList_dsc"></dt>
+        </dl>
+    </div>
+</div>
+    <script src="/js/lib/require.js" data-main="/js/chenggong"></script>

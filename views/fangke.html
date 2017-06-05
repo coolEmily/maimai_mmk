@@ -1,0 +1,43 @@
+{{#extend "header"}}
+    <title>今日访客</title>
+    <link rel="stylesheet" href="/css/visitor.css" />
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>今日访客</nav>
+        </header>
+    </div>
+    <div class="ui-body main">
+        <div class="ui-visitor-info" style="padding: 20px;">
+            <div class="ui-visitor-num">
+                <div>总访客:</div>
+                <div class="ui-visitor-num-total">0</div>
+            </div>
+            <div class="ui-visitor-num" style="overflow: hidden;float: none;">
+                <div class="ui-jin-fang">今日访客:</div>
+                <div class="ui-visitor-num-today">0</div>
+            </div>
+        </div>
+        <div class="ui-visitor-info" style="margin-bottom: 0;">
+            <div class="ui-num-cycle ui-this-today active">今日</div>
+            <div class="ui-num-cycle ui-this-week">本周</div>
+            <div class="ui-num-cycle ui-this-month">本月</div>
+        </div>
+        <div class="ui-visitor-info ui-show-history" style="padding: 20px;">
+            <div class="ui-visitor-num ui-visitor-history">微信号</div>
+            <div class="ui-visitor-num ui-visitor-history" style="overflow: hidden;float: none;">来访时间</div>
+            
+        </div>
+        
+        <div style="display:none;text-align: center;padding-bottom: 15px;background: transparent;margin-bottom: 0;box-shadow: none;">向下滑动加载更多</div>
+    </div>
+    
+    <div class="ui-nothing-find">
+        <div>
+            <dl>
+                <dd style=" width: 72px;"></dd>
+                <dt>抱歉，您还没有访客！<br>赶快分享您的店铺吧！</dt>
+            </dl>
+        </div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/fangke"></script>

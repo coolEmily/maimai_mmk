@@ -1,0 +1,206 @@
+body {
+    background-color: #FFFFFF;
+    font-family: PingFang-SC-Medium;
+}
+.main_head {
+    margin-bottom: 0;
+}
+.main {
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+}
+.main > .head_box {
+    width: 100%;
+    height: 2rem;
+    position: relative;
+    background-color: #f8f8f8;
+}
+.player_photo {
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 4.54%;
+    bottom: 4.54%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px #bbb;
+    background: #ffffff;
+    text-align: center;
+}
+.player_photo img#player_head {
+    position: absolute;
+    top: 0.1rem;
+    left: .27rem;
+    right: .27rem;
+    margin: auto;
+    width: .75rem;
+    height: .75rem;
+    border: 0.03rem solid #FAD6D6;
+    border-radius: 50%;
+}
+.player_photo span#title {
+    font-size: .15rem;
+    position: relative;
+    top: 1rem;
+}
+.player_photo .player_info {
+    display: flex;
+    height: 50px;
+    position: relative;
+    top: 1.1rem;
+}
+.player_photo .player_info span{
+    width: 33%;
+    font-size: .15rem;
+    color: #3a3a3a;
+}
+.player_photo .player_info span samp{
+    font-size: .12rem;
+    color: #666666;
+}
+.buy_flower {
+    width: 100%;
+    height: 67.02%;
+    background-color: #ffffff;
+    position: relative;
+}
+.buy_flower a#give_flower {
+    display: block;
+    background: url("/images/tv/miss_world/shopping@2x.png") no-repeat center / contain;
+    width: 1.2rem;
+    height: .44rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: .1rem;
+    margin: auto;
+}
+.buy_flower .context {
+    position: absolute;
+    top: .69rem;
+    left: .15rem;
+    right: .15rem;
+}
+.buy_flower .buy_context {
+    margin-bottom: .15rem;
+    position: relative;
+}
+.buy_flower .sl_title {
+    display: block;
+    font-size: 0.15rem;
+    padding-left: 0.05rem;
+    border-left: 0.02rem solid #C60716  ;
+}
+/*买花选择*/
+.buy_flower .buy_context .buy_flower_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.buy_flower .buy_context .buy_flower_item span{
+    /*width: 1.055rem;*/
+    width: 1rem;
+    height: .45rem;
+    border: .01rem solid #999999;
+    border-radius: .03rem;
+    font-size: .13rem;
+    text-align: center;
+    /*margin-top: .15rem;*/
+    margin: .05rem;
+    padding-top: 0.05rem;
+}
+/*.buy_flower .buy_context .buy_flower_item span.middle {*/
+    /*margin: .15rem .075rem 0 .075rem;*/
+/*}*/
+.buy_flower .buy_context .buy_flower_item span.selected {
+    border: .01rem solid #cc3333;
+    color: #cc3333;
+}
+.buy_flower .pay_type {
+    display: flex;
+    margin-top: .15rem;
+}
+.buy_flower .pay_type > div{
+    width: 33%;
+    font-size: .15rem;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+.buy_flower .pay_type > div span {
+    width: .15rem;
+    height: .15rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background: url("/images/tv/miss_world/unselected@2x.png") no-repeat center / contain;
+}
+.buy_flower .pay_type > div span.selected {
+    background: url("/images/tv/miss_world/pitch-on@2x.png") no-repeat center / contain;
+}
+.buy_context .sure_btn {
+    display: block;
+    position: absolute;
+}
+.buy_context a#sure_confirm {
+    width: 2.5rem;
+    height: .44rem;
+    background: url(/images/tv/miss_world/sure@2x.png) no-repeat center / contain;
+    position: absolute;
+    left: .475rem;
+    right: .475rem;
+    top: .25rem;
+}
+/*弹出层*/
+.dialog_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, .2);
+    display: none;
+}
+.dialog_box .b1{
+    position: absolute;
+    left: 13.92%;
+    right: 13.92%;
+    top: 39.50%;
+    width: 2.8rem;
+    height: 1.4rem;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 0.17rem;
+    border-radius: .06rem;
+    display: none;
+}
+.dialog_box .b1 span {
+    display: block;
+    margin-top: .25rem;
+}
+.dialog_box .b1 .login {
+    position: absolute;
+    left: 7.4%;
+    right: 7.4%;
+    height: .44rem;
+    bottom: 0.15rem;
+}
+.dialog_box .b1 .login a{
+    height: .44rem;
+    width: 2.5rem;
+    display: block;
+}
+.dialog_box .b1 .v_confirm #confirm {
+    background: url(/images/tv/miss_world/sure@2x.png) no-repeat center / contain;
+    width: 2rem;
+    height: .44rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: .7rem;
+    margin: auto;
+}

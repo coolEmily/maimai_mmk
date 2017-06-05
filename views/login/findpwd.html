@@ -1,0 +1,51 @@
+{{#extend "header"}}
+<title>找回密码</title>
+<link rel="stylesheet" type="text/css" href="/css/findpwd.css"/>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>找回密码</nav>
+</header>
+
+<div class="f-cont">
+    <p class="hintmsg">验证码已发送,请耐心等待</p>
+    <div class="f-tab1 tabs">
+        <div class="inps-wrapper">
+            <div class="inps">
+                <i class="i-l"><img src="/images/buy/login/phone.png"></i>
+                <input type="tel" maxlength="11" class="login-tel inp01" id="phoneval" placeholder="请输入手机号"
+                       onkeyup="this.value=this.value.replace(/\D/gi,'')">
+                <i class="i-r err-i"><img src="/images/buy/login/error.png"></i>
+            </div>
+            <p class="err-warning err-warning1"></p>
+            <div class="inps">
+                <i class="i-l r-label"><img src="/images/buy/login/num-icon.png"></i>
+                <input type="tel" maxlength="4" class="imgCode inp02" placeholder="请输入图形验证码"
+                       onkeyup="this.value=this.value.replace(/\D/gi,'')">
+                <i class="i-r v-code"><img id="imgCodeFir" src=""></i>
+            </div>
+            <p class="err-warning err-warning2"></p>
+            <div class="inps">
+                <i class="i-l l-label"><img src="/images/buy/login/p-icon.png"></i>
+                <input type="tel" maxlength="6" class="smsCode inp03" placeholder="请输入手机验证码"
+                       onkeyup="this.value=this.value.replace(/\D/gi,'')">
+                <span class="i-r r-pcode">获取验证码</span>
+            </div>
+            <p class="err-warning err-warning3"></p>
+        </div>
+        <div class="f-btn">下一步</div>
+    </div>
+
+    <div class="f-tab3  tabs">
+        <div class="inps-wrapper">
+            <div class="inps">
+                <i class="i-l l-lock"><img src="/images/buy/login/lock.png"></i>
+                <input type="password" name="pwdInp" class="pwdInp inp01" placeholder="请设置密码">
+                <i class="i-r r-eye"></i>
+            </div>
+            <p class="err-warning err-warning1"></p>
+        </div>
+        <div class="f-btn btn-done">完成</div>
+    </div>
+
+</div>
+<script src="/js/lib/require.js" data-main="/js/findpwd"></script>

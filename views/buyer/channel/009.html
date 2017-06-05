@@ -1,0 +1,44 @@
+{{#extend "header"}}
+<title id="title">{{title}}</title>
+<style>
+	.home {
+		background: #fff;
+		padding: 1%;
+	}
+	.home_tltie {
+		width: 100%;
+	}
+	.home_goods {
+		width: 100%;
+		overflow: hidden;
+	}
+	.home_goods a {
+		display: inline-block;
+		float: left;
+		width: 49.5%;		
+	}
+	.home_goods a:nth-child(odd) {
+		padding-right: 1%;
+		padding-bottom: 1%;
+	}
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav>
+</header>
+{{>channel_top banner=topMap}}
+
+<div class="home">
+	<div class="home_tltie">
+		<a href="{{adMap.[0].title.[0].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].title.[0].designImgUrl}}" /></a>
+	</div>
+	<div class="home_goods">
+		{{#each adMap.[0].list}}
+			<a href="{{htmlUrl}}"><img src="http://image.maimaicn.com/{{designImgUrl}}" /></a>
+		{{/each}}
+	</div>
+</div>
+{{> channel_roll_item_list rollItemMap=rollItemMap.[0] id="roll_item_list_0"}}
+
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}
+

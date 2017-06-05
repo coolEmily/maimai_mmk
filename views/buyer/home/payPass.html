@@ -1,0 +1,79 @@
+{{#extend "header"}}
+<title>浏览记录</title>
+<link rel="stylesheet" href="/css/safetyCenter.css">
+<style>
+.safetyIcon{
+	background: url("/images/safetyCenter/safetyPay.png")no-repeat center center;
+	background-size: 80%;
+}
+.formList .icon,.formList1 .icon{
+		background: #ccc url("/images/safetyCenter/person.png")no-repeat center center;
+		background-size: 80%;
+}
+.formList1 .icon3,.formList1 .icon4{
+		background: #ccc url("/images/safetyCenter/pass.png")no-repeat center center;
+		background-size: 80%;
+}
+.formList .icon1,.formList1 .icon1{
+		background: #ccc url("/images/safetyCenter/images.png") no-repeat center center;
+		background-size: 80%;
+}
+.formList .icon2,.formList1 .icon2{
+		background: #ccc url("/images/safetyCenter/phone.png")no-repeat center center;
+		background-size: 50%;
+}
+.formList .btn ,.formList1 .btn{
+	line-height: 34px;
+	color: #333;
+}
+.formList.btn1 ,.formList1 .btn1{
+background:#ddd;
+}
+.formList .btn2 ,.formList1 .btn2{
+background:#ff3c3c;
+color:#fff;
+}
+</style>
+{{/extend}}
+<header class="main_head">
+	<nav class="nav"><a href="javascript:;" class="back _goback"></a><span id="addr_title">修改支付密码</span></nav>
+</header>
+<section class="safety">
+	<h1 class="safetyIcon"></h1>
+	<div class="safetyFrom">
+	<span class="title">恭喜主人，你的密码修改成功</span>
+	<ul class="formList">
+		<span class="message">111111111111111111111111</span>
+		<li>
+			<span class="icon"></span>
+			<input disabled=true data-index="1" type="text" value=""/>
+			<span class="btn">已验证</span>
+		</li>
+		<li>
+			<span class="icon icon1"></span>
+			<input autofocus="autofocus" data-index="1" type="text" value="" placeholder="请输入图形验证码"/>
+			<span class="btn btn1"></span>
+		</li>
+		<li>
+			<span class="icon icon2"></span>
+			<input data-index="2" type="text" value="" placeholder="请输入动态验证码"/>
+			<span data-book="true" class="btn btn2">获取验证码</span>
+		</li>
+	</ul>
+	<ul class="formList1" style="display:none">
+		<span class="message">111111111111111111111111</span>
+		<li>
+			<span class="icon icon3"></span>
+			<input data-index="0" autofocus="autofocus" type="password" value="" placeholder="请输入密码"/>
+			<span class="btn"></span>
+		</li>
+		<li>
+			<span class="icon icon4"></span>
+			<input data-index="1"  type="password" value="" placeholder="请再次输入密码"/>
+			<span class="btn "></span>
+		</li>
+	</ul>
+	</div>
+	<button data-page=0 class="address">下一步</button>
+</section>
+<script  data-main="/js/paypass" src="/js/lib/require.js" ></script>

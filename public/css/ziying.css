@@ -1,0 +1,124 @@
+/* 自营 */
+.ziying {
+	width: 100%;
+	background: #fff;
+	padding-bottom: 20px;
+	/*border: 1px solid #b2b2b2;
+	box-shadow: 0 0 4px #999;*/
+}
+.ziying ul {
+	width: 100%;
+	overflow: hidden;
+}
+.ziying ul li {
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin-top: 5%;
+}
+.ziying ul li a:before {
+	content: "";
+	background: url(/images/new_icon.png) no-repeat top center;
+	background-size: 200px auto;
+	width: 23px;
+	height: 28px;
+	margin: 8px auto;
+	display: block;
+}
+.ziying ul li a {
+	display: inline-block;
+	color: #38373c;
+}
+.ziying ul li:nth-of-type(1) a:before {
+	background-position: 0 0;
+}
+.ziying ul li:nth-of-type(2) a:before {
+	background-position: -27px 0;
+}
+.ziying ul li:nth-of-type(3) a:before {
+	background-position: -55px 0;
+  	width: 27px;
+}
+.ziying ul li:nth-of-type(4) a:before {
+	background-position: -85px -3px;
+  	width: 26px;
+}
+.ziying ul li:nth-of-type(5) a:before {
+	background-position: -114px -3px;
+  	width: 23px;
+}
+.ziying ul li:nth-of-type(6) a:before {
+	background-position: -175px -3px;
+  	width: 26px;
+}
+.ziying ul li:nth-of-type(7) a:before {
+	background-position: -141px -3px;
+  	width: 34px;
+}
+.ziying ul li:nth-of-type(8) a:before {
+	background-position: 0 -34px;
+  	width: 26px;
+}
+/* 活动管理 */
+.huodonggl ul li:nth-of-type(1) a:before {
+	background-position: -29px -34px;
+  	width: 26px;
+}
+.huodonggl ul li:nth-of-type(2) a:before {
+	background-position: -57px -34px;
+  	width: 27px;
+}
+.huodonggl ul li:nth-of-type(3) a:before {
+	background-position: -86px -34px;
+  	width: 26px;
+}
+.huodonggl ul li:nth-of-type(4) a:before {
+	background-position: -115px -34px;
+  	width: 27px;
+}
+.huodonggl ul li:nth-of-type(5) a:before {
+	background-position: -144px -34px;
+  	width: 27px;
+}
+
+/* 推广中心 */
+.shouye ul li:nth-of-type(1) a:before {
+	background-position: -172px -34px;
+  	width: 26px;
+}
+.shouye ul li:nth-of-type(2) a:before {
+	background-position: 0px -65px;
+  	width: 27px;
+}
+.shouye ul li:nth-of-type(3) a:before {
+	background-position: -30px -65px;
+  	width: 26px;
+}
+.shouye ul li:nth-of-type(4) a:before {
+	background-position: -59px -65px;
+  	width: 27px;
+}
+.shouye ul li:nth-of-type(5) a:before {
+	background-position: -86px -65px;
+  	width: 27px;
+}
+.shouye ul li:nth-of-type(6) a:before {
+	background-position: -115px -65px;
+  	width: 28px;
+}
+.shouye ul li:nth-of-type(7) a:before {
+	background-position: -145px -65px;
+  	width: 27px;
+}
+.shouye ul li:nth-of-type(8) a:before {
+	background-position: -173px -65px;
+  	width: 27px;
+}
+.shouye ul li:nth-of-type(9) a:before {
+	background-position: -27px -99px;
+  	width: 27px;
+}
+.shouye ul li:nth-of-type(10) a:before {
+	background-position: -56px -99px;
+  	width: 27px;
+}

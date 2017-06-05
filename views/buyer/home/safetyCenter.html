@@ -1,0 +1,112 @@
+{{#extend "header"}}
+<title>账户安全</title>
+<style>
+.list>li{
+	height:50px;
+	width:100%;
+	font-size:12px;
+	box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+	padding:5px 10px 5px 15px;
+	background:#fff;
+	position: relative;
+
+}
+.list>li:nth-last-of-type(1){
+-moz-box-shadow:0px 2px 2px 0px #ddd;
+-webkit-box-shadow:0px 2px 2px 0px #ddd;
+ box-shadow:0px 2px 2px 0px #ddd;
+}
+.list>li:after{
+	content: '';
+	position: absolute;
+	left:0px;
+	bottom:0px;
+	height:1px;
+	width:100%;
+	background:#ddd;
+	transform:scaleY(0.5);
+	-ms-transform:scaleY(0.5); 	/* IE 9 */
+	-moz-transform:scaleY(0.5); 	/* Firefox */
+	-webkit-transform:scaleY(0.5); /* Safari 和 Chrome */
+	-o-transform:scaleY(0.5);
+}
+.list .list_left,.list .list_right{
+	float:left;
+}
+.list .list_left{
+	width:80%;
+}
+.list .list_left h3{
+	font-weight: 600;
+}
+.list .list_left p{
+	color:#999;
+	line-height: 24px;
+		letter-spacing: 1px;
+}
+.list .list_right{
+	width:20%;
+	position: relative;line-height: 40px;
+}
+.enterHtml{
+	border-width: 6px;
+	border-style: solid;
+	border-color: transparent transparent transparent #999;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+}
+.enterHtml:after{
+	content: '';
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent transparent #fff;
+position: absolute;
+top: -5px;
+right: -4px;
+}
+.enterText{
+	font-size:12px;
+	color:#999;
+	letter-spacing: 5px;
+}
+</style>
+{{/extend}}
+<header class="main_head">
+	<nav class="nav"><a href="javascript:;" class="back _goback"></a><span id="addr_title">账户安全</span></nav>
+</header>
+<ul class="list">
+<li>
+	<div class="list_left">
+	<h3>登录密码</h3>
+	<p>建议定期更换登录密码以保障账户安全</p>
+	</div>
+	<div class="list_right">
+		<a class="enterText"   href="javascript:void(0);"></a>
+		<a class="enterHtml" href="javascript:void(0);"></a>
+	</div>
+</li>
+<li>
+	<div class="list_left">
+	<h3>支付密码</h3>
+	<p>用于虚拟帐号支付和提现等功能操作</p>
+	</div>
+	<div class="list_right">
+		<a class="enterText"   href="javascript:void(0);">未设置</a>
+		<a class="enterHtml" href="javascript:void(0);"></a>
+	</div>
+</li>
+<li>
+	<div class="list_left">
+	<h3>手机验证</h3>
+	<p>若已丢失或停用，请立即更换</p>
+	</div>
+	<div class="list_right">
+		<a class="enterText"   href="javascript:void(0);">修改</a>
+		<a class="enterHtml" href="javascript:void(0);"></a>
+	</div>
+</li>
+</ul>
+<script  data-main="/js/safetyCenter" src="/js/lib/require.js" ></script>

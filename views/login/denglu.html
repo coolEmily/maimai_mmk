@@ -1,0 +1,56 @@
+{{#extend "header"}}
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css" />
+{{/extend}}
+
+
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>买买</nav>
+    </header>
+    
+    <div class="login_auto">
+        <div class="main login_select">
+            
+            <h1 class="page_title m5">登录</h1>
+            <div class="line-x m5"></div>
+            <!-- 输入框 默认 -->
+            <div class="login_form m5">
+                <div class="login_hd">
+                    <label class="login_hd_label"></label>
+                    <input type="tel" maxlength="11" value="" name="userName" class="login_tel" placeholder="请输入手机号" onkeyup="this.value=this.value.replace(/\D/gi,'')" />
+                </div>
+                <div class="line"></div>
+                <div class="login_hd">
+                    <label class="login_hd_label login_pass"></label>
+                    <input type="password" name="password" value="" class="login_tel" placeholder="请输入登录密码" />
+                </div>              
+            </div>
+            
+            <!--输入框 错误提示-->
+            <!--
+            <div class="login_form m5 login_form_w">
+                <div class="login_hd">
+                    <label class="login_hd_label"></label>
+                    <input type="tel" maxlength="11" class="login_tel" placeholder="请输入手机号" onkeyup="this.value=this.value.replace(/\D/gi,'')" />
+                    <i class="login_make"></i>
+                </div>
+                <div class="line"></div>
+                <div class="login_hd">
+                    <label class="login_hd_label login_pass"></label>
+                    <input type="password" class="login_tel" placeholder="请输入登录密码" />
+                    <i class="login_make"></i>
+                </div>              
+            </div>-->
+            <div class="login_bott">
+                <div class="button">
+                    <a href="javascript:;">确定</a>
+                </div>
+                <div class="login_bott_a">
+                    <a href="zhaohui.html" class="login_for">忘记密码</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 错误提示    login_error-->
+    <div class="ui-message">手机号不能为空</div>
+    <script src="/js/lib/require.js" data-main="/js/denglu"></script>

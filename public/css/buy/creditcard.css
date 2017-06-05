@@ -1,0 +1,147 @@
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.creadit-icon {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 14px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.creadit-icon > a {
+    width: 50%;
+    float: left;
+}
+
+.creadit-icon dl {
+    width: 100%;
+}
+
+.creadit-icon a dl > dt {
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    display: inline-block;
+    background-image: url("/images/credit_icon.png");
+    background-position: 0 0;
+    background-size: 90px 44px;
+}
+
+.creadit-icon dl > dd {
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+}
+
+.creadit-icon a:nth-child(2) dl > dt {
+    background-position: -46px 0;
+}
+
+.c-title {
+    width: 100%;
+    margin-top: 5px;
+    height: 44px;
+    line-height: 44px;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-title > a {
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    color: #333;
+    font-size: 12px;
+    position: absolute;
+    top:0;
+    right: 4%;
+}
+
+.container {
+    margin-top: 5px;
+}
+
+.list {
+    width: 100%;
+    padding: 16px 0;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.card-pic {
+    float: left;
+    width: 25.3%;
+    margin: 0 4%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card-pic img {
+    width: 100%;
+}
+
+.mes {
+    float: right;
+    width: 66.7%;
+    padding-right: 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.mes > p:nth-child(1) {
+    line-height: 14px;
+}
+
+.mes > p:nth-child(2) {
+    height: 30px;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.applynow {
+    bottom: 12px;
+    right: 15px;
+    width: 16.3%;
+    overflow: hidden;
+}
+
+.applynow img {
+    width: 100%;
+}
+
+.font-1 {
+    font-size: 14px;
+    color: #333;
+}
+
+.font-2 {
+    font-size: 12px;
+    color: #666;
+}
+
+.font-3 {
+    font-size: 12px;
+    color: #999;
+}
+
+.rule {
+    margin-top: 5px;
+}

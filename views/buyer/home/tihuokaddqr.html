@@ -1,0 +1,34 @@
+{{#extend "header"}}    
+    <title>提货卡信息</title>
+    <link rel="stylesheet" href="/css/buy/addr.css" />
+    <link rel="stylesheet" href="/css/buy/confirm_receipt.css" />
+    <style>
+        .ui-transr-999:before{
+            right: 9px;
+            top: 50%;
+            margin-top: -8px;
+        }
+        .ui-transr-999:after{
+            right: 10px;
+            top: 50%;
+            margin-top: -8px;
+        }
+        .ui-per-goods{
+          margin-bottom: 0 !important;
+          box-shadow: none !important;
+        }
+    </style>
+{{/extend}}  
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>提货卡信息</nav>
+        </header>
+    </div>
+    <div class="ui-body main" style="padding-bottom: 100px;">
+
+    </div>
+    
+    <footer style="width: 90%;height:40px;line-height: 40px;border-radius: 25px;background-color: #e62828;color:white;font-size:16px;text-align: center;padding: 0;margin-left: 5%;margin-bottom: 20px">确认提货</footer>
+    
+    {{> loading}}
+    <script data-main="/js/buy/tihuokaddqr" src="/js/lib/require.js"></script>

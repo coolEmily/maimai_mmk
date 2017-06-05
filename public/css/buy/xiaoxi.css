@@ -1,0 +1,148 @@
+.main_head {
+    margin-bottom: 0;
+    border-bottom: 1px solid #c9c8c8;
+}
+.index_x {        
+    background: #fff;
+    border-bottom: 1px solid #c9c8c8;
+}
+.index_c {
+    padding: 3% 3% 0;
+    border-top: 1px solid #e9e9e9;
+}
+.index_l {
+    width: 20%;
+    float: left;
+}
+.index_r {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    height: 100%;
+    padding-left: 5px;
+}
+.index_r span {
+    position: absolute;
+    right: 3%;
+    top: 7px;
+}
+.index_r h2 {    
+    font-size: 16px;
+    padding-top: 5px;
+    font-weight: 500;
+}
+.index_c a span {
+    color: #999;
+}
+.index_c a h2 {
+    color: #333;
+}
+.index_c a p {
+    color: #999;
+}
+.index_r p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    display: -webkit-box;
+    white-space: normal;
+    padding-top: 5px;
+}
+.gonggao {
+    padding: 0 3% 3%;
+    border-top: 1px solid #e9e9e9;
+}
+.gonggao_c {
+    padding-top: 3%;
+}
+.gonggao_time {
+    text-align: center;
+}
+.gonggao_con {
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 6px #ddd;
+    padding: 10px 20px 10px 10px;
+    position: relative;
+}
+.gonggao_con a span {
+    width: 6px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 4%;
+}
+.gonggao_con a h2 {
+    font-size: 16px;
+    color: #333;
+}
+.gonggao_con a p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    display: -webkit-box;
+    white-space: normal;
+    padding-top: 8px;
+    line-height: 18px;
+    color: #999;
+}
+.g_detail {
+    background: #fff;
+    padding: 7% 5%;
+}
+.g_detail h2 {
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+}
+.g_detail .g_con {
+    line-height: 25px;
+    margin-top: 10px;
+}
+.youh {
+    padding: 0 3% 3%;
+    border-top: 1px solid #e9e9e9;
+}
+.youh_time {
+    padding-top: 3%;
+    text-align: center;
+}
+.youh_c {
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 6px #ddd;
+    padding: 3%;
+}
+.youh_c a h2 {
+    color: #333;
+    font-size: 15px;
+}
+.youh_img {
+    margin-top: 10px;
+}
+.youh_c a .youh_more {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #333;
+    font-size: 14px;
+    padding-top: 10px;
+    position: relative;
+}
+.youh_c a .youh_more .more {
+    width: 6px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}

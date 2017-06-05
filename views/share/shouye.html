@@ -1,0 +1,29 @@
+{{#extend "header"}}
+    <link type="text/css" rel="stylesheet" href="/css/ziying.css" />
+    <title>推广中心</title>
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:history.go(-1);" class="back _goback" ></a>推广中心</nav>
+        </header>
+    </div>
+    <div class="ziying shouye">
+        <ul>
+            <li><a href="fxshangpin.html">分享商品</a></li>
+            <li><a href="fxdianpu.html">分享店铺</a></li>
+            <li><a href="yqmaika.html">邀请买咖</a></li>
+            <li><a href="yqdaka.html">邀请大咖</a></li>
+            <li><a href="fxzixun.html">资讯分享</a></li>
+            <li><a href="fxduanxin.html">短信分享</a></li>
+            <li><a href="h5.html">生成H5</a></li>
+            <li><a href="/wxhongbao.html">分享红包</a></li>
+            <li><a href="/dxhongbao.html">短信分享红包</a></li>
+            <li><a href="/share/fxhuodong.html">分享0元购</a></li>
+        </ul>
+    </div>
+    <script>
+        var removeItem = ["desc", "erweima", "shopName", "goodsInfo"];
+        for(var i=0; i<removeItem.length; i++){
+            sessionStorage.removeItem(removeItem[i]);
+        }
+    </script>

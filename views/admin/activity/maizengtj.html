@@ -1,0 +1,35 @@
+{{#extend "header"}}
+    <title>添加买赠商品</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/bootstrap-datetimepicker.css" />
+    <link type="text/css" rel="stylesheet" href="/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="/css/shangou.css">
+{{/extend}}
+    <div class="main" style="padding-bottom: 30px;">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>添加买赠商品</nav>
+        </header>
+
+        <div class="not_pass1">
+            <ul style="margin: 0;">
+                <li class="rg lg"><span>开始时间：</span><input type="text" placeholder="开始时间" name="startTime" class="ui-date" readonly="readonly"></li>
+                <li class="rg lg"><span>截止时间：</span><input type="text" placeholder="截止时间" name="endTime" class="ui-date" readonly="readonly"></li>
+            </ul>
+        </div>
+        <div class="not_pass1" style="margin-bottom:5px">
+            <ul style="margin: 0;">
+                <li class="rg" name="goodsInfo"><span>请选择主商品：</span>请选择主商品</li>
+                <li class="rg" name="giftInfo"><span>请选择赠品：</span>请选择赠品</li>
+                <li class="red">注：主商品审核通过后，不能更改。</li>
+            </ul>
+        </div>
+        <div class="not_pass2">
+            <span style="width: auto;">赠品数量：</span>
+            <input type="tel" name="giftNum" />
+        </div>
+        <div class="not_pass3">
+            <i></i>是否支持优惠券
+        </div>
+        <div class="wd_btn" style="position: fixed;width: 100%;bottom: 0;">提交审核</div>
+    </div>
+    <script data-main="/js/maizengtj" src="/js/lib/require.js"></script>

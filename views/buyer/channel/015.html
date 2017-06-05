@@ -1,0 +1,44 @@
+{{#extend "header"}}
+<title>{{title}}</title>
+<style type="text/css">
+    .ad-title, .banner-title {
+        width: 100%;
+        margin-bottom: 1px;
+    }
+
+    .ad-l {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .ad-l img {
+        float: left;
+        width: 50%;
+    }
+
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav>
+</header>
+
+{{>channel_top banner=topMap}}
+
+<div class="ad-brand clearfix">
+    {{#if adMap.[0].title}}
+    <a href="{{adMap.[0].title.[0].htmlUrl}}"><img class="ad-title"
+                                                   src="http://image.maimaicn.com/{{adMap.[0].title.[0].designImgUrl}}"></a>
+    {{/if}}
+
+    {{#each adMap.[0].list}}
+    <div class="ad-l">
+        <a href="{{htmlUrl}}"><img src="http://image.maimaicn.com/{{designImgUrl}}"></a>
+    </div>
+    {{/each}}
+
+</div>
+
+{{>channel_roll_img_list_1 rollImgMap=rollImgMap.[0] id="ui-row_img_list_0"}}
+
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}

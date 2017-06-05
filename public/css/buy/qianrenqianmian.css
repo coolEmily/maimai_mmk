@@ -1,0 +1,377 @@
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007aff;
+}
+.qm_search {
+    background: url(/images/search_bg.png) no-repeat;
+    position: absolute;
+    width: 100%;
+    max-width: 750px;
+    min-width: 320px;    
+    z-index: 999;
+    background-size: auto 100%;
+    background-repeat-x: initial;
+    padding: 10px 0;
+}
+.qm_search_list {
+    float: right;
+    margin: 0 3%;
+    width: 20px;
+    padding-top: 5px;
+}
+.qm_search_left {
+    border-radius: 5px;
+    height: 30px;    
+    margin: 0 3%;
+    overflow: hidden;
+}
+.qm_search_con {
+    background: #fff;
+    opacity: 0.6; 
+}
+.qm_search_left .txt {
+    color: #333;
+    margin: 6px 0;
+    width: 85%;
+    background: 0 0;
+    overflow: hidden;
+    height: 18px;
+    line-height: 18px;
+}
+.qm_search_left .btn {
+    background: url(/images/search.png) no-repeat;
+    display: block;
+    float: left;
+    height: 14px;
+    width: 14px;
+    background-size: auto 100%;
+    margin-top: 8px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.qm_center {
+    padding-bottom: 50px;
+}
+/*轮播图*/
+.slider{
+    /* height:180px; */
+    overflow: hidden;
+    position: relative;
+    background:#fff;
+    z-index: 7;
+}
+.slider ul li{
+    text-align: center;
+    float:left; 
+    position:relative;
+}
+.serial_number{
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    z-index: 9;
+     width:100%;
+    }
+.serial_number .point{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    height: 8px;
+    width: 8px;
+    margin-right: 7px;
+     display: inline-block;
+    border:solid #fff1c7 1px;
+}
+
+.serial_number .selected{
+    background: #fff1c7;
+}
+.qm_nav {
+    overflow: hidden;
+    background: #fff;
+    padding: 2% 0;
+    box-shadow: 0 0 6px #bbb;
+}
+.qm_nav a {
+    float: left;
+    margin: 0 2.5%;    
+}
+.recommend {
+    background: #fff;
+}
+.recommend p {
+    margin: 0 8%;
+}
+.titlefn {
+    width: 100%;
+    border-bottom:1px solid #ddd;
+    position: relative;
+    margin-top: 10px;
+}
+.titlefn .clock {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);    
+}
+.titlefn a {
+    color: #333;
+}
+.titlefn .clock span {
+    border: 1px solid #666666;
+    margin: 0 5%;
+    padding: 0 1%;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.recommend .contant_3 {
+    overflow: hidden;
+}
+.recommend .contant_3 a {
+    float: left;
+    width: 33.33%;
+    outline: 1px solid #f1f1f1;
+}
+.recommend .contant_3 a .brand {
+    font-size: 14px;
+    color: #000;
+}
+.recommend .contant_3 a .name {
+    color: #333;
+    font-size: 14px;
+    height: 30px;
+    line-height: 15px;
+    -webkit-line-clamp: 2;
+    margin-top: 6px;
+}
+.recommend .contant_3 a .money {
+    color: #e62828;
+    font-size: 14px;
+    -webkit-line-clamp: 1;
+    height: 15px;
+    margin-top: 10px;
+    line-height: 15px;
+}
+.recommend .contant_3 a .reduce {
+    color: #e62828;
+    font-size: 12px;
+    margin: 3px 8% 10px 8%;
+}
+.recommend .contant_3 a p {    
+    letter-spacing: 1px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    height: 15px;
+    overflow: hidden;
+}
+.contant_2 {
+    overflow: hidden;
+}
+.contant_2 a {
+    float: left;
+    width: 50%;
+    outline: 1px solid #f1f1f1;
+    overflow: hidden;
+}
+
+.contant_2 a .brand {
+    font-size: 14px;
+    color: #000;
+}
+.contant_2 a .name {
+    font-size: 14px;
+    color: #333;
+}
+.contant_2 a .money span {
+    padding-left: 8px;
+}
+.recommend .contant_2 a p {    
+    letter-spacing: 1px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    line-height: 15px;
+    height: 30px;
+    padding-top: 7px;
+}
+.recommend .contant_2 a p.money {
+    font-size: 12px;
+    color: #e62828;
+    -webkit-line-clamp: 1;
+    height: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.recommend .contant_2 a p.money b, .recommend .contant_3 a .money b, .contant_1 a .con .money b {
+    font-weight: normal;
+    font-size: 14px;
+    color: #e32b30;
+}
+.contant_1 {
+    overflow: hidden;
+     border-bottom: 1px solid #f1f1f1;
+}
+.contant_1 .goods {
+    overflow: hidden;
+}
+.contant_1 a .con {
+    float: right;
+    width: 50%;    
+    padding-top: 15px;
+}
+.contant_1 a .con .brand {
+    font-size: 14px;
+    color: #000;
+}
+.contant_1 a .con .name {
+    font-size: 14px;
+    color: #333;
+    height: 30px;
+    line-height: 15px;
+    -webkit-line-clamp: 2;
+}
+.contant_1 a .con .money {
+    font-size: 12px;
+    color: #e62828;
+    margin-top: 7px;
+}
+.contant_1 a .reduce {
+    color: #e32b30;
+    font-size: 12px;
+    margin-top: 7px;
+}
+.contant_1 a .reduce span {
+    color: #e62828;
+}
+.contant_1 a p {    
+    letter-spacing: 1px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    line-height: 15px;
+    height: 15px;
+}
+/*广告位*/
+.adver {
+    background: #fff;
+    margin-top: 8px;
+    position: relative;
+    padding-top: 1px;
+    display: block;
+}
+.adver .title {
+    margin: 10px;
+    font-size: 14px;    
+}
+.adver a .title {
+	color: #333;
+}
+.adver .title {
+	color: #333;
+}
+.adver .con {
+    padding: 2% 3%;
+}
+.adver a .con span {
+    color: #999;
+}
+.adver .con span {
+    color: #999;
+}
+.adver .con span.gg {
+    border: 1px solid #999;
+    color: #999;
+    border-radius: 10px;
+    padding: 0 3px;
+}
+.adver a .con span.ll {
+    float: right;
+    color: #999;
+}
+.adver .con span.ll {
+    float: right;
+    color: #999;
+}
+.adver .img_2 img {
+    width: 50%;
+    float: left;
+}
+.adver .img_3 img {
+    width: 33.33%;
+    float: left;
+}
+.adver_l {
+    float: right;
+    width: 50%;
+}
+.adver_r {
+    overflow: hidden;    
+}
+.adver_r .title {
+    color: #333;
+    font-size: 14px;
+    width: 80%;
+    letter-spacing: 1px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    height: 40px;
+    line-height: 20px;
+}
+.adver_r .con1 {
+    position: absolute;
+    bottom: 5px;
+    width: 42%;
+}
+.logo_q a {
+    float: left;
+    width: 33.33%;
+    float: left;
+    outline: 1px solid #f1f1f1;
+}
+.swiper-pag {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+.contant_4 a .goods{
+    padding: 0 7% 0; 
+}
+.contant_4 a .goods img {
+    padding-top:2px;
+}
+.goods img {
+    width: auto;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.goods {
+    padding-top: 2px;
+}

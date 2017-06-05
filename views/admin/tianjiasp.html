@@ -1,0 +1,377 @@
+{{#extend "header"}}
+	<!--<title>添加商品库商品</title>-->
+	<link type="text/css" rel="stylesheet" href="/css/common_seller.css">
+	<link type="text/css" rel="stylesheet" href="/css/apply.css">
+    <script src="/js/lib/require.js" defer async="true" data-main="/js/tianjiasp.js"></script>
+	<style type="text/css">
+		select{color:#333;font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;}
+		.ui-add-t{
+			padding:10px 10px 10px 5px;
+			border-bottom: 1px solid #f1f1f1;
+			line-height: 20px;
+			overflow:hidden;
+		}
+		.ui-add-t select,.ui-add-t input{
+			width: 100%;
+		}
+		.ui-add-t:after{
+			clear: both;
+			content: " ";
+		}
+		.ui-add-t > div:first-child{
+			float: left;
+			width: 75px;
+			color: #999;
+			position: relative;
+		}
+		.ui-add-t > div:last-child{
+			overflow: hidden;
+		}
+		.ui-color-333{
+			color: #333 !important;
+		}
+
+		.ui-color-ff3c3c{
+			color: #ff3c3c !important;
+		}
+		.ui-body.main >div.ui-add-goods-info{margin-bottom:0}
+
+		.ui-add-goods-info .ui-add-t{
+			line-height: 40px;
+			height: 40px;
+		}
+		.ui-add-goods-info .ui-add-t > div:first-child{
+			text-indent: 14px;
+		}
+		.ui-add-goods-info .ui-add-t > div:last-child,.ui-add-goods-info .ui-transd-999{
+			padding: 10px 0;
+			box-sizing: border-box;
+			height: 40px;
+			line-height: 20px;
+			border: 2px solid #999;
+			border-radius: 5px;
+			text-indent: 5px;
+		}
+		.ui-add-goods-info .ui-add-t > div:first-child:before,.ship_pay .ui-color-333:before{
+			content: "";
+			width: 12px;
+			height: 12px;
+			position: absolute;
+			top: 14px;
+			left: 0;
+			background: url(/images/op_icon.png) no-repeat;
+			background-size: 150px auto;
+			background-position: -115px -115px;
+		}
+		.ui-add-t2 > div:first-child:before{display:none}
+
+		.ship_pay .ui-color-333{text-indent:14px}
+		.ship_pay .ui-color-333:before{
+			top:5px;
+		}
+		.ui-add-goods-info .ui-add-t>div:first-child.enName:before{
+			background:none;
+		}
+		.ui-transd-999:after{
+			top:15px;
+			right: 9px;
+		}
+		.ui-transd-999:before{
+			top:17px;
+			right: 9px;
+		}
+
+		.ui-add-wrap{overflow:hidden}
+		.ui-add-wrap .ui-add-t{width:45%;
+		                       float:left}
+
+		.ifagree{color:#02aefe;
+		         text-align:center;
+			     margin:-20px 0 20px 0;}
+
+		.ifagree:before{content: " ";
+						width: 20px;
+						height: 17px;
+			            display:inline-block;
+			            margin-bottom:-3px;
+						background: url(/images/op_icon.png) no-repeat;
+						background-size: 150px auto;
+						background-position: -59px -111px;}
+
+		.ifagree.on:before{background-position: -59px -20px;}
+
+       /*平台返佣比例*/
+		.add_scale {
+			padding: 10px 4%;
+			position: relative;
+			border-bottom: 1px solid #ddd;
+		}
+		.add_scale span {
+			float: left;
+			line-height: 22px;
+		}
+		.add_scale1 select {
+			overflow: hidden;
+			width: 70%;
+			line-height: 22px;
+			padding-left: 2%;
+		}
+		.add_scale1 select option {
+			line-height: 22px;
+		}
+		.add_scale1:before{
+			content: " ";
+			border-width: 6px;
+			border-style: solid;
+			border-color: #666 transparent transparent transparent;
+			position: absolute;
+			right: 4%;
+			top: 18px;
+		}
+		.add_scale1:after{
+			content: " ";
+			border-width: 6px;
+			border-style: solid;
+			border-color: white transparent transparent transparent;
+			position: absolute;
+			right: 4%;
+			top: 17px;
+		}
+		.add_scale2 {
+			overflow: hidden;
+		}
+		.add_scale2 ul {
+			width: 100%;
+		}
+		.add_scale2 ul li {
+			float: left;
+			width: 30%;
+			margin: 0 2% 4%;
+			height: 22px;
+			line-height: 22px;
+			border: 1px solid #999;
+			text-align: center;
+			border-radius: 5px;
+			padding: 2% 0;
+		}
+		.add_scale2 ul li.cur {
+			background: url(/images/add_sg.png) no-repeat right top;
+			background-size: 100% 100%;
+			border-color: transparent;
+		}
+
+	</style>
+{{/extend}}
+<body>
+{{> loading}}
+<div class="main">
+	<header class="main_head">
+		<nav class="nav"><a href="javascript:;" class="back _goback"></a><span id="navtext">添加商品库商品</span></nav>
+	</header>
+</div>
+<div class="ui-body main" id="editGoods">
+	<div>
+		<div class="ui-add-t">
+			<div class="ui-color-333">上传商品:</div>
+			<div class="ui-color-ff3c3c">商品图500X500（支持jpg、jpeg格式图片大小不超过2M，最多上传4张图片，图片重传会覆盖上一张图） </div>
+		</div>
+		<div class="ui-add-t">
+			<div >上传图片</div>
+			<div id="list_photo">
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".playPicture0" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".playPicture2" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".playPicture3" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".playPicture4" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--动态的显示要添加商品的属性-->
+	<div class="ui-add-goods-info">
+		<div class="ui-add-t">
+			<div class="ui-color-333">商品分类:</div>
+			<div class="ui-transd-999"  style="width:42%;float:left;margin-right:10px">
+				<select id="goods_sort">
+					<!--<option>请选择商品分类</option>-->
+					<!--<option>酒水</option>-->
+					<!--<option>食品</option>-->
+				</select>
+			</div>
+			<div class="ui-transd-999"  style="width:30%">
+				<select id="goods_sort2">
+					<!--<option>详细分类</option>-->
+					<!--<option>酒水</option>-->
+					<!--<option>食品</option>-->
+				</select>
+			</div>
+		</div>
+		<div class="ui-add-t">
+			<div class="ui-color-333">商品名称:</div>
+			<div><input type="text" value="" maxlength="25" placeholder="请输入25个字符" id="chName"></div>
+		</div>
+		<div class="ui-add-t">
+			<div class="ui-color-333 enName">英文名称:</div>
+			<div><input type="text" value="" maxlength="25" placeholder="请输入25个字符" id="enName"></div>
+		</div>
+		<div class="ui-add-t">
+			<div class="ui-color-333">广告语:</div>
+			<div><input type="text" value="" maxlength="25" placeholder="请输入25个字符" id="slogan"></div>
+		</div>
+		<div class="ui-add-t">
+			<div class="ui-color-333">原产地:</div>
+			<div class="ui-transd-999"  style="width:42%;float:left;margin-right:10px">
+				<select id="world_sort">
+					<!--<option>法国</option>-->
+					<!--<option>酒水</option>-->
+					<!--<option>食品</option>-->
+				</select>
+			</div>
+			<div class="ui-transd-999"  style="width:30%">
+				<select id="world_sort2">
+					<!--<option>波尔多</option>-->
+					<!--<option>酒水</option>-->
+					<!--<option>食品</option>-->
+				</select>
+			</div>
+		</div>
+		<div class="ui-add-t">
+			<div class="ui-color-333">商品单位:</div>
+			<div><input type="text" value="" placeholder="件" id="sellUnit"></div>
+		</div>
+		<div class="ui-add-wrap">
+			<div class="ui-add-t">
+				<div class="ui-color-333">市场价:</div>
+				<div><input type="text" value="" id="marketPrice" placeholder="元" class="inputNum"></div>
+			</div>
+			<div class="ui-add-t"">
+				<div class="ui-color-333">促销价:</div>
+				<div><input type="text" value="" id="sellingPrice" placeholder="元" class="inputNum"></div>
+			</div>
+		</div>
+		<div class="ui-add-wrap">
+			<div class="ui-add-t">
+				<div class="ui-color-333">商品重量:</div>
+				<div><input type="text" value="" placeholder="kg" id="weight" class="inputNum"></div>
+			</div>
+			<div class="ui-add-t"">
+				<div class="ui-color-333">商品库存:</div>
+				<div><input type="text" value="" id="storage" onkeyup="this.value=this.value.replace(/\D/gi,'')"></div>
+		    </div>
+	   </div>
+		<div class="ui-add-wrap" id="specificSelect">
+			<!--<div class="ui-add-t">-->
+				<!--<div class="ui-color-333">红酒年份:</div>-->
+				<!--<div class="ui-transd-999">-->
+					<!--<select>-->
+						<!--<option>干性</option>-->
+						<!--<option>酒水</option>-->
+						<!--<option>食品</option>-->
+					<!--</select>-->
+				<!--</div>-->
+			<!--</div>-->
+		</div>
+	</div>
+	<div class="ui-add-t ui-transd-999 ship_pay">
+		<div class="ui-color-333" style="width: 140px;">选择运费模板:</div>
+		<div>
+			<select name="" id="delivery_model">
+				<option value="">运费模板1</option>
+				<option value="">运费模板2</option>
+			</select>
+		</div>
+	</div>
+	<div>
+		<div class="ui-add-t">
+			<div class="ui-color-333">上传详情:</div>
+			<div class="ui-color-ff3c3c">商品详情500X500（支持jpg、jpeg格式图片大小不超过2M，最多上传6张图片，图片重传会覆盖上一张图） </div>
+		</div>
+		<div class="ui-add-t">
+			<div >上传图片</div>
+			<div id="goodsRich">
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input  id="" data-width="640" data-target=".detailPicture0" type="file" accept="image/*"
+								name="file1"/>
+                    </div>
+				</div>
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".detailPicture1" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".detailPicture2" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".detailPicture3" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".detailPicture4" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+				<div class="ui-input ui-add-img-button">
+					<div class="ui-add-button">
+                        <input id="" data-width="640" data-target=".playPicture5" type="file" accept="image/*"
+							   name="file1"/>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui-add-t ui-transd-999" style="margin-bottom:0;padding-left:4%">
+		<div class="ui-color-333" style="width: 90px;">推手返佣比例：</div>
+		<div>
+			<select name="" id="benefit">
+				<!--<option value="">10%</option>-->
+				<!--<option value="">10%</option>-->
+				<!--<option value="">10%</option>-->
+			</select>
+		</div>
+	</div>
+	<div class="add_scale">
+		<span>平台返佣比例</span>
+		<div class="add_scale2">
+			<ul id="benefit_plat">
+				<li class="cur" value="0.00">0%</li>
+				<li value="0.01">1%</li>
+				<li value="0.03">3%</li>
+				<li value="0.05">5%</li>
+				<li value="0.07">7%</li>
+				<li value="0.09">9%</li>
+			</ul>
+		</div>
+	</div>
+	<div class="button" id="savebtn" style="margin: 20px 5% 30px;">提交保存</div>
+</div>
+<div class="ifagree on" id="ifagree">我同意将商品内容分享到买买商品库</div>
+</body>
+</html>

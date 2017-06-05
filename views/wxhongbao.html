@@ -1,0 +1,54 @@
+{{#extend "header"}}
+    <title>分享红包</title>
+     <link type="text/css" rel="stylesheet" href="/css/common_seller.css" />
+    <link type="text/css" rel="stylesheet" href="/css/hongbao.css" />
+    <script data-main="/js/fxshangpin" src="/js/lib/require.js" defer async="true"></script>
+{{/extend}}
+
+<div class="main">
+    <header class="main_head" headId="wxhongbao">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>分享红包</nav>
+    </header>
+</div>
+
+<div class="packet_list">
+    <ul class="pocket_pic" id="pocket_pic">
+        <!--<li><img src="/images/hongbao.png" alt=""/></li>-->
+        <!--<li class="cur"><img src="/images/hongbao.png" alt=""/></li>-->
+    </ul>
+</div>
+
+<div class="ui-seller_qr_code" id="ui-seller_qr_code">
+    <div style="height: 350px;margin-bottom:40px">
+        <div>
+            <div class="ui-qr_code-info" style="width:50%;padding-top:35px;">
+                <div><img src="http://image.maimaicn.com/qr_code/3388697691793472.png" id="qrImg"></div>
+                <div style="margin-top: 20px;">长按保存二维码</div>
+                <div style="margin-top: 20px;font-size:14px;color:#ff3c3c" id="groupName">文字内容来自后台红包名称</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dealBtn">
+    <ul>
+        <li id="createQR">生成二维码</li>
+        <li id="shareBtn">分享</li>
+    </ul>
+</div>
+
+<div class="ui-nothing-find1" id="noneList" style="display:none">
+    <div>
+        <dl>
+            <dd style=""></dd>
+            <dt style="">暂无信息</dt>
+        </dl>
+    </div>
+</div>
+
+<div class="fixed" id="fixed">
+    <img src="/images/fenxiang2.png" />
+</div>
+
+<script src="/js/lib/require.js" data-main="/js/hongbao.js"></script>
+

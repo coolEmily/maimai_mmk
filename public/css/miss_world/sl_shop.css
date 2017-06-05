@@ -1,0 +1,141 @@
+/*购买须知*/
+#xz{
+    position: absolute;
+    right: 4%;          ;
+    top:0;
+    color: #3a3a3a;
+    font-size: 15px;
+    font-family: "PingFang-SC-Medium";
+}
+.shop{
+    height: 100%;
+    background: #f8f8f8;
+}
+.shop .message{
+    height: 20px;
+    width: 100%;
+    background: #ffcc66;
+    color: #666;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: "PingFang-SC-Medium";
+    text-align:center;
+}
+/*商品列表*/
+.shop .list{
+    background: #f8f8f8;
+}
+.shop .list li{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 10px;
+    padding-top:20px;
+}
+.shop .list li>img{
+    float: left;
+    width: 90px;
+    height: 90px;
+    background: #f5e;
+    margin: 0 15px;
+}
+.shop .list li p{
+    color: #333;
+    font-size: 14px;
+    font-family: "PingFang-SC-Medium";
+    line-height: 19px;
+    margin-right: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+/*商品价格*/
+.shop .list li .price{
+    position: absolute;
+    left:32%;
+    top:70px;
+    color: #cc3333;
+    font-size: 12px;
+    font-family: "PingFang-SC-Medium";
+}
+.shop .list li .price span{
+    color: #cc3333;
+    font-size: 16px;
+    font-family: "PingFang-SC-Medium";
+}
+.shop .list li .flower{
+    position: absolute;
+    left:32%;
+    bottom:18px;
+    color: #cc3333;
+    font-size: 12px;
+    font-family: "PingFang-SC-Medium";
+}
+/*购买按钮*/
+.shop .list li .btn{
+    position: absolute;
+    right: 4%;
+    bottom: 18px;
+    width: 16%;
+    height: 30px;
+    background: url("/images/tv/miss_world/buy.png") no-repeat center center;
+    background-size: contain;
+}
+.shop .xz_show{
+    position: absolute;
+    left: 10%;
+    top:132px;
+    width: 80%;
+    display: none;
+    z-index: 99;
+}
+.shop .xz_show .x_btn{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    font-size: 13px;
+    border-radius: 50%;
+}
+.shop .xz_show .line{
+    position: absolute;
+    right: 7.5px;
+    top:16px;
+    width: 1px;
+    height:25px;
+    background: #fff;
+}
+.shop .xz_show .show{
+    position: absolute;
+    left:0;
+    top:40px;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    border-radius: 5px;
+}
+.shop .xz_show .show .title{
+    color: #333333;
+    font-size: 17px;
+    font-family: "PingFang-SC-Medium";
+    text-align: center;
+    line-height: 50px;
+}
+/*遮罩*/
+.shop .shade{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: #003;
+    opacity:0.2;
+    display: none;
+}

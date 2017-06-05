@@ -1,0 +1,49 @@
+{{#extend "header"}}
+<title>{{title}}</title>
+<style type="text/css">
+    .discount-box{
+        width: 100%;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    .discount-title img{
+        width: 100%;
+    }
+    .discount-item{
+        padding:0 3.1%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .prom-banner img{
+        width: 100%;
+    }
+
+    .discount-item img{
+        float: left;
+        width: 50%;
+    }
+
+
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav>
+</header>
+
+{{>channel_top banner=topMap}}
+{{> channel_roll_item_list rollItemMap=rollItemMap.[0] id="roll_item_list_0"}}
+
+
+<div class="discount-box">
+    {{#if adMap.[0].title}}
+    <div class="discount-title"><a href="{{adMap.[0].title.[0].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].title.[0].designImgUrl}}"></a></div>
+    {{/if}}
+
+    {{#if adMap.[0].list}}
+    {{#each adMap.[0].list}}
+    <div class="discount-item"><a href="{{htmlUrl}}"><img src="http://image.maimaicn.com/{{designImgUrl}}"></a></div>
+    {{/each}}
+    {{/if}}
+</div>
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}

@@ -1,0 +1,24 @@
+{{#if rollItemMap}}
+<div class="slideWrap slideGoods">
+    {{#if rollItemMap.title}}
+        {{#each rollItemMap.title}}
+            <p class="titP"><a href="{{htmlUrl}}"><img src="http://image.maimaicn.com/{{designImgUrl}}" alt=""></a></p>
+        {{/each}}
+    {{/if}}
+    <div class="swiper-container-goods" id={{id}}>
+        <div class="swiper-wrapper">
+            {{#each rollItemMap.list}}
+                <dl class="swiper-slide">
+                    <dt><a href="/g?gId={{goodsId}}"><img src="http://image.maimaicn.com/{{mainPictureJPG}}" alt=""></a></dt>
+                    <dd>
+                        <a href="/g?gId={{goodsId}}"><span>{{chName}}</span></a>
+                        <a href="/g?gId={{goodsId}}"><span>￥{{sellingPrice}}</span></a>
+                    </dd>
+                </dl>
+            {{/each}}
+        </div>
+
+    </div>
+</div>
+{{/if}}
+

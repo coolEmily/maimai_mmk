@@ -1,0 +1,64 @@
+{{#extend "header"}}
+	<title>帮助中心</title>
+<style>
+	.help-main{
+		width: 100%;
+		margin-top: 5px;
+		background-color: #fff;
+	}
+	.help-list{
+		position: relative;
+		overflow: hidden;
+	}
+	.help-list li{
+		width: 100%;
+		height: 44px;
+		line-height: 44px;
+		font-size: 14px;
+		padding: 0 4%;
+		box-sizing: border-box;
+		border-bottom: 1px solid #e5e5e5;
+		position: relative;
+	}
+	.help-list li a{
+		display: block;
+		width: 100%;
+		padding-right: 5%;
+		box-sizing: border-box;
+		height: 44px;
+		color:#333;
+	}
+	.help-list li a:before{
+		content: "";
+		border-width: 8px;
+		border-color: transparent transparent transparent #666;
+		border-style: solid;
+		position: absolute;
+		top: 14px;
+		right: 12px;
+	}
+	.help-list li a:after{
+		content: "";
+		border-width: 8px;
+		border-color: transparent transparent transparent #fff;
+		border-style: solid;
+		position: absolute;
+		top: 14px;
+		right: 13px;
+	}
+</style>
+{{/extend}}
+<header class="main_head">
+	<nav class="nav"><a href="javascript:history.back();" class="back _goback"></a>帮助中心</nav>
+</header>
+<div class="help-main">
+	<ul class="help-list">
+		<li><a href="/buyer/help/001.html">售后政策</a></li>
+		<li><a href="/buyer/help/002.html">退换货/返修申请</a></li>
+		<li><a href="/buyer/help/003.html">售后服务单查询与修改</a></li>
+		<li><a href="/buyer/help/004.html">售后商品返回</a></li>
+		<li><a href="/buyer/help/005.html">售后退款说明</a></li>
+		<li><a href="/buyer/help/006.html">联系客服</a></li>
+        <li><a href="/buyer/help/007.html">关于我们</a></li>
+	</ul>
+</div>

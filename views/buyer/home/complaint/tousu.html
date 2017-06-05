@@ -1,0 +1,149 @@
+{{#extend "header"}}
+	<title>联系客服</title>
+	<link rel="stylesheet" type="text/css" href="/css/buy/refund.css" />
+<style>
+	.kefu-row{
+		position: relative;
+		height:39px;
+		padding: 0 5%;
+		border-bottom: 1px solid #ddd;
+		background-color: #fff;
+		font-size: 13px;
+	}
+	.kefu-row a{
+		display: block;
+		padding-right: 6%;
+		overflow: hidden;
+	}
+	.kefu-row .field{
+		float:left;
+		line-height: 40px;
+		color: #333;
+	}
+	.kefu-row .tel{
+		position: relative;
+		float: right;
+		padding-right: 8%;
+		line-height: 39px;
+		color: #333;
+	}
+	.kefu-row .tel:after{
+		position: absolute;
+		top: 11px;
+		right: 0;
+		content: '';
+		width: 18px;
+		height: 18px;
+		background: url(/images/yijian_icon.png) no-repeat;
+		background-position: 0 0;
+		background-size: 18px auto;
+	}
+	.kefu-row .goto-arrow-next:after{
+		position: absolute;
+		top: 11px;
+		right: 5%;
+		content: '';
+		width: 18px;
+		height: 18px;
+		background: url(/images/yijian_icon.png) no-repeat;
+		background-position: 0px -90px;
+		background-size: 18px auto
+	}
+	.kefu-row .goto-arrow-up:after{
+		position: absolute;
+		top: 11px;
+		right: 5%;
+		content: '';
+		width: 18px;
+		height: 18px;
+		background: url(/images/yijian_icon.png) no-repeat;
+		background-position:0px -36px;
+		background-size: 18px auto;
+	}
+	.kefu-row .down:after{
+		background-position: 0 -52px;
+	}
+	.complaint {
+		border-bottom: 1px solid #d6d6d6;
+		-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+		-moz-box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+		box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+	}
+	.cmpln-row{
+		position: relative;
+		height:39px;
+		line-height: 39px;
+		padding: 0 5%;
+		border-bottom: 1px solid #ddd;
+		color:#999;
+		background-color: #eee;
+		font-size: 13px;
+	}
+	.cmpln-row .ord-no,.cmpln-row .ord-status{
+		display: block;
+		float:left;
+		padding-left: 5%;
+		color: #333;
+	}
+	.cmpln-row .ord-day,.cmpln-row .ord-detail{
+		display: block;
+		float:right;
+	}
+	.cmpln-row .ord-detail{
+		padding-right: 7%;
+		color:#2785ff;
+	}
+	.cmpln-row .ord-detail:after{
+		position: absolute;
+		top: 12px;
+		right: 18px;
+		content: '';
+		width: 18px;
+		height: 18px;
+		background: url(/images/yijian_icon.png) no-repeat;
+		background-position: 0 -18px;
+		background-size: 18px auto;
+	}
+</style>
+{{/extend}}
+	<header class="main_head">
+		<nav class="nav"><a href="javascript:;" class="back _goback"></a>联系客服</nav>
+	</header>
+	<div class="kefu-row">
+			<div class="field">客服热线</div>
+			<a class="tel" href="tel:4008150988">4008150988</a>
+	</div>
+	<div class="kefu-row">
+		<a href="/buyer/home/complaint/tianjia.html" class="goto-arrow-next" id="nick">
+			<div class="field">反馈意见</div>
+		</a>
+	</div>
+	<div class="kefu-row">
+		<a href="javascript:void(0);" class="goto-arrow-up show-cpln">
+			<div class="field">查看进度</div>
+		</a>
+	</div>
+	<div class="complaint-wrap" id="complaint-wrap" style="display: none">
+		<!--<div class="complaint">-->
+			<!--<div class="cmpln-row">-->
+				<!--<span style="float:left">订单编号</span>-->
+				<!--<span class="ord-no">201602241004</span>-->
+				<!--<span class="ord-day">2016-10-21</span>-->
+			<!--</div>-->
+			<!--<div class="cmpln-row">-->
+				<!--<span style="float:left">订单状态</span>-->
+				<!--<span class="ord-status">未解决</span>-->
+				<!--<a class="ord-detail" href="javascript:;">查看订单</a>-->
+			<!--</div>-->
+		<!--</div>-->
+	</div>
+	<!-- 无投诉 -->
+	<div class="ui_nothing_find" id="noneList"  style="display: none">
+		<div>
+			<dl>
+				<dd></dd>
+				<dt>近期无投诉</dt>
+			</dl>
+		</div>
+	</div>
+	<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/complaintlist.js"></script>

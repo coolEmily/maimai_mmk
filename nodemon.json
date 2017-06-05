@@ -1,0 +1,15 @@
+{
+  "watch": [
+    "bin/",
+    "routes/",
+    "views/",
+    "app.js"
+  ],
+  "ignore": [
+    ".git",
+    ".idea",
+    ".gitignore",
+    "public"
+  ],
+  "ext": "js hbs html"
+}

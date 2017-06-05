@@ -1,0 +1,173 @@
+.guess_like {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.guess_like_wrapper {
+    box-shadow: 0 2px 2px 0 #b2b2b2;
+    background-color: #ffffff;
+}
+
+.side_bar {
+    width: 1%;
+    height: 35px;
+    background-color: #ff641e;
+    float: left;
+}
+
+.guess_like_title {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #333;
+    padding-left: 5%;
+    letter-spacing: 2px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.swiper-slide {
+    width: 49%;
+    margin-top: 4px;
+    padding: 3% 0;
+    float: left;
+    position: relative;
+    background: #fff;
+}
+
+.swiper-slide h3 a {
+    color: #333;
+}
+
+.swiper-slide .marketing_price a {
+    color: #999;
+}
+
+.swiper-slide .now_price a {
+    color: #ff3c3c;
+}
+
+.clearfix {
+    zoom: 1;
+    clear: both;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.img_wrapper {
+    margin: 0 auto;
+}
+
+.img_wrapper_link img {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+.swiper-slide h3{
+    font-size: 14px;
+    letter-spacing: 1px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    padding: 0 3%;
+}
+
+.price {
+    font-size: 18px;
+    margin-top: 2%;
+    padding: 0 3%;
+    display: block;
+    white-space: nowrap;
+}
+
+.now_price {
+    color: red;
+}
+
+.marketing_price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/*买买图片*/
+.ui_nothing_find > div > dl > dd {
+    width: 100px;
+    height: 70px;
+    background: url(/images/sg_icon.png) no-repeat;
+    background-size: 250px auto;
+    background-position: -149px -65px;
+    margin: 0 auto
+}
+
+.ui_nothing_find > div > dl > dt {
+    line-height: 24px
+}
+
+.ui_nothing_find > div > dl > dt {
+    line-height: 20px;
+    color: #999;
+    text-align: center;
+    margin-top: 15px;
+}
+@media screen and (max-device-height: 480px) {
+    .ui_nothing_find {
+        margin: 0 auto 3vh;
+    }
+    .side_bar {
+        width: 1%;
+        height: 25px;
+    }
+    .guess_like_title {
+        padding-left: 5%;
+        height: 25px;
+        line-height: 25px;
+    }
+    .swiper-slide {
+        margin-top: 4px;
+        box-sizing: border-box;
+        padding: 1% 0;
+    }
+}
+@media screen and (min-device-height: 481px) and (max-device-height: 568px) {
+    .ui_nothing_find {
+        margin: 0 auto 10vh;
+    }
+    .side_bar {
+        width: 1%;
+        height: 25px;
+    }
+    .guess_like_title {
+        padding-left: 5%;
+        height: 25px;
+        line-height: 25px;
+    }
+    .swiper-slide {
+        margin-top: 4px;
+        box-sizing: border-box;
+        padding: 1% 0;
+    }
+}
+@media screen and (min-device-height: 569px) {
+    .ui_nothing_find {
+        margin: 0 auto 20vh;
+    }
+}

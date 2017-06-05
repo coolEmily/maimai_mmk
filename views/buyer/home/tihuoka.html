@@ -1,0 +1,19 @@
+{{#extend "header"}}    
+    <title>提货卡</title>
+    <link rel="stylesheet" href="/css/buy/tihuoka.css" />
+{{/extend}}
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>提货卡</nav>
+    </header>
+    <div class="tihuoka">
+        <input type="text" value="" placeholder="请输入提货卡账号" id="userCardNo"/>
+        <input type="password" value="" placeholder="请输入提货卡密码" id="userPass"/>
+        <div class="thk_btn">我要提货</div>
+        <div class="thk_prompt" style="display: none;"></div>
+    </div>
+    <div style="position: absolute;bottom: 0;left: 0;">
+      <img src="/images/buy/tihuokats.png" style="width: 100%;"/>
+    </div>
+</div>
+<script  data-main="/js/buy/tihuoka" src="/js/lib/require.js" ></script>

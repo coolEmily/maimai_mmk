@@ -1,0 +1,67 @@
+{{#extend "header"}}
+    <title>世旅大赛首页</title>
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/miss_world/sl_index.css" />
+{{/extend}}
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="navs_icon clearfix">
+        <a href="/tv/sl_shop.html" class="sl_shop">
+            <dl>
+                <dt></dt>
+                <dd>世旅商城</dd>
+            </dl>
+        </a>
+        <a href="/tv/sl_rank.html" class="sl_rank">
+            <dl>
+                <dt></dt>
+                <dd>选手排行榜</dd>
+            </dl>
+        </a>
+        <a href="/tv/sl_sole.html" class="sl_sole">
+            <dl>
+                <dt></dt>
+                <dd>大赛规则</dd>
+            </dl>
+        </a>
+    </div>
+    <div class="p_container">
+        <div class="player_cont">
+            <div class="titlee">
+                <span>选手</span>
+            </div>
+            <div class="lists"></div>
+        </div>
+    </div>
+<!--检验登陆-->
+<div class="dialog_box">
+    <!--未登录-->
+    <div class="b1">
+        <span>您还没有登录！</span>
+        <div class="login">
+            <a class="close_btn"></a>
+            <a class="go_login"></a>
+        </div>
+    </div>
+    <!--确定或取消投票-->
+    <div class="b2">
+        <span></span>
+        <div class="v_confirm">
+            <a class="cancel"></a>
+            <a class="confirm"></a>
+        </div>
+    </div>
+    <!--每人只有一次投票-->
+    <div class="b3">
+        <span>每人每日只能投 1 票，明天继续!</span>
+        <div class="v_determine">
+            <a id="determine"></a>
+        </div>
+    </div>
+</div>
+<div class="b4"></div>
+
+<script src="/js/lib/require.js" data-main="/js/buy/sl_index"></script>

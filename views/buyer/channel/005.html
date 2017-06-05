@@ -1,0 +1,32 @@
+{{#extend "header"}}
+    <title id="title">{{title}}</title>
+    <style>
+        .ad-holder{
+            margin-bottom: 10px;
+        }
+        .ad-holder div{
+            width:50%;
+            float:left;
+        }
+        .ad-holder div img{
+            width:100%;
+        }
+    </style>
+{{/extend}}
+<header class="main_head"><nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav></header>
+{{>channel_top banner=topMap}}
+{{>channel_roll_item_list rollItemMap=rollItemMap.[0] id="roll_item_list_0"}}
+<div class="ad-holder clearfix">
+    {{#if adMap.[0].list}}
+        {{#each adMap.[0].list}}
+        <div class="fl">
+            <a href="{{this.htmlUrl}}"><img src="http://image.maimaicn.com/{{this.designImgUrl}}" alt=""></a>
+        </div>
+        {{/each}}
+    {{/if}}
+    <!--<div class="fl">-->
+        <!--<a href="#"><img src="/images/pre/白条专区-.png" alt=""></a>-->
+    <!--</div>-->
+</div>
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}
+

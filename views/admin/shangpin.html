@@ -1,0 +1,246 @@
+{{#extend "header"}}
+	<title>自营商品</title>
+	<link type="text/css" rel="stylesheet" href="/css/common_seller.css">
+	<link type="text/css" rel="stylesheet" href="/css/order.css">
+    <script src="/js/lib/require.js" defer async="true" data-main="/js/shangpin.js"></script>
+	<style type="text/css">
+		.header a{color:#333;}
+		.goodslist > div{
+			position: absolute;
+			width: 36px;
+			top: 50%;
+			right: 20px;
+			margin-top: -8px;
+		}
+		.goodslist dd li:nth-child(3) {
+			margin-top: 57px;
+		}
+		.goodslist dd {
+			width: auto;
+			float: none;
+			overflow: hidden;
+		}
+		.ui-goods-p{
+			font-size: 16px !important;
+			color: #ff3c3c !important;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.ui-goods-p span{
+			font-size: 12px !important;
+			margin-left: 30px;
+		}
+		.dealBtn{
+			min-width: 320px;
+			max-width: 640px;
+			width:100%;
+			overflow:hidden;
+			position:fixed;
+			bottom:0
+		}
+		.dealBtn ol{display:none}
+		.dealBtn>ol li{height:40px;
+		               line-height:40px;
+		               background:#fff;
+		               border-top:solid #ddd 1px;
+		               padding:0 4%}
+
+		.dealBtn>ol li a{color:#333;
+			             display:block;
+		                }
+
+		.dealBtn>ul li{width:49.8%;
+						 height:40px;
+						 line-height:40px;
+						 text-align:center;
+						 color:#fff;
+						 background:#dc3c3c;
+						 float: right;}
+
+		.dealBtn>ul li:first-child{float:left;
+			                       background:#ec7e41;}
+
+		.ui-transd-999:before{border-color: transparent transparent transparent #999;right:3px;top:13px}
+		.ui-transd-999:after{border-color: transparent transparent transparent #fff;right:4px;top:13px}
+
+		.coverbox{height: 800px;
+				 min-width: 320px;
+				 max-width: 640px;
+				 width: 100%;
+				 position: fixed;
+			     background: rgba(0,0,0,0.5);
+			     top:0;
+			     left:0;
+				 display:none;}
+
+		/*出售中*/
+		.goodslist_now dd li.inputli{color:#a9a9a9;
+									 margin-top:10px;}
+
+		.goodslist_now dd li.inputli input{width:80px;
+		                                   height:23px;
+		                                   line-height:23px;
+		                                   border:solid #999 1px;
+		                                   border-radius:4px;
+		                                   text-align:center}
+		.goodslist>div p{height:12px;
+		                 width:36px;
+						 color:#666}
+
+		.goodslist > div a{color:#43bafe;
+		                   display:block;
+		                   width:36px;
+		                   text-align:center}
+
+		.goodslist_now>div{background:url(../images/op_icon.png) no-repeat;
+							background-size: 200px auto;
+							background-position: -174px 5px;
+							width: 30px;
+			                height:30px;
+							top: 59px;
+		                    font-size:0;}
+		/*审核中*/
+		.noSelectBtn dt:before{display:none}
+	</style>
+{{/extend}}
+<body>
+<div class="main">
+	<header class="main_head">
+		<nav class="nav"><a href="javascript:;" class="back _goback"></a>
+			<div class="titword">
+				<span>自营商品</span>
+			</div>
+		</nav>
+	</header>
+</div>
+<div class="container">
+	<header class="header" id="titword">
+		<div>商品状态：</div>
+		<span class="sort_span" id="titword_text">出售中</span>
+		<!--分类的下拉-->
+		<div class="triangle tri_sort" id="tri_sort">
+			<span class="triangle_s1"></span>
+			<span class="triangle_s2"></span>
+		</div>
+		<div class="trianglered tri_sorted" id="tri_sorted">
+			<span class="triangle_s1"></span>
+			<span class="triangle_s2"></span>
+		</div>
+	</header>
+	<div class="ui-nothing-find" id="noneList">
+		<div>
+			<dl>
+				<dd style=""></dd>
+				<dt style="">无此类商品信息</dt>
+			</dl>
+		</div>
+	</div>
+	<div class="guess_like"></div>
+	<!--分类-->
+	<div class="select_box" id="select_box" style="top:76px">
+		<div class="itemcon" id="itemcon">
+			<ul>
+				<li class="cur">出售中<span class="radioimg"></span></li>
+				<li>已下架</li>
+				<li>待审核</li>
+			</ul>
+		</div>
+	</div>
+	<div id="goods_wrap" style="margin-bottom: 50px;">
+		<!--<div class="orderunit">
+			<div class="goodslist goodslist_now">
+				<div class="ui-show-qr"></div>
+				<dl>
+					<dt class="on"><a href="#"><img src="/images/buy/index_l7.jpg"></a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">维图干红葡萄酒</a></li>
+							<li><a href="#">LES VENTURONS</a></li>
+							<li class="ui-goods-p">￥999 <span>库存：108件</span></li>
+							<li class="inputli"
+							><span>单价：</span><input type="tel" onkeyup="this.value=this.value.replace(/\D/gi,'')"/></li>
+							<li class="inputli"
+							><span>库存：</span><input type="tel" onkeyup="this.value=this.value.replace(/\D/gi,'')"/></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="orderunit">
+			<div class="goodslist noSelectBtn">
+				<div>
+					<p>审核中</p>
+				</div>
+				<dl>
+					<dt class="on"><a href="#"><img src="/images/buy/index_l7.jpg"></a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">维图干红葡萄酒</a></li>
+							<li><a href="#">LES VENTURONS</a></li>
+							<li class="ui-goods-p">￥999 <span>库存：108件</span></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="orderunit">
+			<div class="goodslist">
+				<div>
+					<p>未通过</p>
+				</div>
+				<dl>
+					<dt class="on"><a href="#"><img src="/images/buy/index_l7.jpg"></a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">维图干红葡萄酒</a></li>
+							<li><a href="#">LES VENTURONS</a></li>
+							<li class="ui-goods-p">￥999 <span>库存：108件</span></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="orderunit">
+			<div class="goodslist">
+				<div>
+					<a href="#">修改</a>
+				</div>
+				<dl>
+					<dt class="on"><a href="#"><img src="/images/buy/index_l7.jpg"></a></dt>
+					<dd>
+						<ul>
+							<li><a href="#">维图干红葡萄酒</a></li>
+							<li><a href="#">LES VENTURONS</a></li>
+							<li class="ui-goods-p">￥999 <span>库存：108件</span></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>-->
+	</div>
+</div>
+<p class="coverbox" id="coverbox"></p>
+<div class="dealBtn">
+	    <ol>
+			<li class="ui-transd-999"><a href="/admin/tianjiasp.html">添加自营商品</a></li>
+			<li class="ui-transd-999"><a href="/admin/tianjiaspk.html">添加商品库商品</a></li>
+		</ol>
+    	<ul style="position:relative">
+			<li id="add_goods">添加新的商品</li>
+			<li id="off_goods">下架已选商品</li>
+		</ul>
+</div>
+<div class="ui-seller_qr_code" id="ui-seller_qr_code">
+	<div style="height: 400px;margin-bottom:40px">
+		<div>
+			<div class="ui-qr_code-info">
+				<div class="ui-img" style="height:140px"><img src="/images/buy/index_l7.jpg" id="goodsImg"></div>
+				<div><img src="/images/buy/index_l7.jpg" id="qrImg"></div>
+				<div style="margin-top: 20px;">长按此处可保存二维码<br>只有0.1%的人知道怎么玩</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{{#extend "header"}}
+<title id="title">{{title}}</title>
+<style>
+	.home {
+		background: #fff;
+		padding: 1%;
+	}
+	.home_tltie {
+		width: 100%;
+	}
+	.home_goods {
+		width: 100%;
+		overflow: hidden;
+	}
+	.home_goods a {
+		margin-bottom: 2px;
+		display: inline-block;
+	}
+	.home_goods_l {
+		float: left;
+		width: 49.5%;
+	}
+	.home_goods_r {
+		float: right;
+		width: 49.5%;
+	}
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav>
+</header>
+{{>channel_top banner=topMap}}
+
+<div class="home">
+	<div class="home_tltie">
+		<a href="{{adMap.[0].title.[0].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].title.[0].designImgUrl}}" /></a>
+	</div>
+	<div class="home_goods">
+		<!--{{#each adMap.[0].list}}
+			<a href="{{htmlUrl}}"><img src="http://image.maimaicn.com/{{mainPictureJPG}}" /></a>
+		{{/each}}-->
+		<div class="home_goods_l">
+			<a href="{{adMap.[0].list.[0].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].list.[0].designImgUrl}}" /></a>
+			<a href="{{adMap.[0].list.[2].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].list.[2].designImgUrl}}" /></a>
+		</div>
+		<div class="home_goods_r">
+			<a href="{{adMap.[0].list.[1].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].list.[1].designImgUrl}}" /></a>
+			<a href="{{adMap.[0].list.[3].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].list.[3].designImgUrl}}" /></a>
+		</div>
+	</div>
+</div>
+<div>
+    <a href="{{adMap.[1].list.[0].htmlUrl}}" class="home_goods_l"><img src="http://image.maimaicn.com/{{adMap.[1].list.[0].designImgUrl}}""></a>
+    <a href="{{adMap.[1].list.[1].htmlUrl}}" class="home_goods_l"><img src="http://image.maimaicn.com/{{adMap.[1].list.[1].designImgUrl}}""></a>
+</div>
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}
+

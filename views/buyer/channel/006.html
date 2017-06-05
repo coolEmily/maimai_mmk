@@ -1,0 +1,9 @@
+{{#extend "header"}}
+    <title id="title">{{title}}</title>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav>
+</header>
+{{>channel_top banner=topMap}}
+{{>channel_roll_img_list rollImgMap=rollImgMap.[0] id="ui-row_img_list_0"}}
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}

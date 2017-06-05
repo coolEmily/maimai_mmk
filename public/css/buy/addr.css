@@ -1,0 +1,66 @@
+.ui-show-address{
+    padding: 15px 20px;
+    border: 1px solid #f1f1f1;
+}
+.ui-show-address-op{
+    padding: 10px 20px;
+    height: 30px;
+    line-height: 30px;
+}
+.ui-show-address > div:nth-of-type(-n+2){
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 15px;
+}
+.ui-show-address > div:first-child{
+    float: right;
+    width: 140px;
+}
+.ui-show-address > div:nth-of-type(3) > span:last-of-type{
+    display: table;
+    overflow: hidden;
+    word-break: break-all;
+}
+.ui-show-address > div:nth-of-type(3) > span:first-of-type{
+    float: left;
+}
+.ui-show-address > div > span{
+    color: #999;
+}
+.ui-show-address > div > span:last-of-type{
+    color: #333;
+}
+.ui-show-address-op > .ui-addr-choose{
+    color: #ff4444;
+    padding-left: 26px;
+    position: relative;
+    width: 60px;
+    float: left;
+}
+/*.ui-addr-choose:before{*/
+    /*content: " ";*/
+    /*height: 20px;*/
+    /*width: 20px;*/
+    /*background: url(../../images/op_icon.png) no-repeat;*/
+    /*background-size: 150px auto;*/
+    /*background-position: -61px -20px;*/
+    /*position: absolute;*/
+    /*top: 5px;*/
+    /*left: 0;*/
+/*}*/
+.ui-show-address-op > div:nth-of-type(n+2){
+    width: 65px;
+    height: 30px;
+    float: right;
+    background: url(../../images/addr_del.png)no-repeat center center;
+    background-size:65px auto;
+}
+.ui-show-address-op > div:nth-of-type(3){
+    background-image: url(../../images/addr_edit.png);
+    margin-right: 10px;
+}
+
+.ui-add-address{
+    margin-top: 25px;
+}

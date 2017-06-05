@@ -1,0 +1,73 @@
+{{#extend "header"}}
+    <title>我的红包</title>
+    <link type="text/css" rel="stylesheet" href="/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="/css/hongbao.css" />
+{{/extend}}
+<div class="main">
+    <header class="main_head" headId="hongbao">
+        <nav class="nav"><a href="javascript:window.app !== 0 && push.pushViewController();" class="back _goback"></a>我的红包</nav>
+        <a href="javascript:void(0)" class="balanceItem" id="activeBtn">激活红包</a>
+    </header>
+</div>
+
+<div class="tab_item" id="tab_item">
+    <ul>
+        <li class="cur">可用<span id="available"></span></li>
+        <li>过期<span id="expire"></span></li>
+        <li>已用<span id="used"></span></li>
+    </ul>
+</div>
+
+<div class="packet_list" id="packet_list">
+    <!--<div class="packet_unit gray">-->
+        <!--<div class="first_d"><span>￥2000</span> <span>余额：￥100</span></div>-->
+        <!--<div class="second_d">红包编号：MM2016061723</div>-->
+        <!--<div class="second_d">有效日期：2016年06月16日至2017年06月16日</div>-->
+    <!--</div>-->
+    <!--<div class="packet_unit">-->
+        <!--<div class="first_d"><span>￥2000</span> <span>余额：￥100</span></div>-->
+        <!--<div class="second_d">红包编号：MM2016061723</div>-->
+        <!--<div class="second_d">有效日期：2016年06月16日至2017年06月16日</div>-->
+        <!--<div class="use-now"><a href="/buyer/hongbaoshangpin.html"></a>立即使用</div>-->
+    <!--</div>-->
+</div>
+
+<div class="noMore" id="noMore" style="display:none">无更多红包……</div>
+
+<!--激活红包弹窗-->
+<div class="dialog_wrap" id="activeInput">
+    <div class="dialog">
+        <div class="box_input">
+            <p>激活红包</p>
+            <input type="text" placeholder="请输入红包兑换码"/>
+        </div>
+        <div class="box_btn">
+            <span class="close">取消</span>
+            <span id="active_btn">激活</span>
+        </div>
+    </div>
+</div>
+<div class="dialog_wrap" id="active_s"><!---激活成功-->
+    <div class="dialog">
+        <span class="text"><span id="facevalue"></span>元红包已存入您的账户</span>
+        <div class="box_btn">
+            <span class="close" check="true">查看红包</span>
+            <span id="go_mall">立即使用</span>
+        </div>
+    </div>
+</div>
+<div class="dialog_wrap" id="dialog_sss"><!---error-->
+    <div class="dialog">
+        <span class="text"></span>
+        <a  class="go_mall close" id='qud' href="javascript:void(0)">确定</a>
+    </div>
+</div>
+<div class="dialog_wrap" id="dialog_err"><!---error-->
+    <div class="dialog">
+        <span class="text"></span>
+        <a  class="go_mall close" href="javascript:void(0)">好</a>
+    </div>
+</div>
+
+
+<script src="/js/lib/require.js" data-main="/js/hongbao.js"></script>

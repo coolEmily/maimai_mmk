@@ -1,0 +1,80 @@
+{{#extend "header"}}
+<title>百万红包</title>
+<style>
+    html,body{
+        width: 100%;
+        height: 100%;
+            }
+    .m-content{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        background: url("/images/rp_bg.jpg") center center no-repeat;
+        background-size: 100% 100%;
+        padding-top: 80%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .m-btn{
+        width: 40%;
+        height: 44px;
+        line-height: 44px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 22px;
+        border-radius: 22px;
+        background-color: #ff9600;
+    }
+    .congrats{
+        display: none;
+        width: 80%;
+        height: 120px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        background-color: #ff9600;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        margin-top: -60px;
+        margin-left: -40%;
+    }
+    .congrats p,.congrats span{
+        margin-top: 20px;
+        height: 22px;
+        line-height: 22px;
+    }
+    .congrats span{
+        height: 40px;
+        line-height: 40px;
+        width: 40%;
+        display: block;
+        background-color: #f01e1e;
+    }
+    .congrats a{
+        color:#fff;
+    }
+    .congrats span:nth-of-type(1){
+        margin-left: 5%;
+        float: left;
+    }
+    .congrats span:nth-of-type(2){
+        margin-right: 5%;
+        float: right;
+    }
+
+</style>
+{{/extend}}
+<div class="m-content">
+    <span class="m-btn">点击领取红包</span>
+</div>
+<div class="congrats clearfix">
+    <p>恭喜您获得100万红包！</p>
+    <span class="go-check"><a href="/buyer/home/hongbao.html">查看红包</a></span>
+    <span class="go-shoping"><a href="/buyer/hongbaoshangpin.html">红包商城</a></span>
+</div>
+<script src="/js/lib/require.js" data-main="/js/millionRedpocket"></script>

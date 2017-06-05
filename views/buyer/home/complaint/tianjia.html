@@ -1,0 +1,89 @@
+{{#extend "header"}}
+	<title>反馈意见</title>
+	<link rel="stylesheet" href="/css/apply.css" />
+	<link rel="stylesheet" href="/css/buy/refund.css" />
+<style>
+	.refund_mold,.refund_ex{
+		padding: 0 5%;
+	}
+	.ui-img-type-tishi {
+		padding: 10px 5% !important;
+	}
+	.refund_mold span,.refund_ex span,.ui-upload-img > .ui-t {
+		 color: #333;
+	}
+	.refund_ex .area {
+		margin-left: 4%;
+	}
+	.ui-img-type-tishi {
+		padding: 10px 4% !important;
+	}
+	.refund_mold .selectx select {
+		font-size: 14px;
+		color: #333;
+		font-family: "微软雅黑";
+		width: 100%;
+		position: relative;
+		margin-left: 5px;
+		z-index: 10;
+	}
+	.refund_mold .selectx:after{
+		position: absolute;
+		top: 11px;
+		right: 0px;
+		content: '';
+		width: 18px;
+		height: 18px;
+		background: url(/images/yijian_icon.png) no-repeat;
+		background-position: 0px -72px;
+		background-size: 18px auto;
+		z-index: 9;
+	}
+
+</style>
+{{/extend}}
+
+	<header class="main_head">
+		<nav class="nav"><a href="javascript:;" class="back _goback"></a>反馈意见</nav>
+	</header>
+	<div class="refund">
+		<div class="refund_mold">
+			<span>反馈订单</span>
+			<div class="selectx">
+				<select  id="compl-order">
+					<option>--选择投诉订单--</option>
+				</select>
+			</div>
+		</div>
+		<div class="refund_mold">
+			<span>商品名称</span>
+			<div class="selectx">
+				<select id="compl-goods">
+					<option>--选择投诉商品--</option>
+				</select>
+			</div>
+		</div>
+		<div class="refund_ex clearfix">
+			<span>留言内容</span>
+			<textarea id="compl-reply" maxlength="200" class="area area1" placeholder="两百字内，留言1-3个工作日给您回复。"></textarea>
+		</div>
+		<!---------------------------------------------->
+		<div class="ui-img-type-tishi ui-upload-img">
+			<div class="ui-t">上传图片</div>
+			<div class="ui-input ui-add-img-button">
+				<div class="ui-add-button">
+					<input name="playPicture1_input" id="" data-width="640" data-target=".playPicture1" type="file" accept="image/*" name="file1"/>
+				</div>
+				<div class="ui-add-button">
+					<input name="playPicture2_input" id="" data-width="640" data-target=".playPicture2" type="file" accept="image/*" name="file1"/>
+				</div>
+				<p class="ui-img-guige">上传凭证最多两张。</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+	</div>
+	<div class="refund_apply button">
+		<a href="javascript:;">提交</a>
+	</div>
+	<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/complaintadd.js"></script>

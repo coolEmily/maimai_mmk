@@ -1,0 +1,48 @@
+{{#extend "header"}}
+    <title>提现</title>
+    <link rel="stylesheet" href="/css/money.css" />
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>提现</nav>
+        </header>
+    </div>
+    <div class="ui-body main">
+        <div class="ui-account-balance">
+            <div class="ui-balance-show">
+                <div>可提现金额（元）</div>
+                <div id="ui-yue" style="color: #ff6262;font-size: 24px;line-height: 50px;">￥0.00</div>
+            </div>
+            <div class="ui-apply-op">
+                <div class="ui-user-mobile">
+                    <div class="ui-mobile-icon"></div>
+                    <div class="ui-mobile-num">
+                        <input name="tixian" type="number"/>
+                    </div>
+                </div>
+                <div class="ui-balance-op button ui-undo">提现</div>
+            </div>
+        </div>
+        
+        <div class="ui-account-history">
+            <div style="font-size: 14px;line-height: 50px;height: 50px;">账户余额明细</div>
+            <!--<div class="ui-acc-cash">
+                <div>待结算金额<span>已完成</span><br><span>2016-04-06 12:20:38</span></div>
+                <div>￥600.00</div>
+            </div>
+            <div class="ui-acc-cash">
+                <div>可提现金额 </div>
+                <div>￥600.00</div>
+            </div>
+            <div class="ui-acc-cash">
+                <div>提现中金额 </div>
+                <div>￥600.00</div>
+            </div>
+            <div class="ui-acc-cash">
+                <div>已提现金额  </div>
+                <div>￥600.00</div>
+            </div>-->
+        </div>
+    </div>
+    <div class="ui-message"></div>
+    <script src="/js/lib/require.js" data-main="/js/money_shouye"></script>

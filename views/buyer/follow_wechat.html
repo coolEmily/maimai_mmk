@@ -1,0 +1,55 @@
+{{#extend "header"}}
+<title>关注买买</title>
+<style type="text/css">
+
+    .container{ width:100%;
+                margin:0 auto;
+                overflow:hidden;
+                background:#fff;
+                height:250px;
+                padding:25px 0 25px 0}
+
+    .container ul{text-align:center;font-size:12px;}
+
+    .container ul li:first-child{font-size:15px;
+                                 color:#ff3c3c;
+                                 margin-bottom:10px;}
+
+    .container img{width:35%;
+                   margin:15px auto;}
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>关注买买</nav>
+</header>
+<div class="container">
+    <ul>
+        <li>买买电商官方公众号</li>
+        <li>有最超值的商品折扣</li>
+        <li>让您的关注更有价值</li>
+        <li><img src="../images/buy/wechat.jpg" alt=""/></li>
+        <li>长按二维码，识别后即可关注</li>
+    </ul>
+</div>
+<script src="/js/lib/require.js"></script>
+<script>
+  require.config({baseUrl: '../js/lib'});
+  require(['zepto', 'lib', 'visitor-logs'], function($, lib, vl){
+    vl.setLog(window.location.href, 2);//会员访问日志
+    var fn = {}, lib = new lib();
+    $.extend(fn, {
+      sId: lib.getUrlParam("sId") || $.cookie("maimaicn_s_id"),
+      init: function(){
+        var _t = this;
+        if(_t.sId ==  "425160"){
+          $("title").text("关注天视商城");
+          $("nav:contains(关注买买)").html('<a href="javascript:window.history.back();" class="back _goback"></a>关注天视商城');
+          $("li > img").attr("src", "/images/buy/tianshishangcheng.jpg");
+          $("li:contains(买买电商官方公众号)").text("天视商城官方公众号");
+          $("a:contains(下载买买电商APP)").attr("href", "http://a.app.qq.com/o/simple.jsp?pkgname=com.maimaicn.tianshi").text("下载天视商城APP");
+        }
+      }
+    });
+    fn.init();
+  });
+</script>

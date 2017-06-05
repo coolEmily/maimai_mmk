@@ -1,0 +1,79 @@
+.container{max-width:640px;
+           min-width:320px; 
+           margin:0 auto;
+           overflow-x: hidden;}
+
+.sue_list{height:160px;
+          box-shadow:0px 2px 2px #ccc;
+          margin-bottom:10px;
+          background:#fff;}
+
+.sue_list li,.sue_detail li{height:39px;
+				             border-bottom:solid #ddd 1px;
+				             line-height:39px;
+				             padding-left:4%;
+				             color:#999;}
+
+.sue_list li span,.sue_detail li span{color:#333;}
+
+.sue_list li .check_detail{background:#ff3c3c;
+                           color:#fff;
+                           display: inline-block;
+                           float:right;
+                           width: 37%;
+                           text-align:center;}
+
+.sue_none{text-align: center;
+          color:#999;
+          line-height:30px;}
+
+/*投诉详情*/
+.sue_detail{box-shadow:0px 2px 2px #ccc;
+            margin-bottom:25px;
+            background:#fff;}
+
+.return_reason{padding:10px 0 10px 4%;
+               overflow:hidden;
+               border-bottom:solid #ddd 1px;
+               line-height:20px;}
+
+.return_reason p{float:left;}
+
+.return_reason p:first-child{color:#999;
+                             float:left;}
+
+.return_reason p:nth-child(2){width:75%;}
+
+.return_images{padding:15px 0 15px 4%;
+               overflow: hidden;
+               border-bottom:solid #ddd 1px;}
+
+.return_images p:first-child{color:#999;
+                             float:left;}
+
+.images dl{width:25%;
+           float:left;}
+           
+.images dl:first-child{margin-right:6%;}
+
+.images dd{color:#02aefe;
+           margin-top:10px;
+           text-align: center;}
+
+/*投诉拒绝*/
+.sue_refuse{height:265px;
+            background:#fff;
+            box-shadow: 0px 2px 2px #ccc;
+            margin-bottom:10px;}
+
+.sue_text{height:190px;
+          border-bottom:solid #ddd 1px;}
+
+.sue_text p{line-height:35px;
+            padding-left:4%;}
+
+.sue_text textarea{width:92%;
+                   padding:0 4%;
+                  font-size:12px;}
+
+.button{margin:15px 4%;}

@@ -1,0 +1,205 @@
+{{#extend "header"}}
+    <title>分享商品</title>
+    <link type="text/css" rel="stylesheet" href="/css/common_seller.css">
+    <link type="text/css" rel="stylesheet" href="/css/order.css">
+    <link type="text/css" rel="stylesheet" href="/css/buy/index.css">
+    <script data-main="/js/fxshangpin" src="/js/lib/require.js" defer async="true"></script>
+    <style>
+        .header{margin-bottom:0}
+        .goodslist dd li:nth-child(1) a,.goodslist dd li:nth-child(2) a{
+            width: auto;
+        }
+        .goodslist dt {
+            width: 22%;
+            height: auto;
+            min-height: 65px;
+        }
+        .goodslist dt:before{
+            top: 50%;
+            margin-top: -8.5px;
+            left: 10px;
+        }
+        .goodslist > div{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 59px;
+            right: 20px;
+            background: url(/images/op_icon.png) no-repeat;
+            background-size: 200px auto;
+            background-position: -174px 5px;
+            font-size:0;
+        }
+        .goodslist dd li:nth-child(3) {
+            position: absolute;
+            bottom: 10px;
+        }
+        .goodslist dd {
+            width: auto;
+            float: none;
+            overflow: hidden;
+        }
+        .ui-goods-p{
+            font-size: 16px !important;
+            color: #ff3c3c !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .ui-goods-p span{
+            font-size: 12px !important;
+            margin-left: 30px;
+        }
+        .goods_wrap{overflow:hidden;
+                    margin-bottom:50px;
+                    margin-top: 10px;}
+        .button_wrap{width: 100%;
+                     height: 40px;
+                     position: fixed;
+                     bottom:10px;
+                     left: 0px;}
+        /*二维码*/
+        .ui-seller_qr_code{z-index:99}
+        .back_benefit{margin-top:10px;display: none;}
+        .fixed{
+            width: 100%;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: none;
+            background-color: rgba(0,0,0,0.8);
+        }
+        /*添加搜索框*/
+        .search{background:url(/images/buy/cart_icon.png) no-repeat -94px -115px;
+            background-size:150px auto;
+            width:16px;
+            height:16px;
+            position:absolute;
+            top:12px;
+            right:20px}
+
+        .search_wrap{   background: rgba(0,0,0,0.5);
+            position: absolute;
+            width: 100%;
+            height: 900px;
+            z-index: 9999;
+            top: 0;
+            padding-top: 44px;
+            display:none}
+
+        .ind_search_left{opacity: 1}
+    </style>
+{{/extend}}
+<body>
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback" ></a>分享商品</nav>
+        <div class="search" id="search"></div>
+    </header>
+</div>
+<!--搜索框-->
+<div class="search_wrap" id="search_wrap">
+    <div class="ind_search_left">
+        <i class="ind_search_s"></i>
+        <a href="javascript:void(0);" class="ind_search_r">搜索</a>
+        <div class="ind_search_cen">
+            <form action="javascript:return true" method="get" id="searchForm">
+                <input type="search" class="txt" placeholder="请输入关键字" />
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="header" id="sort_box">
+        <div>全部商品：</div>
+        <span class="sort_span" id="sort_text">全部</span>
+         <!--分类的下拉1-->
+        <div class="triangle tri_sort" id="tri_sort">
+            <span class="triangle_s1"></span>
+            <span class="triangle_s2"></span>
+        </div>
+        <div class="trianglered tri_sorted" id="tri_sorted">
+            <span class="triangle_s1"></span>
+            <span class="triangle_s2"></span>
+        </div>
+    </div>
+    <div class="header" id="sort_box2" style="display:none">
+        <div>商品分类：</div>
+        <span class="sort_span" id="sort_text2">全部</span>
+        <!--分类的下拉2-->
+        <div class="triangle tri_sort" id="tri_sort2">
+            <span class="triangle_s1"></span>
+            <span class="triangle_s2"></span>
+        </div>
+        <div class="trianglered tri_sorted" id="tri_sorted2">
+            <span class="triangle_s1"></span>
+            <span class="triangle_s2"></span>
+        </div>
+    </div>
+    <div class="header" id="sort_box3" style="display:none">
+        <div>商品分类：</div>
+        <span class="sort_span" id="sort_text3">全部</span>
+        <!--分类的下拉3-->
+        <div class="triangle tri_sort" id="tri_sort3">
+            <span class="triangle_s1"></span>
+            <span class="triangle_s2"></span>
+        </div>
+        <div class="trianglered tri_sorted" id="tri_sorted3">
+            <span class="triangle_s1"></span>
+            <span class="triangle_s2"></span>
+        </div>
+    </div>
+    <div class="select_box" id="select_box">
+        <div class="itemcon" id="itemcon">
+            <ul>
+                <li class="cur">推荐商品<span class="radioimg"></span></li>
+                <li>已推商品</li>
+            </ul>
+        </div>
+    </div>
+    <!--分类-->
+    <div class="select_box" id="select_sort" style="top:76px">
+        <div class="itemcon" id="itemcon_sort">
+            <ul>
+                <li class="cur">酒水<span class="radioimg"></span></li>
+                <li>食品</li>
+            </ul>
+        </div>
+    </div>
+    <!--分类2-->
+    <div class="select_box" id="select_sort2" style="top:112px">
+        <div class="itemcon" id="itemcon_sort2">
+            <ul>
+                <li class="cur">酒水<span class="radioimg"></span></li>
+                <li>食品</li>
+            </ul>
+        </div>
+    </div>
+    <!--分类3-->
+    <div class="select_box" id="select_sort3" style="top:112px">
+        <div class="itemcon" id="itemcon_sort3">
+            <ul>
+                <li class="cur">酒水<span class="radioimg"></span></li>
+                <li>食品</li>
+            </ul>
+        </div>
+    </div>
+    <div class="back_benefit" id="back_benefit">
+        <span>返利由高到低</span>
+        <span>返利由低到高</span>
+    </div>
+    <div class="ui-nothing-find" id="noneList">
+        <div>
+            <dl>
+                <dd style=""></dd>
+                <dt style="">无此类商品</dt>
+            </dl>
+        </div>
+    </div>
+    <div class="goods_wrap" id="goods_wrap">
+</div>
+<div class="button_wrap"><div class="button" id="button">分享</div></div>
+<div class="fixed">
+    <img src="/images/fenxiang2.png" />
+</div>

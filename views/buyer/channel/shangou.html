@@ -1,0 +1,56 @@
+{{#extend "header"}}
+    <title id="title">大牌闪购</title>
+    <link rel="stylesheet" href="/css/swiper.min.css" />
+    <link rel="stylesheet" href="/css/buy/activity.css" />
+<link rel="stylesheet" href="/css/buy/shangounew.css">
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>大牌闪购</nav>
+</header>
+<div class="ind_search">
+    <div class="ind_search_1 clearfix">
+        <div class="ind_search_left">
+            <i class="ind_search_s"></i>
+            <a href="javascript:void(0);" class="ind_search_r">搜索</a>
+            <div class="ind_search_cen">
+                <form action="javascript:return true" method="get" id="searchForm">
+                    <input type="search" class="txt" placeholder="请输入关键字" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="ind_search_bg"></div>
+</div>
+<div class="slider" id="slider">
+    <div id="slider_Img">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide" ><a href="" target="_blank">
+            <img src="http://image.maimaicn.com/png/20160928/default/9991856760244254" />
+            </a></li>
+
+        </ul>
+    </div>
+    <div class="serial_number" id="serial_number">
+    </div>
+</div>
+<div class="flash-holder">
+    <div class="mall_tab clearfix">
+        <a href="javascript:;" data-sortname="collectNum" class="active up">人气</a>
+        <a href="javascript:;" data-sortname="price" class="">价格</a>
+        <a href="javascript:;" data-sortname="sellShowNumber" class="">销量</a>
+        <a href="javascript:;" data-sortname="endTime" class="">时间</a>
+    </div>
+    <div class="flash-goods-list">
+        <ul id="flash-goods-b">
+            <!--<li class="flash-goods">-->
+                <!--<div class="goods-time">-->
+                    <!--<div class="time"></div>-->
+                    <!--<p>距离结束</p>-->
+                    <!--<p>仅剩2天</p>-->
+                <!--</div>-->
+                <!--<div class="goods-img"><img src="" alt=""></div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>
+<script src="/js/lib/require.js" data-main="/js/buy/shangounew"></script>

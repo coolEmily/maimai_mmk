@@ -1,0 +1,297 @@
+{{#extend "header"}}
+<title>会员中心</title>
+<link rel="stylesheet" href="/css/buy/member_center.css"/>
+<style>
+    body {
+        visibility: hidden;
+    }
+
+    .ui-nothing-find > div > dl > dt {
+        margin-top: 5px;
+    }
+    .main .imgs{
+       float:left;
+        height:53px;
+        width:20.2%;
+        border:0.4rem solid #fff;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+    }
+    .main .title{
+        width:70.1%;
+        height:40px;
+        float: left;
+        font-size: 12px;
+        padding-top:13px;
+    }
+    .ui-my-order{
+        overflow: hidden;
+    }
+    .ui-my-order .ui{
+        width:100%;
+        border-top:1px solid #eee;
+
+    }
+    .main .ui-transt-999,.main .ui-transd-999{
+        float:left;
+        margin-top:6px;
+        width:15px;
+        height:15px;
+    }
+    .yui{
+        display: none;
+    }
+    .title{
+    padding-left:10px;
+    }
+
+    .modal{
+        background: rgba(0,0,0,0.26);
+        width: 100%;
+        height: 100%;
+        z-index: 99999999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .modal-box{
+        position: relative;
+        width: 5.89rem;
+        height: 4.75rem;
+        background: url(/images/buy/jindou_modalbox.png) no-repeat 0 0 /100% auto;
+        border-radius: 3px;
+        margin: 30% auto;
+        padding: 1.64rem 0.5rem 0;
+        box-sizing: border-box;
+    }
+    /*.modal-box > .modal-close{*/
+        /*position: absolute;*/
+        /*top: 11px;*/
+        /*right: 8px;*/
+        /*width: 20px;*/
+        /*height: 20px;*/
+        /*background: url(/images/addr_box.png) no-repeat 0 0 / 100% auto;*/
+        /*background-position: -15px 0;*/
+        /*background-size: 30px auto;*/
+    /*}*/
+    .modal-box > input{
+        display: block;
+        width: 100%;
+        height: 0.74rem;
+        padding-left: 4%;
+        margin-bottom: 0.14rem;
+        border: 1px solid #e5e5e5;
+        font-size: 12px;
+        color: #333;
+        box-sizing: border-box;
+    }
+    .modal-box > label{
+        display: block;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        padding-left: 4%;
+        color: #e12842;
+        font-size: 12px;
+    }
+    .modal-box > div{
+        float: left;
+        width: 50%;
+        height: 0.80rem;
+        /* line-height: 36px; */
+        /* border: 1px solid #e5e5e5; */
+        background-color: rgba(255,255,255,0);
+        text-align: center;
+    }
+    /*.modal-box > div.card-activate{*/
+        /*!*margin-top: 15px;*!*/
+        /*!*width: 100%;*!*/
+        /*color: #fff;*/
+        /*background-color: #e12842;*/
+    /*}*/
+    /*.modal-box > div.card-activate-disable{*/
+        /*background-color: #b3b3b3;*/
+    /*}*/
+
+    .ui-tool-list a:nth-child(6) dd {
+        background: url(/images/buy/member_icon_dou.png) no-repeat;
+        background-size: 18px 17px;
+    }
+    .ui-tool-list a:nth-child(7) dd {
+        background: url(/images/buy/card_icon.png) no-repeat;
+        background-size: 18px 17px;
+    }
+</style>
+{{/extend}}
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>会员中心</nav>
+    </header>
+</div>
+<div class="ui-body main" style="padding-bottom: 50px;">
+    <div class="ui-head clearfix" id="ui-head">
+        <div class="ui-imgbox"><a href="/buyer/home/zhanghugl.html"><img src="/images/buy/default_head.png"></a></div>
+        <span class="ui-account-m"><a href="/buyer/home/zhanghugl.html">账户管理</a></span>
+        <div class="ui-float-l">
+            <p class="ui-nickname"><a href="/buyer/home/zhanghugl.html"></a></p>
+            <img class="ui-vip" src="/images/buy/vip_mark.png">
+        </div>
+    </div>
+    <div class="ui-wallet" id="ui-wallet">
+        <p>我的钱包</p>
+        <div class="ui-wallet-list">
+            <a href="/buyer/home/zhanghuyue.html">
+                <dl>
+                    <dt id="balance"></dt>
+                    <dd>账户余额</dd>
+                </dl>
+            </a>
+            <a href="/buyer/home/hongbao.html">
+                <dl>
+                    <dt id="redBalance"></dt>
+                    <dd>红包余额</dd>
+                </dl>
+            </a>
+            <a href="/buyer/home/bean/jindoumxview.html">
+                <dl>
+                    <dt id="jindouBalance"></dt>
+                    <dd>金豆余额</dd>
+                </dl>
+            </a>
+        </div>
+    </div>
+    <div class="ui-my-order" id="show">
+    </div>
+    <div id="order-box">
+        <div class="ui-my-order">
+            <p><a href="../order/dingdan.html" class="ui-transr-999">全部订单</a></p>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="ui-my-order-type" id="ui-my-order-type">
+            <a href="../order/dingdan.html?type=2" class="ui_pending_payment ui-detail-icon-d ui-nothing-find">
+                <div>
+                    <dl>
+                        <dd style=""></dd>
+                        <dt>待付款</dt>
+                    </dl>
+                    <span class="ui-new-message" id="obligation">0</span>
+                </div>
+            </a>
+            <a href="../order/dingdan.html?type=4" class="ui_pending_payment ui-detail-icon-d ui-nothing-find">
+                <div>
+                    <dl>
+                        <dd style="background-position: -47px -84px;"></dd>
+                        <dt>待收货</dt>
+                    </dl>
+                    <span class="ui-new-message" id="receipt">0</span>
+                </div>
+            </a>
+            <a href="../order/dingdan.html?type=3" class="ui_pending_payment ui-detail-icon-d ui-nothing-find">
+                <div>
+                    <dl>
+                        <dd></dd>
+                        <dt>已完成</dt>
+                    </dl>
+                    <span class="ui-new-message" id="completed">0</span>
+                </div>
+            </a>
+            <a href="../order/dingdan.html?type=1" class="ui_pending_payment ui-detail-icon-d ui-nothing-find">
+                <div>
+                    <dl>
+                        <dd></dd>
+                        <dt>已取消</dt>
+                    </dl>
+                    <span class="ui-new-message" id="canc">0</span>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="ui-tool">
+        <p>必备工具</p>
+        <div class="ui-tool-list">
+            <a href="shoucang.html">
+                <dl>
+                    <dd></dd>
+                    <dt>我的收藏</dt>
+                </dl>
+            </a>
+            <a href="lishi.html">
+                <dl>
+                    <dd></dd>
+                    <dt>浏览历史</dt>
+                </dl>
+            </a>
+            <a href="/buyer/home/complaint/tousu.html">
+                <dl>
+                    <dd></dd>
+                    <dt>联系客服</dt>
+                </dl>
+            </a>
+            <a href="/buyer/help/shouye.html">
+                <dl>
+                    <dd></dd>
+                    <dt>帮助中心</dt>
+                </dl>
+            </a>
+            <a href="/buyer/home/tihuoka.html">
+                <dl>
+                    <dd></dd>
+                    <dt>提货卡</dt>
+                </dl>
+            </a>
+            <a href="javascript:;" class="activate">
+                <dl>
+                    <dd></dd>
+                    <dt>金豆激活</dt>
+                </dl>
+            </a>
+            <a href="#" id="cardsBox">
+                <dl>
+                    <dd></dd>
+                    <dt>我的卡包</dt>
+                </dl>
+            </a>
+            <a href="/mjzhongxin.html">
+                <dl>
+                    <dd></dd>
+                    <dt>卖家</dt>
+                </dl>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal-box">
+        <input type="text" class="card-no" placeholder="请输入金豆卡号">
+        <input type="password" class="card-pass" placeholder="请输入金豆卡密码">
+        <label class="card-pass-tip"></label>
+        <div class="card-cancel"></div>
+        <div class="card-activate "></div>
+    </div>
+</div>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    console.log(clientWidth);
+                    if(clientWidth>= 750){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script data-main="/js/buy/huiyuanzx" src="/js/lib/require.js"></script>

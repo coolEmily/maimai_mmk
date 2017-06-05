@@ -1,0 +1,42 @@
+{{#extend "header"}}
+    <title>收藏</title>
+    <link rel="stylesheet" href="/css/buy/collect.css" />
+    <script src="/js/lib/require.js" defer async="true" data-main="/js/buy/collect.js"></script>
+{{/extend}}
+<!--body-->
+	    <div class="main" id="collect">
+            <header class="main_head" style="position: relative;">
+                <nav class="nav"><a href="javascript:;" class="back _goback"></a>收藏</nav>
+                <div class="ui-collect-op" style="position: absolute;width: 30px;height: 100%;color: #333;font-size: 14px;top:0;right: 20px;">编辑</div>
+            </header>
+        </div>
+	    <div class="ui-body main">
+	        <div class="ui-collect-detail">
+                <div class="ui-show-diff off">
+                    <div>全部</div>
+                </div>
+                <div class="ui-show-diff off">
+                    <div>最近收藏</div>
+                </div>
+                
+                <!--显示收藏信息-->
+                <div id="collect_list">
+                    <!--<div class="ui-collect-show">-->
+                        <!--<div class="ui-img"><a href="#"><img src="images/index_l7.jpg"></a></div>-->
+                        <!--<div class="ui-desc">-->
+                            <!--<p><a href="#">宾利凤凰赤霞珠红葡萄酒</a></p>-->
+                            <!--<p><a href="#">Penley Estate Phoenix</a></p>-->
+                            <!--<p>￥306</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="ui-delandquit">
+                <div class="ui-del">删除</div>
+                <div class="ui-quit">取消</div>
+            </div>
+	    </div>
+	    
+
+	<!--body-->
+</html>

@@ -1,0 +1,42 @@
+{{#extend "header"}}
+    <title id="title">{{title}}</title>
+    <style>
+        .big-shop .shop-img{
+            display: block;
+            width:100%;
+            padding:0 4%;
+            box-sizing: border-box;
+        }
+        .big-shop,.brand-shop{
+            display:block;
+            background-color: #fff;
+            margin-bottom: 10px;
+        }
+        .brand-body{
+            padding:0 4% 20px;
+            box-sizing: border-box;
+        }
+        .brand-body .col{
+            width: 50%;
+            float:left;
+        }
+    </style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>{{title}}</nav>
+</header>
+{{>channel_top banner=topMap}}
+{{> channel_roll_item_list rollItemMap=rollItemMap.[0] id="roll_item_list_0"}}
+<div class="brand-shop">
+    {{#if adMap.[0].title}}
+        <div class="brand-title"><a href="{{adMap.[0].title.[0].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].title.[0].designImgUrl}}" alt=""></a></div>
+    {{/if}}
+    {{#if adMap.[0].list}}
+    <div class="brand-body clearfix">
+        {{#each adMap.[0].list}}
+        <div class="col"><a href="{{this.htmlUrl}}"><img src="http://image.maimaicn.com/{{this.designImgUrl}}" alt=""></a></div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}

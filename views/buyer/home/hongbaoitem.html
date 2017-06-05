@@ -1,0 +1,34 @@
+{{#extend "header"}}
+    <title>我的红包</title>
+    <link type="text/css" rel="stylesheet" href="/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="/css/hongbao.css" />
+{{/extend}}
+
+<div class="main">
+    <header class="main_head" headId="hongbaoitem">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>红包余额</nav>
+    </header>
+</div>
+
+<div class="tab_item tab_item1" id="tab_item">
+    <ul>
+        <li class="cur">收入明细</li>
+        <li>支出明细</li>
+    </ul>
+</div>
+
+<div class="item_list">
+    <ul id="item_list">
+        <!--<li>-->
+            <!--<p><span>红包收入</span><span>2016-01-31  11:21:12</span></p>-->
+            <!--<p>+ ￥1000</p>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<p><span>红包收入</span><span>2016-01-31  11:21:12</span></p>-->
+            <!--<p>+ ￥1000</p>-->
+        <!--</li>-->
+    </ul>
+</div>
+<div class="noMore" id="noMore" style="display:none">无更多明细……</div>
+
+<script src="/js/lib/require.js" data-main="/js/hongbao.js"></script>

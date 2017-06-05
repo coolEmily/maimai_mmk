@@ -1,0 +1,66 @@
+{{#if goodsList.itemsList}}
+    <div>
+        {{#if goodsList.itemTextList}}
+            <div class="sort_tab sort{{goodsList.itemTextList.length}} clearfix" style="overflow: hidden">
+                <div class="swiper-wrapper">
+                    {{#each goodsList.itemTextList}}
+                        {{#if @index}}
+                            <a href="javascript:;" data-classId="{{htmlUrl}}" class="swiper-slide">{{textMessage}}</a>
+                        {{else}}
+                            <a href="javascript:;" data-classId="{{htmlUrl}}" class="swiper-slide active">{{textMessage}}</a>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="mall_tab clearfix ui-bg-f1f1f1">
+        {{else}}
+            <div class="mall_tab clearfix">
+        {{/if}}
+                <a href="javascript:;" data-sortName="collectNum" class="active up">人气</a>
+                <a href="javascript:;" data-sortName="price" class="">价格</a>
+                <a href="javascript:;" data-sortName="sellShowNumber" class="">销量</a>
+                <a href="javascript:;" data-sortName="couponEsc" class="">红包</a>
+            </div>
+        {{#if_eq listType 1}}
+            <div id="ui-goods-list">
+            {{#each goodsList.itemsList}}
+                <div class="ind_sx_list clearfix" data-idType="{{idType}}">
+                    <a href="/g?gId={{goodsId}}">
+                        <div class="ind_sx_img"><img src="http://image.maimaicn.com/{{mainPictureJPG}}_C"></div>
+                        <div class="ind_sx_r">
+                            <h3>{{chName}}</h3>
+                            <p class="dred"><em>￥</em>{{sellingPrice}}{{#if limitcoupon}}<span>红包立减{{limitcoupon}}元</span>{{/if}}</p>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="ind_sx_cart"><i data-goodsId="{{goodsId}}"></i></a>
+                </div>
+            {{/each}}
+            </div>
+        {{/if_eq}}
+        {{#if_eq listType 2}}
+            <div class="ind_sx_h clearfix" id="ui-goods-list">
+                {{#each goodsList.itemsList}}
+                    <div class="ind_sx_h_l" data-idType="{{idType}}">
+                        <a href="/g?gId={{goodsId}}">
+                            <div class="ind_sx_lo"></div>
+                            <div class="ind_sx_l_img">
+                                <img src="http://image.maimaicn.com/{{mainPictureJPG}}_C">
+                            </div>
+                            <h3>{{chName}}</h3>
+                            <div>
+                                <p class="dred">
+                                    <em>￥</em>{{sellingPrice}}
+                                    {{#if limitcoupon}}<span>红包立减{{limitcoupon}}元</span>{{/if}}
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                {{/each}}
+            </div>
+        {{/if_eq}}
+    </div>
+<script>
+    var listType = {{{listType}}};
+    var modelActiveId = {{{id}}}
+</script>
+{{/if}}

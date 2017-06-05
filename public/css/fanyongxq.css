@@ -1,0 +1,99 @@
+.ui-order-info > div{
+    padding: 0 20px;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.ui-order-info .ui-order-status{
+    float: right;
+    color: #999;
+}
+.ui-order-info .ui-goods-list{
+    line-height: normal;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ui-goods-list > .ui-goods-info{
+    height: 80px;
+    padding: 10px 0;
+}
+.ui-goods-info .ui-img{
+    width: 80px;
+    height: 100%;
+    float: left;
+    padding-right: 20px;
+}
+.ui-goods-info .ui-img img{
+    width: 100%;
+    max-height: 100%;
+}
+.ui-goods-info .ui-desc{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.ui-goods-info .ui-desc p{
+    font-size: 13px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ui-goods-info .ui-desc p:nth-of-type(2){
+    font-size: 12px;
+    color: #999;
+}
+.ui-goods-info .ui-desc p:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #999;
+}
+.ui-zeng{
+    color: #ff3c3c;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+    padding: 10px 0;
+    clear: both;
+}
+.ui-order-subtotal div{
+    color: #333;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+}
+.ui-order-subtotal div > span{
+    color: #ff3c3c;
+}
+.ui-order-subtotal div:nth-of-type(1){
+    float: left;
+}
+.ui-order-subtotal div:nth-of-type(2){
+    float: right;
+}
+.ui-man{
+    padding: 0;
+}
+.ui-man > div{
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1; 
+}
+
+.ui-man > div > div:first-child{
+    float: left;
+    height: 100%;
+}
+.ui-man > div > div:last-child{
+    overflow: hidden;
+}
+.ui-err{
+    color: #ff3c3c !important;
+}
+.ui-ing{
+    color: #02aefe !important;
+}
+.ui-shou-info{
+    color: #999;
+}

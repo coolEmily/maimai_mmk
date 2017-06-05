@@ -1,0 +1,32 @@
+{{#extend "header"}}
+<title id="title">{{title}}</title>
+<style>
+    .adWrap{background:#fff;
+            padding:0 3%;
+            width:94%;
+            overflow:hidden;
+            padding-bottom:10px;}
+    
+    .adWrap img{width:50%;
+               float:left}
+    
+    .titP{background:#fff}
+</style>
+{{/extend}}
+
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback" ></a>{{title}}</nav>
+</header>
+{{>channel_top banner=topMap}}
+<p class="titP"><a href="{{adMap.[0].title.[0].htmlUrl}}"><img src="http://image.maimaicn.com/{{adMap.[0].title.[0].designImgUrl}}" alt=""></a></p>
+<div class="adWrap">
+    {{#each adMap.[0].list}}
+    <a href="{{htmlUrl}}"><img {{#if_eq @index 2}} style="margin-top:-30%"
+    {{/if_eq}}src="http://image.maimaicn.com/{{designImgUrl}}" /></a>
+    {{/each}}
+</div>
+{{>channel_item_list goodsList=itemListMap listType=2 id=modelActiveId}}
+
+
+
+

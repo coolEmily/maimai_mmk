@@ -1,0 +1,128 @@
+body{
+    background: #fff;
+}
+.cox{
+    padding:0 0.6rem;
+}
+.form{
+    position: relative;
+}
+input{
+    font-size:15px;
+}
+.login{
+    height:1.8rem;
+    width:1.8rem;
+    margin:1.4rem auto 1.26rem;
+    background:url("/images/buy/login/logo.png") no-repeat center center;
+    background-size:contain;
+}
+.cox section{
+    margin-top:0.29rem;
+    display: block;
+    height:0.88rem;
+    border-bottom:1px solid #999;
+}
+.cox section input{
+    float: left;
+    width: 3.6rem;
+    height:100%;
+    /*line-height: 0.88rem;*/
+   
+}
+.cox section .icon{
+    border:0.24rem solid #fff;
+    margin:0rem 0.06rem;
+    float:left;
+    height:0.4rem;
+    width:0.3rem;
+    background:url("/images/buy/login/phone.png") no-repeat center center;
+    background-size:contain;
+}
+.cox section:nth-of-type(2) .icon{
+    background:url("/images/buy/login/lock.png") no-repeat center center;
+    background-size:contain;
+}
+.cox section .icon1{
+    display: none;
+    margin:0.24rem 0.3rem 0.24rem 1.2rem;
+    float:left;
+    height:0.4rem;
+    width:0.3rem;
+    background:url("/images/buy/login/error.png") no-repeat center center;
+    background-size:contain;
+}
+.cox section:nth-of-type(2) .icon2{
+    opacity: 0;
+    background:url("/images/buy/login/del.png") no-repeat center center;
+    background-size:contain;
+}
+.cox section:nth-of-type(2) .icon3{
+    background:url("/images/buy/login/eye.png") no-repeat center center;
+    background-size:contain;
+}
+.cox section:nth-of-type(2) .icon4{
+    background:url("/images/buy/login/eyec.png") no-repeat center center;
+    background-size:contain;
+}
+.btn{
+    -moz-border-radius: 6px;/* 圆的半径为边长的一半，即6px */
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: block;
+    width:6.3rem;
+    margin:0.5rem auto 0.3rem;
+    height:0.88rem;
+    line-height: 0.88rem;
+    text-align: center;
+    color:#fff;
+    background:#999;
+    font-size: 17px;
+}
+.link span{
+    float: left;
+    color:#666;
+}
+.link span:nth-of-type(2){
+    float: right;
+}
+.thrid{
+    position:absolute;
+    bottom:0;
+    width:6.3rem;
+    height:2.32rem;
+}
+.thrid div{
+    float:left;
+    width:2rem;
+    border-top:1px solid #ebebeb;
+    height:2.32rem;
+}
+.thrid div:nth-of-type(2){
+    font-size:13px;
+    color:#666; 
+    text-align: center;
+    margin-top:-0.2rem;
+    border:none;
+    width:2.3rem;
+    height:2.32rem;
+}
+.thrid div:nth-of-type(2) a{
+    display: block;
+    width:1rem;
+    height:1rem;
+    margin:0.52rem auto 0;
+    background:url("/images/buy/login/weixin.png") no-repeat center center;
+    background-size:contain; 
+}
+.mes{
+    display: block;
+    width: 6.3rem;
+    color:#cc3333;
+    position: absolute;
+    padding-left:0.9rem;
+     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    bottom:0.96rem;
+}

@@ -1,0 +1,62 @@
+{{#extend "header"}}
+<title>账户管理</title>
+<link rel="stylesheet" href="/css/buy/zhanghugl.css" />
+{{/extend}}
+<div class="main" id="acc-page">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>账户管理</nav>
+    </header>
+    <div class="account-row h119">
+        <a href="javascript:void(0);" class="ui-transr-999" id="img-sel-box">
+            <div class="field">头像</div>
+            <div class="field-img"><img src="" alt=""></div>
+        </a>
+    </div>
+    <div class="account-row">
+        <a href="javascript:void(0);" class="ui-transr-999" id="nick">
+            <div class="field">昵称</div>
+            <div class="field-name"></div>
+        </a>
+    </div>
+    <div class="account-row">
+        <a href="/buyer/home/dizhi.html" class="ui-transr-999">
+            <div class="field">地址管理</div>
+        </a>
+
+    </div>
+    <div class="account-row">
+        <a href="/buyer/home/safetyCenter.html" class="ui-transr-999">
+            <div class="field">账户安全</div>
+        </a>
+    </div>
+</div>
+<!--图片剪裁-->
+<div class="image-cropper-bg" id="image-cropper-bg">
+    <div class="image-cropper-wrap">
+        <span class="remodal-close" id="remodal-close"></span><!-- 关闭弹窗按钮 -->
+        <div id="image-cropper">
+            <input type="file" class="cropit-image-input" />
+            <div class="cropit-preview"></div>
+
+            <div class="cropit-image-zoom-input-wrap"><span>缩放</span><input type="range" class="cropit-image-zoom-input" /></div>
+
+            <div style="padding-bottom: 16px">
+                <button class="rotate-ccw btn">逆时针旋转</button>&nbsp;
+                <button class="rotate-cw btn">顺时针旋转</button>
+            </div>
+            <button class="export btn" id="exportClick">上传图片</button>
+        </div>
+    </div>
+</div>
+<div class="main" id="nick-page" style="display: none">
+    <header class="main_head" id="nick-head">
+        <nav class="nav"><a href="javascript:;" class="back" id="nick-go"></a>修改昵称</nav>
+        <div id="nick-save">保存</div>
+    </header>
+    <div class="account-row">
+        <input type="text" id="nick-name" maxlength="15">
+        <span id="nick-clear"></span>
+    </div>
+</div>
+
+<script src="/js/lib/require.js" data-main="/js/buy/zhanghugl"></script>

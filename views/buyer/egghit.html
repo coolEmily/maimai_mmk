@@ -1,0 +1,231 @@
+{{#extend "header"}}
+<title id="title">{{result.activeDrawName}}</title>
+<style type="text/css">
+    body{overflow: hidden;}
+    .container{ width:100%;
+                height:100%;
+                margin:0 auto;
+                overflow-x: hidden;
+                background:url(../images/eggImg/n_egg.gif) no-repeat;
+                background-size:100% 100%}
+
+    .egg{width:100%;
+        position:absolute;
+        top:50%;
+        margin-top:-105px;}
+
+    .egg ul li{z-index:999;}
+    .egg_list{position:relative;}
+
+    .egg_list li{float:left;
+        background:url(../images/eggImg/n_egg_1.gif) no-repeat bottom;
+        background-size: contain;
+        width:30%;
+        height:130px;
+        cursor:pointer;
+        position:relative;
+        margin-left:3%;}
+
+    .egg_list li span{position:absolute;
+        width:30px;
+        height:60px;
+        left:53%;
+        top:50%;
+        margin-left:-17px;
+        margin-top:-25px;
+        color:#ff0;
+        text-align: center;
+        font-size:30px;
+        font-weight:bold}
+
+    .egg_list li.current{background:url(../images/eggImg/n_egg_2.png) no-repeat bottom;
+        background-size:100% 100%;
+        cursor:default;
+        z-index:300;}
+
+    .egg_list li.current sup{position:absolute;
+        background:url(../images/eggImg/img-4.png) no-repeat;
+        background-size:100% 100%;
+        width:98px;
+        height:90px;
+        top:-10px;
+        left:5px;
+        z-index:800;}
+
+    .hammer{background:url(../images/eggImg/img-6.png) no-repeat;
+        background-size:100% 100%;
+        width:39px;
+        height:44px;
+        position:absolute;
+        text-indent:-9999px;
+        z-index:150;
+        left:168px;
+        top:100px;
+        display:none}
+
+    .result_tip{position:absolute;
+        background:#ffc;
+        width:148px;
+        padding:6px;
+        z-index:500;
+        top:200px;
+        left:10px;
+        color:#f60;
+        text-align:center;
+        overflow:hidden;
+        display:none;
+        z-index:500;}
+
+    .result_tip b{font-size:14px;line-height:24px;}
+
+    .activity_rules{height:175px;
+                    color:#fff;
+                    position:absolute;
+                    bottom:30px;
+                    left:10%;
+                    line-height:25px;}
+
+    .marqueeDiv{background:rgba(0,0,0,0.5);
+                height:40px;
+                line-height:40px;
+                position:absolute;
+                bottom:0;
+                overflow:hidden;
+                width:100%;}
+
+    .marqueeDiv marquee{overflow:hidden;display:block;}
+
+    .marqueeUl{color:#fff;
+               overflow:hidden;}
+
+    .marqueeUl li{float:left}
+
+    .marqueeUl img{width:25px;
+                   height:25px;
+                   border-radius:25px;
+                   float:left;
+                   margin-left:40px;
+                   margin-right:5px;
+                   margin-top:5px;}
+
+    .dialogWrap{background:rgba(0,0,0,0.7);
+                width:100%;
+                height:110%;
+                z-index:9999;
+                position:absolute;
+               margin-top:-3px;
+               display:none}
+
+    .dialogWrap div{width:80%;
+                     margin-top:25%;
+                     margin-left:11%;
+                     display:block;
+                     color:#ffd862;
+                     font-size:14px;
+                     position:relative;}
+
+    .dialogWrap span{position:absolute;
+                     top:62%;
+                     color: #ff3c3c;
+                     width:100%;
+                     text-align:center;}
+
+    .dialogWrap a{  display: block;
+                    width: 70%;
+                    height: 12%;
+                    position: absolute;
+                    font-size: 0;
+                    left:15%}
+
+    .dialogWrap a.atOnce{top: 52%;}
+    .dialogWrap a.checkWallet{top:67%}
+
+    @media screen and (min-width:414px){
+        .egg_list li{height:142px}
+        .egg_list li.current sup{left:14px;top: -5px;}
+        .egg{margin-top:-120px;}
+    }
+    @media screen and (max-width:320px){
+        .egg_list li{height:112px}
+        .activity_rules{bottom:15px;line-height:20px;}
+        .egg_list li.current sup{left:0;top: -18px;}
+        .egg{margin-top:-85px;}
+    }
+
+    .rules{width: 80px;
+        height: 30px;
+        position: absolute;
+        right: 8%;
+        top: 59%;
+        color: #fff;}
+            
+    @media screen and (orientation: landscape) {
+       /*横屏 css*/
+        body{
+            height: 700px;
+            overflow: auto;
+        }
+    }
+    #go-login{display:none;top:79%;}
+
+    .back{width: 100px;
+        height: 40px;
+        position: absolute;
+        top:10px;
+        left:10px;}
+</style>
+{{/extend}}
+<a href="/buyer/egghit_rule.html" class="rules"></a><!--活动规则-->
+<a href="javascript:;" class="back" id="back"></a><!--返回按钮-->
+<div class="container" id="container" htmlT="0" bg-img="{{result.designImgUrl}}" rule-img="{{result.activeRuleImgUrl}}">
+    <div class="demo">
+        <div class="egg">
+            <ul class="egg_list">
+                <p class="hammer" id="hammer">锤子</p>
+                <p class="result_tip" id="result_tip"><b id="result"></b></p>
+                <li><span></span><sup></sup></li>
+                <li><span></span><sup></sup></li>
+                <li><span></span><sup></sup></li>
+            </ul>
+        </div>
+    </div>
+    <!--<div class="activity_rules">-->
+        <!--<ul id="activityRules">-->
+            <!--{{#each result.list_Enty}}-->
+              <!--<li>{{this}}</li>-->
+            <!--{{/each}}-->
+        <!--</ul>-->
+    <!--</div>-->
+
+    <div class="marqueeDiv">
+        <ul  class="marqueeUl" id="marquee">
+            <!--<li>-->
+                <!--<img src="/images/default.png" alt=""/>-->
+                <!--<span>恭喜133***抽中200元现金</span>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<img src="/images/default.png" alt=""/>-->
+                <!--<span>恭喜133***抽中200元现金</span>-->
+            <!--</li>-->
+        </ul>
+    </div>
+
+    <div class="dialogWrap" id="dialogWrap">
+        <div>
+            <span></span>
+            <a class="atOnce" href="/buyer/hongbaoshangpin.html?imgUrl={{result.signImgUrl}}&title={{result.activeDrawName}}">立即使用</a>
+            <a href="/buyer/home/hongbao.html" class="checkWallet">查看红包</a>
+            <a href="javascript:void(0)" id="go-login">去登录</a>
+            <img src="/images/eggImg/dialog.png" alt=""/>
+        </div>
+    </div>
+
+    <!--<div class="ui-login-ts">-->
+        <!--<div>-->
+            <!--<img src="/images/eggImg/login_ts.png" style="width: 100%;">-->
+            <!--<i class="ui-x"></i>-->
+            <!--<i class="ui-queding"></i>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<script src="/js/lib/require.js" data-main="/js/buy/egghit.js"></script>

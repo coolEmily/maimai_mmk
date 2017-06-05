@@ -1,0 +1,395 @@
+body {
+    background-color: #FFFFFF;
+    font-family: PingFang-SC-Medium;
+}
+.main_head {
+    margin-bottom: 0;
+}
+.main {
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+.main > .head_box {
+    width: 100%;
+    height: 2.84rem;
+    position: relative;
+}
+.player_photo {
+    position: absolute;
+    left: .15rem;
+    right: .15rem;
+    top: .1rem;
+    height: 2rem;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px #bbb;
+}
+.player_photo > span {
+    display: block;
+    height: 0.18rem;
+    color: white;
+}
+.player_photo > span#flower_number {
+    background: url('/images/tv/miss_world/_fresh-flower.png') no-repeat left / contain;
+    position: relative;
+    top: 0.15rem;
+    padding-left: 0.22rem;
+}
+.player_photo > span#vote_number {
+    background: url('/images/tv/miss_world/writ.png') no-repeat left / contain;
+    position: relative;
+    top: 0.25rem;
+    padding-left: 0.22rem;
+}
+.head_box > .player_btn {
+    position: absolute;
+    left: 13.33%;
+    right: 13.33%;
+    bottom: 5.28%;
+}
+.head_box > .player_btn > a {
+    float: left;
+    width: 1.2rem;
+    height: 0.44rem;
+    display: block;
+}
+.head_box > .player_btn > a#flower_btn {
+    background: url(/images/tv/miss_world/flower@2x.png) no-repeat center / contain;
+}
+.head_box > .player_btn > a#vote_btn {
+    background: url(/images/tv/miss_world/vote@2x.png) no-repeat center / contain;
+    position: absolute;
+    right: 0;
+}
+/* 档案详情部分 */
+.player_info_box {
+    background-color: #ffffff;
+    color: #3a3a3a;
+    font-size: .14rem;
+    padding-top: .15rem;
+}
+.player_info_box > div {
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+    position: relative;
+}
+.player_info_box span.title {
+    font-size: 0.15rem;
+    padding-left: 0.05rem;
+    border-left: 0.02rem solid #C60716  ;
+}
+.player_info_box .info {
+    margin-left: 0.15rem;
+    margin-top: 0.12rem;
+    margin-bottom: 0.12rem;
+}
+.basic .info > div {
+    width: 50%;
+    float: left;
+}
+.basic .info > div:first-child {
+    width: 45%;
+}
+.basic .info span {
+    display: block;
+    margin-bottom: 0.12rem;
+}
+#introduce > div.info {
+    /*display: -webkit-box;*/
+    /*-webkit-box-orient: vertical;*/
+    /*-webkit-line-clamp: 3;*/
+    /*overflow: hidden;*/
+    line-height: 20px;
+    overflow: hidden;
+}
+#introduce span#show_more {
+    font-size: .12rem;
+    color: #cc3333;
+    position: absolute;
+    bottom: .14rem;
+    right: .06rem;
+    background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);
+    padding-left: 40px;
+    display: none;
+}
+.photo > div.info {
+    height: 0.64rem;
+    position: relative;
+    margin-left: 0;
+    margin-top: 0.12rem;
+    margin-bottom: 0.12rem;
+}
+.player_info_box a.more_q {
+    display: none;
+}
+.player_info_box a.more_q:before {
+    content: "";
+    border-width: .1rem;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+    position: absolute;
+    top: .2rem;
+    left: -.1rem;
+}
+.player_info_box a.more_q:after {
+    content: "";
+    border-width: .1rem;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    top: .2rem;
+    left: -.08rem;
+}
+.player_info_box a.more_h {
+    display: none;
+}
+.player_info_box a.more_h:before {
+    content: "";
+    border-width: .1rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+    position: absolute;
+    top: .2rem;
+    right: -.1rem;
+}
+.player_info_box a.more_h:after {
+    content: "";
+    border-width: .1rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: .2rem;
+    right: -.08rem;
+}
+.photo > .info > .smalpic {
+    width: 3.2rem;
+    height: .64rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+.photo > .info > .smalpic > .smallbox {
+    width: 10000px;
+    position: absolute;
+    left: 0rem;
+}
+.photo > .info > .smalpic > .smallbox img {
+    float: left;
+    width: .6rem;
+    height: .6rem;
+    margin: .02rem;
+    border-radius: 3px;
+}
+.player_info_box .video {
+    display: none;
+}
+.player_info_box .video > div.info {
+    height: 1.05rem;
+    position: relative;
+    margin-left: 0;
+    margin-top: 0.12rem;
+    margin-bottom: 0.12rem;
+}
+.player_info_box .video div.info .smalpic {
+    width: 3.2rem;
+    height: 1.05rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+.player_info_box .video div.info {
+    margin-left: .05rem;
+}
+.player_info_box .video a.video_q:before {
+    top: .45rem;
+    left: -.1rem;
+}
+.player_info_box .video a.video_q:after {
+    top: .45rem;
+    left: -.08rem;
+}
+.player_info_box .video a.video_h:before {
+    top: .45rem;
+    right: -.1rem;
+}
+.player_info_box .video a.video_h:after {
+    top: .45rem;
+    right: -.08rem;
+}
+.player_info_box .video div.info > .smalpic > .smallbox {
+    width: 10000px;
+    position: absolute;
+    left: 0;
+}
+.player_info_box .video div.info .video_box {
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin: .03rem;
+    border-radius: 3px;
+}
+.player_info_box .video div.info .video_box div{
+    background: rgba(58, 58, 58, .3);
+    display: block;
+    width: 1rem;
+    height: 1rem;
+}
+.player_info_box .video div.info .video_box span{
+    background: url("/images/tv/miss_world/play@2x.png") no-repeat center / contain;
+    display: block;
+    width: .25rem;
+    height: .25rem;
+    margin: auto;
+    padding-top: .7rem;
+    z-index: 10;
+}
+.partners {
+    margin-bottom: .15rem;
+    display: inline-block;
+}
+.partners ul li {
+    float: left;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.05rem;
+    border-radius: 0.06rem;
+}
+.partners ul li > img {
+    height: 100%;
+}
+/* 弹出层 */
+.dialog_box {
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 100;
+   background: rgba(0, 0, 0, .2);
+   display: none;
+}
+.dialog_box .b1{
+    position: absolute;
+    left: 13.92%;
+    right: 13.92%;
+    top: 32.75%;
+    width: 2.7rem;
+    height: 2.3rem;
+    background: url("/images/tv/miss_world/register.png") no-repeat center center;
+    background-size: 100%;
+    text-align: center;
+    font-size: 0.17rem;
+    display: none;
+}
+.dialog_box .b1 span {
+    display: block;
+    margin-top: .25rem;
+}
+.dialog_box .b1 .login {
+    position: absolute;
+    left: 7.4%;
+    right: 7.4%;
+    height: .44rem;
+    bottom: 0.15rem;
+}
+.dialog_box .b1 .login a{
+    height: .44rem;
+    width: 1.02rem;
+    display: block;
+    float: left;
+}
+.dialog_box .b1 .login #close_btn {
+    background: url("/images/tv/miss_world/cancel@2x.png") no-repeat center / contain;
+}
+.dialog_box .b1 .login #go_login {
+    background: url("/images/tv/miss_world/register@2x.png") no-repeat center / contain;
+    position: absolute;
+    right: 0;
+}
+.dialog_box .b2{
+    position: absolute;
+    left: 13.92%;
+    right: 13.92%;
+    top: 32.75%;
+    width: 2.7rem;
+    height: 2.3rem;
+    background: url("/images/tv/miss_world/vote_bg.png") no-repeat center center;
+    background-size: 100%;
+    text-align: center;
+    font-size: 0.17rem;
+    display: none;
+}
+.dialog_box .b2 span {
+    display: block;
+    margin-top: .25rem;
+}
+.dialog_box .b2 .v_confirm {
+    position: absolute;
+    left: 7.4%;
+    right: 7.4%;
+    height: .44rem;
+    bottom: 0.15rem;
+}
+.dialog_box .b2 .v_confirm a{
+    height: .44rem;
+    width: 1.02rem;
+    display: block;
+    float: left;
+}
+.dialog_box .b2 .v_confirm #cancel {
+    background: url("/images/tv/miss_world/cancel@2x.png") no-repeat center / contain;
+}
+.dialog_box .b2 .v_confirm #confirm {
+    background: url("/images/tv/miss_world/confirm@2x.png") no-repeat center / contain;
+    position: absolute;
+    right: 0;
+}
+.dialog_box .b3{
+    position: absolute;
+    left: 13.92%;
+    right: 13.92%;
+    top: 32.75%;
+    width: 2.7rem;
+    height: 2.3rem;
+    background: url("/images/tv/miss_world/vote_bg.png") no-repeat center / contain;
+    background-size: 100%;
+    text-align: center;
+    font-size: 0.17rem;
+    display: none;
+}
+.dialog_box .b3 span {
+    display: block;
+    margin-top: .25rem;
+}
+.dialog_box .b3 .v_determine #determine {
+    background: url("/images/tv/miss_world/sure@2x.png") no-repeat center / contain;
+    width: 2rem;
+    height: .44rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .2rem;
+    margin: auto;
+}
+.b4 {
+    position: absolute;
+    left: 23.33%;
+    right: 23.33%;
+    top: 44.75%;
+    width: 2rem;
+    height: .7rem;
+    background: url("/images/tv/miss_world/vote_success.png") no-repeat center center;
+    background-size: 100%;
+    text-align: center;
+    font-size: 0.17rem;
+    display: none;
+}

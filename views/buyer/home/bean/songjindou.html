@@ -1,0 +1,138 @@
+{{#extend "header"}}
+<title id="title">赠送金豆</title>
+<style>
+    body{
+        background-color: #fff;
+    }
+    .nav{
+        position: relative;
+    }
+    .nav:nth-child(1) a{
+        display:block;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        text-decoration:none;
+    }
+    .content{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+   .content input{
+       display:block;
+       width: 57%;
+       margin: 35px auto;
+       height: 40px;
+       padding-left:15px;
+       padding-right: 25%;
+       font-size: 14px;
+       font-family: "Microsoft YaHei";
+       border: 1px solid #cecece;
+       border-radius: 5px;
+       background-color: #eeeeee;
+   }
+
+    .psd_setting{
+        font-size: 14px;
+        font-family:"Microsoft YaHei";
+        text-decoration: none;
+        top: 202px;
+        right: 7%;
+    }
+    .psd_setting>a{color: #2B5CB5}
+    .button_give{
+        width: 86%;
+        height: 40px;
+        line-height: 40px;
+        margin:55px auto 0px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #DDDDDD;
+
+    }
+    .button_give>a{
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Microsoft YaHei";
+        color: #ffffff;
+    }
+    .alert1,.alert2,.alert3{
+        position: absolute;
+    }
+    .alert1{
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: #e61e1e;
+        top: -19px;
+        left: 10%;
+    }
+    .alert2{
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: #e61e1e;
+        top: 55px;
+        left: 10%;
+    }
+    .alert3{
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: #e61e1e;
+        top: 133px;
+        left: 10%;
+    }
+    .alert4>p{
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        color: #999999;
+        top: 13px;
+        right: 10%;
+    }
+</style>
+{{/extend}}
+<header class="main_head" id="container">
+    <nav class="nav">
+        <a href="javascript:;" class="back _goback"></a>赠送金豆
+        <a href="javascript:;" class="givlog">赠送记录</a>
+    </nav>
+</header>
+<div class="content">
+    <form action="" style="position: relative">
+        <div class="inp">
+            <input type="text" maxlength="11" value="" name="userName" class="login_tel" placeholder="请输入手机号" onkeyup="this.value=this.value.replace(/\D/gi,'')" placeholder="请输入赠会员手机号"/>
+            <div class="alert1"></div>
+        </div>
+
+        <div class="alert4" style="position: relative">
+            <p style="position: absolute;">可用金豆<span id="num"></span>个</p>
+        </div>
+
+        <div class="inp">
+            <input type="text"  placeholder="赠送金豆数量" class="jindou_num"/>
+            <div class="alert2"></div>
+        </div>
+
+        <div class="inp">
+            <input type="password" placeholder="请输入支付密码" class="password"/>
+            <div class="alert3"></div>
+        </div>
+
+        <div class="psd_setting" style="position: absolute;">
+            <a href="/buyer/home/payPass.html?backurl=/buyer/bank/songjindou.html">设置支付密码</a>
+        </div>
+
+        <div class="button_give">
+            <a href="javascript:;">确定赠送</a>
+        </div>
+        <!--<div class="alert1" style="display: none" >该用户还没有注册哦</div>-->
+        <!--<div class="alert3" style="display: none" >请正确输入手机号码</div>-->
+        <!--<div class="alert2" style="display: none" >您输入的金豆数量已超限</div>-->
+    </form>
+</div>
+<script src="/js/lib/require.js" data-main="/js/buy/songjindou"></script>
+
+
+

@@ -1,0 +1,57 @@
+/*客户总数*/
+
+/*总人数*/
+.ui-visitor-info{
+    background-color: white;
+    margin-bottom: 15px;
+    position: relative;
+    box-shadow: 0 0 6px #ddd;  
+}
+.ui-num-cycle{
+    width: 33%;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+}
+.ui-this-today, .ui-this-week{
+    float: left;
+}
+
+.ui-this-month{
+    width: auto;
+    overflow: hidden;
+}
+
+.active{
+    color: #ff3c3c;
+}
+.ui-visitor-num{
+    width: 50%;
+    float: left;
+    height: 56px;
+}
+.ui-visitor-num:nth-of-type(2){
+    overflow: hidden;
+    float: none;
+}
+.ui-visitor-num > div:nth-of-type(2){
+    color: #02aefe;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bolder;
+}
+.ui-visitor-history{
+    height: auto;
+    padding-bottom: 15px;
+}
+.ui-visitor-detail{
+    line-height: 30px;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+.ui-visitor-detail:nth-of-type(1){
+    padding-right: 20px;
+}

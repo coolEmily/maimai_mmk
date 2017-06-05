@@ -1,0 +1,60 @@
+{{#extend "header"}}
+    <title>创建活动</title>    
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap-datetimepicker.css">
+    <link type="text/css" rel="stylesheet" href="/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="/css/shangou.css">
+    <link rel="stylesheet" href="/css/apply.css" />
+{{/extend}}
+    <div class="main" style="padding-bottom: 30px;">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>创建活动</nav>
+        </header>
+        <div class="not_pass1" style="margin: 0;">
+            <div class="add_deil">
+                <span>上传活动图片</span>
+                <p>活动图片600×300(支持jpg.jpeg格 式图片,大小不超过5M)</p>
+            </div>
+        </div>
+        <div class="add_activity-img">
+            <div class="add_goods_img">
+                <span>上传活动图片</span>
+            </div>
+            <input type="file" name="activePicture_input" data-width="6400" data-target=".activePicture" type="file" accept="image/*"/>
+        </div>
+        <div class="not_pass1">
+            <ul style="margin: 0;">
+                <li><span>活动名称：</span><input type="text" name="ui-activity-name"></li>
+                <li class="rg lg"><span>开始时间：</span><input name="startTime" class="ui-date"></li>
+                <li class="rg lg"><span>截止时间：</span><input name="endTime" class="ui-date"></li>
+            </ul>
+        </div>
+        <div class="not_pass1 ui-activity-rule">
+            <div class="add_deil">
+                <span>促销规则</span>
+                <p>*达到商品总金额够满减条件后输入满减金额</p>
+            </div>
+            <div class="add_kunb">
+                <span>购买总额：</span>
+                <input type="text" value="" class="txt" placeholder="请输入所购商品总金额数目" /> 
+            </div>
+            <div class="add_kunb">
+                <span>减免金额：</span>
+                <input type="text" value="" class="txt" placeholder="请输入减免金额" /> 
+            </div>
+        </div>
+        <div class="add_goods">
+            <div class="add_goods_img">
+                <span>继续添加</span>
+            </div>
+        </div>
+        <div class="orderunit">
+            
+        </div>
+        <div class="wd_btn" style="position: fixed;bottom: 0;width: 100%;">添加商品</div>
+        <div class="hd_btn" style="position: fixed;bottom: 0;width: 100%;display: none;z-index: 999;">
+            <a href="javascript:;" class="hd_btn_add">继续添加商品</a>
+            <a href="javascript:;" class="saveInfo">保存活动</a>
+        </div>
+    </div>
+    <script data-main="/js/manjiantj" src="/js/lib/require.js"></script>

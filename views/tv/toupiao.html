@@ -1,0 +1,55 @@
+{{#extend "header"}}
+    <title id="title">投票</title>
+    <script src="/js/lib/rem.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/toupiao.css" />
+{{/extend}}
+<!--<header class="main_head">-->
+    <!--<nav class="nav"><a href="javascript:;" class="back _goback"></a>投票</nav>-->
+<!--</header>-->
+
+<div class="vote">
+    <p class="v_title">请选择A队或B队进行投票</p>
+    <div class="v_select">
+      <div class="v_button v_b1">
+          <div class="circle_a">
+              <div class="head_a"></div>
+          </div>
+          <div class="v_a">
+              <span>A</span>
+          </div>
+      </div>
+      <div class="v_button v_b2">
+          <div class="circle_b">
+              <div class="head_b"></div>
+          </div>
+          <div class="v_b">
+              <span>B</span>
+          </div>
+      </div>
+
+   </div>
+    <!--未登录-->
+    <div class="b1">
+           <span>你还没有登录哦！</span>
+           <div class="go-denglu"></div>
+    </div>
+    <!--确定投票-->
+    <div class="b2">
+        <span></span>
+        <div class="v_confirm">
+            <span class="cancel"></span>
+            <span class="confirm"></span>
+        </div>
+    </div>
+    <!--投票成功-->
+    <div class="b3">
+
+    </div>
+    <!--每人只有一次投票-->
+    <div class="b4">
+
+    </div>
+    <div class="shade"></div>
+</div>
+
+<script src="/js/lib/require.js" data-main="/js/toupiao.js"></script>

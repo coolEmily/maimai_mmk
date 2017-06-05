@@ -1,0 +1,85 @@
+{{#extend "header"}}
+    <title>实体店认证</title>
+    <link rel="stylesheet" href="/css/apply.css" />
+{{/extend}}
+{{> loading}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>实体店认证</nav>
+        </header>
+    </div>
+    <div class="ui-body main">
+        <div class="ui-title-input">
+            <div>
+                <div class="ui-t">门店名称：</div>
+                <div class="ui-input"><input type="text" placeholder="请填写真实门店名称" name="name"></div>
+            </div>
+            <div>
+                <div class="ui-t">营业执照号：</div>
+                <div class="ui-input"><input type="text" placeholder="请填写真实营业执照号码" name="yyzz"></div>
+            </div>
+        </div>
+        
+        <div class="ui-shop-img ui-title-input">
+            <div class="ui-img-type-tishi">
+                <div class="ui-t" style="color: #333;">提交资料：</div>
+                <div class="ui-input" style="color: #ff3c3c;">支持jpg、jpeg、bmp、gif格式图片，大小不超过2M</div>
+            </div>
+            <div class="ui-img-type-tishi">
+                1、门店外面照片 (照片请包含完整店铺招牌、及店铺周边场景，内容需为实体零售店，企业厂房等无法 通过审核)
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="titlePicture_input" id="" data-width="640" data-target=".titlePicture" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ui-img-type-tishi">
+                2、门店内营业现场照片 (请保持门店内售卖商品与营业执照的经营范围、买买经营范围一致。可上传1-4张)
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="livePictureA_input" id="" data-width="640" data-target=".livePictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <div class="ui-add-button">
+                         <input name="livePictureB_input" id="" data-width="640" data-target=".livePictureB" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <div class="ui-add-button">
+                         <input name="livePictureC_input" id="" data-width="640" data-target=".livePictureC" type="file" accept="image/*" name="file1"/>
+                    </div>
+                    <div class="ui-add-button">
+                         <input name="livePictureD_input" id="" data-width="640" data-target=".livePictureD" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ui-img-type-tishi">
+                3、门店内悬挂营业执照照片 (请取景时包含店内营业场景,并可清晰辨认营业执照摆放或悬挂位置) 
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="licensePicture_input" id="" data-width="640" data-target=".licensePicture" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ui-submit button" style="margin:30px 20px;">提交审核</div>
+    
+    <div class="ui-nothing-find">
+        <div>
+            <dl>
+                <dd style=" width: 85px;background-position: -83px -77px;"></dd>
+                <dt>资料审核中请耐心等待3-5个工作日</dt>
+            </dl>
+        </div>
+    </div>
+    <script data-main="/js/stdrenzheng.js" src="/js/lib/require.js" ></script>

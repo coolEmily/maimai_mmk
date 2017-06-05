@@ -1,0 +1,71 @@
+.ui-transr-999:before,.ui-transr-999:after{
+    top: 14px;
+}
+.account-row{
+    position: relative;
+    height:39px;
+    padding: 0 5%;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 13px;
+}
+.account-row a{
+    display: block;
+    padding-right: 6%;
+    overflow: hidden;
+}
+.field{
+    float:left;
+    line-height: 40px;
+    color: #333;
+}
+.field-name{
+    float:right;
+    line-height: 39px;
+    color: #666;
+}
+.field-img{
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    overflow: hidden;
+}
+.field img{
+    width:100%;
+}
+.h119{
+    height:59px;
+}
+.h119 div{
+    line-height: 59px;
+}
+.h119 .ui-transr-999:before,.h119 .ui-transr-999:after{
+    top: 24px;
+}
+#nick-clear{
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(/images/acc-clear.png) no-repeat center center / 100% auto;
+}
+#nick-name{
+    height:100%;
+    width: 85%;
+    line-height: 39px;
+    font-size: 16px;
+    /*cursor: url(/images/acc-cursor.png),default;*/
+}
+#nick-save{
+    position: absolute;
+    top:0;
+    right: 5%;
+    font-size: 16px;
+    color:#1a9eff;
+}

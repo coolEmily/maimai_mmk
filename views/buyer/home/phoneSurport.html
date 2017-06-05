@@ -1,0 +1,64 @@
+{{#extend "header"}}
+<title>改绑手机号</title>
+<link rel="stylesheet" href="/css/changePhone.css">
+
+{{/extend}}
+<header class="main_head">
+	<nav class="nav"><a href="javascript:;" class="back _goback"></a><span id="addr_title">改绑手机号</span></nav>
+</header>
+<section class="old_change">
+	<div class="change_p">
+		<p class="p1">为确保账号安全，更换手机号前，需验证原手机号</p>
+		<p class="p2">验证码将发送至</p>
+		<p class="p3"></p>
+	</div>
+	<div class="formList">
+		<i class="get_icon"></i>
+		<input type="tel" value="" maxlength="6" class="get_txt" id="get_txt" onkeyup="this.value=this.value.replace(/\D/gi,'')" placeholder="请输入图形验证码" />
+		<span class="get_btn" id="get_btn" data-book="true">获取验证码</span><!--倒计时追加class：get_btn_h-->
+	</div>
+	<div class="message" id="message"></div>
+	<div class="next_btn next_btn_h" id="next_btn">下一步</div><!--变灰追加class：next_btn_h-->
+	<div class="change_mess" data="" id="change_mess">验证码已发送，注意查收</div>
+</section>
+
+<section class="new_change">
+	<div class="new_phone">
+		<i class="phone_icon"></i>
+		<input type="tel" value="" maxlength="11" class="get_phone" id="get_phone" onkeyup="this.value=this.value.replace(/\D/gi,'')" placeholder="请输入新手机号" />
+		<span id="gt"><img src="/images/buy/login/error.png" /></span>
+	</div>
+	<div class="message" id="phone_error"></div>
+	<div class="new_code">
+		<i class="code_icon"></i>
+		<input type="tel" value="" maxlength="4" class="get_code" id="get_code" onkeyup="this.value=this.value.replace(/\D/gi,'')" placeholder="请输入图形验证码" />
+		<span class="n_get_code"><img id="imgNum" /></span>		
+	</div>
+	<div class="message" id="code_error"></div>
+	<div class="formList">
+		<i class="get_icon"></i>
+		<input type="tel" value="" maxlength="6" class="get_txt" id="succ_txt" onkeyup="this.value=this.value.replace(/\D/gi,'')" />
+		<span class="get_btn" id="succ_btn" data-book="true">获取验证码</span><!--倒计时追加class：get_btn_h-->
+	</div>
+	<div class="message" id="succ_mess"></div>
+	<div class="n_next_btn next_btn_h" id="succ_finish">完成</div><!--变灰追加class：next_btn_h-->
+	<div class="change_mess" id="new_error">验证码已发送，注意查收</div>
+</section>
+
+<!--<section class="succ_change">
+	<div class="new_code" id="succ_show" style="display: none;">
+		<i class="code_icon"></i>
+		<input type="tel" value="" maxlength="4" class="get_code" id="succ_code" onkeyup="this.value=this.value.replace(/\D/gi,'')" placeholder="请输入图形验证码" />
+		<span class="n_get_code"><img id="imgNum1" /></span>		
+	</div>
+	
+	
+	<div class="n_next_btn" id="succ_finish">完成</div>
+	<div class="change_mess" id="succ_error">验证码已发送，注意查收</div>
+</section>-->
+<section class="succ_login">
+	<div class="succ_txt">恭喜您，手机绑定成功</div>
+	<div class="succ_img"><img src="/images/buy/succ_icon.png" /></div>
+	<div class="n_next_btn" id="succ_login">去登录</div>
+</section>	
+<script  data-main="/js/PhoneSurport" src="/js/lib/require.js" ></script>

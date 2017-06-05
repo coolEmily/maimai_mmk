@@ -1,0 +1,40 @@
+.ui-goods-img img{height:80px;}
+.payWay{background:#f1f1f1;overflow:hidden;padding:10px 0}
+.ui-settlement > div:first-child{display:none}
+.payWay div{background:#fff;
+    height:35px;
+    line-height:35px;
+    font-size:14px;
+    padding:0 4%;
+    box-shadow:1px 1px 2px #ccc;
+}
+
+.payWay span:last-child{color:#666;float:right;font-size:12px;}
+
+.ui-payNub{height:33px;
+    font-size:14px;
+    border-bottom:solid #ccc 1px;}
+
+.ui-settlement{padding:0}
+
+.ui-wrap div{padding: 0 15px;color:#666}
+.ui-settlement .ui-wrap> div > span:last-child{color:#666}
+.ui-settlement-freight-1 span:first-child{
+    background:url(../../images/buy/yfs.png) 29px 7px no-repeat;
+    background-size:16px auto;
+}
+/*鲜花支付-提示语*/
+.ui-goods-desc > p:nth-of-type(3){
+    line-height:24px;
+    font-size:12px;
+    position:absolute;
+    bottom:17px;
+    color:#ff3c3c
+}
+.ui-goods-desc > p:nth-of-type(4){
+    position: absolute;
+    color: #999;
+    bottom: 0;
+    left: 5px;
+    letter-spacing: 1px;
+}

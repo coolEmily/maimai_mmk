@@ -1,0 +1,94 @@
+{{#extend "header"}}
+<title id="title">订单列表</title>
+<link type="text/css" rel="stylesheet" href="/css/buy/order.css">
+<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/dingdan.js"></script>
+{{/extend}}
+
+<body>
+<div class="main">
+	<header class="main_head">
+		<nav class="nav"><a href="javascript:;" class="back _goback" ></a>全部订单</nav>
+	</header>
+</div>
+<div class="container">
+	<header class="header" id="project">
+		<div class="ui-transd-999 transd">订单状态</div>
+		<div class="ui-transd-999 transd">订单时间</div>
+	</header>
+	<!--<div class="ui-nothing-find" id="noneList">-->
+		<!--<div>-->
+			<!--<dl>-->
+				<!--<dd style=""></dd>-->
+				<!--<dt style="">无此类订单</dt>-->
+			<!--</dl>-->
+		<!--</div>-->
+	<!--</div>-->
+	<div class="ui_nothing_find" id="noneList">
+		<div>
+			<dl>
+				<dd></dd>
+				<dt id="noneList_dsc">无此类订单</dt>
+			</dl>
+		</div>
+	</div>
+
+
+	<div class="select_box" id="select_box">
+		<div class="itemcon">
+			<ul>
+				<li class="cur">全部<span class="radioimg"></span></li>
+				<li>已取消</li>
+				<li>待付款</li>
+				<li>已完成</li>
+				<li>待收货</li>
+			</ul>
+		</div>
+		<div class="itemcon">
+			<ul>
+				<li class="cur">全部<span class="radioimg"></span></li>
+				<li>本月内</li>
+				<li>半年内</li>
+				<li>三年内</li>
+			</ul>
+		</div>
+	</div>
+	<div id="list_wrap">
+		<!--<div class="orderunit">-->
+			<!--<div class="unithead">-->
+				<!--<span>订单编号：123456789441</span>-->
+				<!--<span class="orderstate">已完成</span>-->
+			<!--</div>-->
+			<!--<div class="goodslist">-->
+				<!--<dl>-->
+					<!--<dt><a href="#"><img src="/images/47549894304100_B.jpg"></a></dt>-->
+					<!--<dd>-->
+						<!--<ul>-->
+							<!--<li><a href="#">dsf</a></li>-->
+							<!--<li>￥306</li>-->
+						<!--</ul>-->
+						<!--<div>-->
+							<!--<span>x1</span>-->
+						<!--</div>-->
+					<!--</dd>-->
+				<!--</dl>-->
+			<!--</div>-->
+			<!--<div class="unitfoot">-->
+				<!--<ul>-->
+					<!--<li>2016-11-11 12:22:22 &nbsp;&nbsp;共有 <span>3</span> 件商品</li>-->
+					<!--<li>实付：<span>￥100</span></li>-->
+				<!--</ul>-->
+			<!--</div>-->
+			<!--<div class="deal_order">-->
+				<!--<p class="wait_pay"><a href="/buyer/order/dingdanxq.html?oId=34162&amp;sflag=0">立即支付</a><a href="/buyer/order/dingdanxq.html?oId=34162&amp;sflag=0">取消订单</a>-->
+				<!--</p>-->
+				<!--<p class="wait_receive"><a href="/buyer/order/dingdanxq.html?oId=37238&amp;sflag=0">确认收货</a></p></div>-->
+		<!--</div>-->
+
+	</div>
+</div>
+<div style="text-align:center;display:none" id="noMore">暂无更多订单……</div>
+<div class="fixed_index">
+  <a href="/buyer/shouye.html"><img src="/images/buy/fixed_top.png" /></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{{#extend "header"}}
+<title>添加商品库商品</title>
+<link type="text/css" rel="stylesheet" href="/css/common_seller.css">
+<link type="text/css" rel="stylesheet" href="/css/order.css">
+<script src="/js/lib/require.js" defer async="true" data-main="/js/tianjiaspk.js"></script>
+<style type="text/css">
+	.header a{color:#333;}
+	.header{margin-bottom:1px}
+	.ui-transd-999:before{right:5px;top:15px}
+	.ui-transd-999:after{right:5px;top:14px}
+
+	.headerSelect{height:35px;
+					background:#fff;
+					margin-bottom:10px;
+					border-bottom:solid #ddd 1px;}
+
+	.headerSelect div{height:35px;
+						width:49%;
+						text-align:center;
+						line-height: 35px;
+						float:left;}
+
+	.headerSelect div:nth-child(1){border-right:solid #ddd 1px;}
+	.headerSelect .redColor{color:#fc3f43}
+	.select_btn{background:#ff3c3c;
+	            height:40px;
+		        text-align:center;
+	            line-height:40px;
+	            color:#fff;
+	            width:100%;
+	            position:absolute;
+	            bottom:0}
+
+	.nav>a{color:#00acff;
+	         position:absolute;
+		     right: 10px;
+		     top: 0px;
+			 font-size:12px;}
+</style>
+{{/extend}}
+<body>
+<div class="main">
+	<header class="main_head" headId="goods_sort">
+		<nav class="nav"><a href="javascript:;" class="back _goback"></a>
+			<div class="titword">
+				<span>添加商品库商品</span>
+			</div>
+			<a href="#">说明</a>
+		</nav>
+	</header>
+</div>
+<div class="container">
+	<div class="headerSelect" id="project">
+		<div class="redColor">官方商品库</div>
+		<div>第三方商品库</div>
+	</div>
+	<div id="selectWrap">
+		<!--<div class="header ui-transd-999">-->
+			<!--<div>商品分类：</div>-->
+			<!--<select>-->
+				<!--<option value="">分类</option>-->
+			<!--</select>-->
+		<!--</div>-->
+	</div>
+	<div class="select_btn" id="select_btn">筛选</div>
+</body>
+</html>

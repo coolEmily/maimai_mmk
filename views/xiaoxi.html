@@ -1,0 +1,31 @@
+{{#extend "header"}}
+    <title>消息管理</title>
+    <link rel="stylesheet" href="/css/common.css" />
+    <style>
+        .ui-message-detail > div:nth-of-type(2):before{
+            background-position: -17px -65px
+        }
+        .ui-message-detail > div:nth-of-type(3):before{
+            background-position: -35px -65px
+        }    
+    </style>
+{{/extend}}
+
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>消息管理</nav>
+    </header>
+</div>
+<div class="ui-body main">
+	
+</div>
+
+<div class="ui-nothing-find">
+    <div style="margin-top: 10vh;">
+        <dl>
+            <dd style="background-position: -155px 0;"></dd>
+            <dt style="line-height: 45px;">您还没有新的消息</dt>
+        </dl>
+    </div>
+</div>
+<script src="/js/lib/require.js" data-main="/js/xiaoxi"></script>

@@ -1,0 +1,98 @@
+.rank{
+    background: #f8f8f8;
+    height: 100%;
+}
+.rank .select{
+    width: 100%;
+    height: 44px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+.rank .select .rk{
+    display: inline-block;
+    height: 42px;
+    color: #3a3a3a;
+    font-size: 17px;
+    line-height: 44px;
+    font-family: "PingFang-SC-Medium";
+}
+.rank .select .flower{
+    margin-left: 25%;
+    float: left;
+}
+.rank .select .vote{
+    margin-right: 25%;
+    float: right;
+}
+.rank .select .hover{
+    color: #cc3333;
+    border-bottom: 2px solid #cc3333;
+}
+/*列表*/
+.rank .list{
+    margin: 0 4%;
+}
+.rank .list .item{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    border-radius: 3px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+/*排名图标*/
+.rank .list .item .icon{
+    float: left;
+    width: 5.6%;
+    height: 24px;
+    background: url("/images/tv/miss_world/rank/1.png") no-repeat center center;
+    background-size: contain;
+    margin: 18px 0 18px 2.7%;
+}
+/*头像*/
+.rank .list .item .avatar{
+    float: left;
+    left:11.5%;
+    top:10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 4% 10px 3.3%;
+}
+/*编号*/
+.rank .list .item .num{
+    color: #7b7b7b;
+    margin-right: 3.2%;
+    font-size: 17px;
+    line-height: 60px;
+    font-family: "PingFang-SC-Medium";
+}
+.rank .list .item .name{
+    position: absolute;
+    left: 38% ;
+    top:0;
+    color: #666666;
+    font-size: 17px;
+    line-height: 60px;
+    font-family: "PingFang-SC-Medium";
+}
+/*票数*/
+.rank .list .item .poll{
+    position: absolute;
+    right: 9% ;
+    top:0;
+    color: #cc3333;
+    font-size: 17px;
+    line-height: 60px;
+    font-family: "PingFang-SC-Medium";
+}
+/*单位*/
+.rank .list .item .unit{
+    position: absolute;
+    right: 3.2% ;
+    top:0;
+    color: #666666;
+    font-size: 13px;
+    line-height: 60px;
+    font-family: "PingFang-SC-Medium";
+}

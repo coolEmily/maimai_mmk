@@ -1,0 +1,40 @@
+{{#extend "header"}}    
+    <title>确认订单</title>
+    <link rel="stylesheet" href="/css/buy/addr.css" />
+    <link rel="stylesheet" href="/css/buy/confirm_receipt.css" />
+    <style>
+        .ui-transr-999:before{
+            right: 9px;
+            top: 50%;
+            margin-top: -8px;
+        }.ui-transr-999:after{
+            right: 10px;
+            top: 50%;
+            margin-top: -8px;
+        }
+        .cart_list_mj {
+            padding: 3%;
+            border-bottom: 1px solid #f1f1f1;
+            color: #ff3c3c;
+        }
+        .ui-settlement > div:nth-child(2) > div > span:nth-child(2){
+            float: right;
+            color: #ff3c3c;
+        }
+    </style>
+{{/extend}}  
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>确认订单</nav>
+        </header>
+    </div>
+    <div class="ui-body main" style="padding-bottom: 40px;">
+
+    </div>
+    
+    <footer class="ui-confirm-order">
+        <div class="ui-confirm-pay">确认支付</div>
+        <div style="float: none;text-align: left;">应付款:<span class="ui-pay-total" style="display: inline-block;">￥0</span></div>
+    </footer>
+    {{> loading}}
+    <script data-main="/js/buy/dingdanqr_new" src="/js/lib/require.js"></script>

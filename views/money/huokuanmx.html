@@ -1,0 +1,56 @@
+{{#extend "header"}}
+    <title>货款明细</title>
+    <link type="text/css" rel="stylesheet" href="/css/client_num.css">
+    <style>
+        .listul li > span:nth-child(1), .titp p:nth-child(1){
+            padding-right: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .listul li > span:nth-child(2), .titp p:nth-child(2){
+            width: 50px
+        }
+        .listul li > span:nth-child(3){
+            text-align: right;
+            color: #fc3f43;
+        }
+        
+    </style>
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>货款明细</nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="numbox" style="height: 66px;">
+            <div class="number" style="text-align: left;border: 0;">
+                <p>总货款：</p>
+                <span name="getTotalGoodsMoney" style="color: #ff3d3d;">0元</span>
+           </div>
+        </div>
+        
+        <div class="datalist" style="margin-top: 15px;padding: 0;">
+             <div class="titp">
+                 <p>商品名称</p>
+                 <p>已售数量</p>
+                 <p style="text-align: right;">累计货款</p>
+             </div>
+             <div class="listul">
+                 <ul>
+                    <!-- <li>
+                        <span>18310770993</span>
+                        <span>2016-03-02</span>
+                        <span>大咖</span>
+                    </li>
+                    <li>
+                        <span>18310770993</span>
+                        <span>2016-03-02</span>
+                        <span>大咖</span>
+                    </li>-->
+                 </ul>
+             </div>
+        </div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/huokuanmx"></script>

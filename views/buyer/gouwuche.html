@@ -1,0 +1,104 @@
+{{#extend "header"}}
+    <title>购物车</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="" >
+    <link rel="stylesheet" type="text/css" href="/css/buy/cart.css" />
+    <style>
+        .cart_goods_c{
+            position:absolute;
+            top:50%;
+            margin-top:-9.5px
+        }
+    </style>
+{{/extend}}
+    <div style="padding: 0 10px;background-color: #fb7272;position: relative;margin-bottom: 10px;display: none;">
+      <div style="height: 40px;text-align: center;color: white;display: table-cell;vertical-align: middle;">
+        <span>春节停发货通知：2017.1.17-2017.2.3停止发货，2月4日开始发货。</span>
+        <em  onclick="this.parentNode.parentNode.style.display= 'none'" style="width: 15px;height: 15px;position: absolute;top: 50%;right: 10px;-webkit-transform: translateY(-50%);transform: translateY(-50%);background: url(/images/addr_box.png) no-repeat;background-size: 30px auto;background-position-x: -15px;"></em>
+      </div>
+    </div>
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>购物车</nav>
+    </header>
+    <div class="ui-cart" style="padding-bottom: 50px;">
+        <div class="cart_check clearfix">
+            <span class="cart_check_l"><i class="none"></i>全选</span>
+            <a class="cart_check_r" href="javascript:;">一键清空</a>
+        </div>
+        <div class="cart_list">
+            <!--<div class="cart_list_d">买买伽官方旗舰店</div>
+             //满减 
+            <div class="cart_list_mj clearfix">
+                <span>满减: 活动商品未购满60元</span>
+                <a href="javascript:;">去凑单></a>
+            </div>
+            <div class="cart_goods clearfix">
+                <div class="cart_goods_c"><i></i></div>
+                <div class="cart_goods_img"><a href="javascript:;"><img src="/images/buy/47549894304100_C.jpg" /></a></div>
+                <div class="cart_goods_del">
+                    <p class="red_t">￥306</p>
+                    <p class="through">￥788</p>
+                    <a href="javascript:;"><i></i></a>
+                </div>
+                <div class="cart_goods_list">
+                    <h2><a href="javascript:;"><nobr>宾利凤凰赤霞珠红葡萄酒宾利凤凰赤红葡萄酒宾利凤凰赤霞珠红葡萄酒</nobr></a></h2>
+                    <h3><a href="javascript:;"><nobr>Penley Estate Phoenix</nobr></a></a></h3>
+                    <div class="num">
+                        <span class="reduce">-</span>
+                        <span class="plus">+</span>
+                        <div class="num_1">
+                            <input type="text" class="txt" value="99" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            //满赠 
+            <div class="cart_list_mj clearfix">
+                <span>【赠品】 10元电子券仅可购买   买买店铺的商品（订单完成后自动发放） X1</span>
+            </div>
+            <div class="cart_goods clearfix">
+                <div class="cart_goods_c"><i></i></div>
+                <div class="cart_goods_img"><a href="javascript:;"><img src="/images/buy/47549894304100_C.jpg" /></a></div>
+                <div class="cart_goods_del">
+                    <p class="red_t">￥30606</p>
+                    <p class="through">￥788</p>
+                    <a href="javascript:;"><i></i></a>
+                </div>
+                <div class="cart_goods_list">
+                    <h2><a href="javascript:;"><nobr>宾利凤凰赤霞珠红葡萄酒宾利凤凰赤红葡萄酒宾利凤凰赤霞珠红葡萄酒</nobr></a></h2>
+                    <h3><a href="javascript:;"><nobr>Penley Estate Phoenix</nobr></a></a></h3>
+                    <div class="num">
+                        <span class="reduce">-</span>
+                        <span class="plus">+</span>
+                        <div class="num_1">
+                            <input type="text" class="txt" value="99" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_all clearfix">
+                <p class="money">本店合计:<span>￥306</span></p>
+                <p>共有<span>1</span>件商品</p>
+            </div>-->
+        </div>
+        <div class="cart_por clearfix" style="display: none;">
+            <p class="money">本店合计:<span>￥0.00</span></p>
+            <p>共有<span>0</span>件商品</p>
+        </div>
+        <div class="cart_fixed">
+            <div>
+                <p class="cart_fixed_r ui-submit-buttom"><a href="javascript:;">去结算<span class="ui-all-goods-num">(0)</span></a></p>
+                <p class="cart_fixed_l">合计: <span class="ui-all-goods-price">￥0</span><span class="h_txt">不含运费</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 空购物车 -->
+    <div class="cart_none" style="display: none;">
+        <div class="cart_none_t">购物车空空如也</div>
+        <div class="cart_none_a">
+            <a href="/">点击去商城逛逛</a>
+        </div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/buy/gouwuche"></script>
+    {{> loading}}

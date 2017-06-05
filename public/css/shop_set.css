@@ -1,0 +1,148 @@
+/*店铺设置*/
+
+/*店铺信息*/
+html, body{
+    height: auto;;
+}
+.ui-shop-info > div{
+    height: 45px;
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 45px;
+    padding: 0 20px;
+    font-size: 12px;
+    position: relative;
+}
+.ui-m-t{
+    font-size: 14px !important;
+}
+.ui-shop-t{
+    color: #b0b0b0;
+    width: 70px;
+    float: left;
+}
+.ui-shop-name-modify{
+    float: right;
+    width: 40px;
+    text-align: center;
+    color: #02aefe;
+}
+
+.ui-shop-desc-modify{
+    position: absolute;
+    color: #02aefe;
+    bottom: 4px;
+    right: 20px;
+    background-color: white;
+}
+.ui-shop-desc{
+    overflow: hidden;
+    text-align: justify;
+}
+
+/*手机绑定*/
+.ui-shop-info .ui-user-mobile{
+    height: 40px;
+    margin: 30px 20px;
+    border: 2px solid #f1f1f1;
+    padding: 0;
+    border-radius: 5px;
+}
+.ui-mobile-modify{
+    margin: 50px 20px 0;
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.ui-mobile-icon{
+    margin: 0 20px;
+    width: 18px;
+    height: 23px;
+    background: url(../images/op_icon.png) no-repeat;
+    background-size: 150px auto;
+    background-position:  1px -41px;
+    float: left;
+    margin-top: 10px;
+}
+.ui-mobile-num{
+    height: 100%;
+    overflow: hidden;
+    border-left: 1px solid #f1f1f1;
+}
+.ui-mobile-num > input{
+    height: 100%;
+    width: 100%;
+     padding: 2.5% 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/*上传图片*/
+.ui-shop-info .ui-upload-img-t{
+    width: 55px;
+    height: 100%;
+    border: 0;
+    float: left;
+}
+.ui-shop-info .ui-upload-img-d{
+    height: 120px;
+    display: table;
+    box-sizing: border-box;
+    border: 0;
+    padding-left: 0;
+    padding-top: 14px;
+}
+.ui-shop-info .ui-upload-img-tishi{
+    padding-bottom: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #b0b0b0;
+    border: 0;
+    padding-left: 0;
+    line-height: 20px;
+    width: 100%;
+    display: table;
+}
+#add_img{
+    border: 1px solid #aaaaaa;
+    position: relative;
+}
+#add_img:before{
+    content: " ";
+    height: 40px;
+    width: 3px;
+    background-color: #aaaaaa;
+    position: absolute;
+    top: 30px;
+    left: 49px;
+}
+#add_img:after{
+    content: " ";
+    width: 40px;
+    height: 3px;
+    background-color: #aaaaaa;
+    position: absolute;
+    top: 49px;
+    left: 30px;
+}
+.on + .ui-shop-name{
+    outline: 1px dashed #02AEFE;
+}
+input:disabled, textarea:disabled{
+    background-color: transparent;
+}
+.ui-shop-name > input, .ui-shop-name > textarea, .ui-shop-name > select{
+    width: 90%;
+    height: 100%;
+}
+.ui-img-guige{
+    clear: both;
+    color: #999;
+    word-break: break-all;
+}
+.ui-url-set{
+    line-height: 40px !important;
+    overflow: hidden;
+    color: #333;
+}

@@ -1,0 +1,61 @@
+{{#extend "header"}}
+    <title>投诉处理</title>
+    <link rel="stylesheet" type="text/css" href="/css/buy/refund.css" />
+    <style>
+        .complaint_2{
+            padding: 10px 5%;
+        }
+        .complaint_2 a{
+            width: 47.5%;
+            height: 40px;
+            border-radius: 10px;
+        }
+        .complaint_2 a.ui-unEdit{
+            background: #999;
+        }
+        .complaint_2 a:nth-child(2){
+            float: left;
+        }
+    </style>
+{{/extend}}
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>授权管理</nav>
+    </header>
+    <div class="ui-body main">
+        <div class="complaint_list">
+            <!--<div class="complaint">
+                <div class="complaint_1">
+                    <span>品牌中文名:</span>
+                    <p>201602241004</p>
+                </div>
+                <div class="complaint_1">
+                    <span>审核状态:</span>
+                    <p>被驳回</p>
+                </div>
+                <div class="complaint_1">
+                    <span>授权状态:</span>
+                    <p>未授权</p>
+                </div>
+                <div class="complaint_1">
+                    <span>到期日:</span>
+                    <p>2016-04-01</p>
+                </div>
+                <div class="complaint_2">
+                    <a href="shouquan.html?id=&et=1">修改</a>
+                    <a href="shouquan.html?id=&et=0">查看</a>
+                </div>
+            </div>-->
+        </div>
+        <a href="shouquan.html" class="button ui-add-button" style="margin-top: 30px;display: block;">新增授权</a>
+    </div>
+        
+    <!-- 无投诉 -->
+    <div class="ui-nothing-find">
+        <div>
+            <dl>
+                <dd style="height:115px; width: 85px;background:url(/images/nothing.png) no-repeat; background-size: 100% auto"></dd>
+                <dt>您还未申请任何授权</dt>
+            </dl>
+        </div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/shouquanzt"></script>

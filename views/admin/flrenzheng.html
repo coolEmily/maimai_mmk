@@ -1,0 +1,115 @@
+{{#extend "header"}}
+    <title>授权管理</title>
+    <link rel="stylesheet" href="/css/apply.css" />
+{{/extend}}
+{{> loading}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback"></a>授权管理</nav>
+        </header>
+    </div>
+    <div class="ui-body main">
+        <div class="ui-title-input">
+            <div>
+                <div class="ui-t">授权类型：</div>
+                <div class="ui-input ui-transd-999">
+                    <select id="ui-type-list">
+                    </select>
+                </div>
+            </div>
+            <!--<div>
+                <div class="ui-t">品牌中文：</div>
+                <div class="ui-input"><input type="text" placeholder="请填写品牌的中文名称"></div>
+            </div>-->
+        </div>
+        
+        <div class="ui-shop-img ui-title-input">
+            <div class="ui-img-type-tishi ui-undel">
+                <div class="ui-t" style="color: #333;">提交资料：</div>
+                <div class="ui-input" style="color: #ff3c3c;">支持jpg、jpeg、bmp格式图片，大小不超 过1M</div>
+            </div>
+            <!--<div class="ui-img-type-tishi">
+                1、经营者个人身份证照片（正反面以及，双手拿身      份证照片，要求照片清晰，证件与持证人一致） 
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureA_input" id="" data-width="640" data-target=".trademarkPictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ui-img-type-tishi">
+                2、个体工商营业执照照片(要求照片清晰，法人与      身份证法人要一致) 
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureA_input" id="" data-width="640" data-target=".trademarkPictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ui-img-type-tishi">
+                3、食品流通许可证（非食品可以不上传）  
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureA_input" id="" data-width="640" data-target=".trademarkPictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ui-img-type-tishi">
+                4、税务登记证
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureA_input" id="" data-width="640" data-target=".trademarkPictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ui-img-type-tishi">
+                5、银行开户许可证
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureA_input" id="" data-width="640" data-target=".trademarkPictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="ui-img-type-tishi">
+                6.组织机构代码证
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img">
+                <div class="ui-t">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                         <input name="trademarkPictureA_input" id="" data-width="640" data-target=".trademarkPictureA" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>-->
+        </div>
+    </div>
+    <div class="ui-submit button" style="margin:30px 20px;">提交审核</div>
+    
+    <div class="ui-nothing-find">
+        <div>
+            <dl>
+                <dd style=" width: 85px;background-position: -83px -77px;"></dd>
+                <dt>资料审核中请耐心等待3-5个工作日</dt>
+            </dl>
+        </div>
+    </div>
+    <script src="/js/lib/require.js" data-main="/js/flrenzheng"></script>

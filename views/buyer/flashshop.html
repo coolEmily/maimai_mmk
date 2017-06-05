@@ -1,0 +1,226 @@
+{{#extend "header"}}
+<title id="title">闪购专场</title>
+<style>
+body{
+    overflow-x:hidden; 
+}
+    .banner{
+        width:100%;
+        height:4.24rem;
+        display: inline-block;
+    }
+     #footer{
+        width:100%;
+        height:4.62rem;
+        margin:0.12rem 0 0.22rem 0;
+        background:#fff;
+    }
+    .footer h3{
+         background:#fff;
+        color:#333;
+        height:0.7rem;
+        width:100%;
+        line-height: 0.7rem;
+        padding-left: 0.3rem;
+        font-size: 14px;
+        font-weight: 600;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+    }
+    .footer .box{
+        height:3.3rem;
+        width:100%;
+         background:#fff;
+    }
+    .footer h4{
+         background:#fff;
+        height:0.64rem;
+        color:#b6b6b6;
+        line-height: 0.64rem;
+        overflow: hidden;
+         box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+         padding:0 0.3rem;
+    }
+    .icon{
+        text-align: center;
+        padding:2px 0.1rem;
+        border:1px solid #b6b6b6;
+        width:0.48rem;
+        height:12px;
+        font-weight: 600;
+        border-radius: 12px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+        -moz-border-radius: 12px; /* Mozilla浏览器的私有属性 */ 
+        -webkit-border-radius: 12px; /* Webkit浏览器的私有属性 */ 
+        border-radius: 12px; /* 四个半径值分别是左上角、右上角、右下角和左下角 */ 
+    }
+    .listitem{
+         background:#fff;
+        width:100%;
+        display: block;
+        height:2.02rem;
+        overflow: hidden;
+        /*1像素的边框
+        border-top:0.5px solid #b6b6b6;*/
+        position:relative;
+    }
+     .listitem::before{
+        content: "";
+        position:absolute;
+        width:100%;
+        height:1px;
+        background:#b6b6b6;
+        transform:scale(1,0.5);
+        -ms-transform:scale(1,0.5); 	/* IE 9 */
+        -moz-transform:scale(1,0.5); 	/* Firefox */
+        -webkit-transform:scale(1,0.5); /* Safari 和 Chrome */
+        -o-transform:scale(1,0.5);  
+        left:0px;
+        top:0px
+     }
+    .listitem .img{
+        border:0.2rem solid #fff;
+          box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+        float:left;
+        width:2.39rem;
+        height:2.02rem;
+    }
+    .listitem .box{
+         width: 3.26rem;
+        height:2.02rem;
+        float:left;
+    }
+    .listitem .box .top{
+        overflow: hidden;
+        height:0.72rem;
+        color:#333;
+        margin-top:0.28rem;
+        margin-bottom:0.24rem;
+        line-height: 0.36rem;
+        font-weight:600;
+    }
+     .listitem .box .tuan{
+        font-size:14px;
+        color:#e92324;
+        margin-right:0.2rem;
+     }
+     .listitem .box .yuan{
+        font-size:12.5px;
+        display: inline-block;
+        transform: scale(0.8);
+    -ms-transform: scale(0.8); /* IE 9 */
+    -webkit-transform: scale(0.8);
+        color:#989898;
+         text-decoration :line-through;
+     }
+    .listitem .box .rang{
+       margin-top:5px;
+        width:2rem;
+        height:8px;
+       position: relative;
+       float: left;
+       background:#ddd;
+        border-radius: 4px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+        -moz-border-radius: 4px; /* Mozilla浏览器的私有属性 */ 
+        -webkit-border-radius: 4px; /* Webkit浏览器的私有属性 */ 
+        border-radius: 4px; /* 四个半径值分别是左上角、右上角、右下角和左下角 */ 
+     }
+     .listitem .box .rangitem{
+         background:#e92324;
+         position: absolute;
+         left:0;
+         top:0;
+         width:3%;
+         height:8px;
+          border-radius: 4px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+        -moz-border-radius: 4px; /* Mozilla浏览器的私有属性 */ 
+        -webkit-border-radius: 4px; /* Webkit浏览器的私有属性 */ 
+        border-radius: 4px; /* 四个半径值分别是左上角、右上角、右下角和左下角 */ 
+     }
+
+     .listitem .box .test{
+         color:#b2b2b2;
+     }
+    .listitem .btn{
+        width: 1.85rem;
+        height:2.02rem;
+        float:left;
+        line-height: 2.02rem;
+    }
+     .listitem .btn span{
+         margin-left:0.2rem;
+         color:#e22521;
+         padding:0.17rem;
+         border:1px solid #e22521;
+        border-radius: 5px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+        -moz-border-radius: 5px; /* Mozilla浏览器的私有属性 */ 
+        -webkit-border-radius: 5px; /* Webkit浏览器的私有属性 */ 
+        border-radius: 5px; /* 四个半径值分别是左上角、右上角、右下角和左下角 */ 
+     }
+     .listitem .btn .colorp{
+         color:#989898;
+         border:1px solid #989898;
+     }
+     .list .title{
+         text-align: center;
+         height:0.8rem;
+         width:100%;
+         background:#fff;
+         margin-top: 0.16rem;
+         line-height: 0.8rem;
+     }
+     .list .title strong{
+         color:#f8191e;
+         font-weight: 600;
+         margin-right:0.14rem;
+         font-size: 14px;
+     }
+     .list .title .boxborder{
+         color:#656565;
+         font-weight: 600;
+         padding:0.08rem;
+         border:1px solid #656565;
+          border-radius: 5px; /* 所有角都使用半径为5px的圆角，此属性为CSS3标准属性 */ 
+        -moz-border-radius: 5px; /* Mozilla浏览器的私有属性 */ 
+        -webkit-border-radius: 5px; /* Webkit浏览器的私有属性 */ 
+        border-radius: 5px; /* 四个半径值分别是左上角、右上角、右下角和左下角 */ 
+        margin:0 0.14rem;
+     }
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:void(0);" class="back _goback"></a>闪购专场</nav>
+</header>
+    <a class="banner" href="javascript:void(0);)"></a>
+    <div class="list">
+        <h3 class="title"><strong>距结束</strong><span class="boxborder">00</span>:<span class="boxborder">00</span>:<span class="boxborder">00</span></h3>
+    </div>
+    <a id="footer" class="footer" href="javascript:void(0);">
+        <h3></h3>
+        <div class="box"></div>
+        <h4><span class="icon">广告</span><span class="num" style="float:right;">332016次浏览</span></h4>
+    </a>
+<script>
+     (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script src="/js/lib/require.js" data-main="/js/buy/flashshop.js"></script>

@@ -1,0 +1,70 @@
+.help-main{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: -3px;
+}
+.help-tab{
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #e5e5e5;
+    height: 44px;
+}
+.help-tab li{
+    width: 50%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 15px;
+    color:#666;
+    float: left;
+    overflow: hidden;
+}
+.help-tab .active{
+    height: 42px;
+    border-bottom: 2px solid #333;
+    color: #333;
+}
+.help-cont div{
+    display: none;
+    overflow: hidden;
+}
+.help-cont div img{
+    width: 100%;
+}
+.help-cont .cur{
+    display: block;
+}
+.help-about {
+    width: 94%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: -3px;
+    padding:0 3%;
+    padding-top: 5px;
+}
+.help-about p {
+    padding-top: 5px;
+    font-size: 13px;
+}
+.help-about p.name {
+    font-size: 14px;
+}
+.help-contact {
+    width: 94%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: -3px;
+    padding:0 3%;
+    padding-top: 5px;
+}
+.help-contact h2 {
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    padding-top: 5px;
+}
+.help-contact p {
+    line-height: 20px;
+    margin-top: 5px;
+    
+}

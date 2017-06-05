@@ -1,0 +1,96 @@
+{{#extend "header"}}
+    <title>商品列表</title>
+    <link rel="stylesheet" type="text/css" href="/css/buy/index.css" />
+{{/extend}}
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>商品列表</nav>
+    </header>
+    <div class="ui-header-img" style="width: 100%;">
+    </div>
+    <!-- 右侧悬浮框 -->
+    <div class="swiper-container" style="background-color:white;display:none;position: absolute;width: 50%;top:92px;right: -50%;z-index: 99;">
+        <div class="swiper-wrapper">
+            <div class="fixed_r swiper-slide" style="height: auto">
+                <h1>会当凌绝顶旗舰店</h1>
+                <ul class="ui-type-list">
+                    <li class="ui-transd-999">
+                        <a href="javascript:;">红酒</a>
+                        <div class="fixed_chlid">
+                            <a href="javascript:;">红酒</a>
+                            <a href="javascript:;">红酒</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="slider" id="slider">
+        <div id="slider_Img" style="display: none;">
+            <ul>
+                <li><img src="/images/buy/index_banner.jpg" /></li>
+                <li><img src="/images/buy/index_banner.jpg" /></li>
+                <li><img src="/images/buy/index_banner.jpg" /></li>
+                <li><img src="/images/buy/index_banner.jpg" /></li>
+                <li><img src="/images/buy/index_banner.jpg" /></li>
+                <li><img src="/images/buy/index_banner.jpg" /></li>
+            </ul> 
+        </div>
+        <div class="serial_number" id="serial_number">
+            <span class="point selected"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+            <span class="point"></span>
+        </div>
+    </div>
+    <div class="mall_tab clearfix">
+        <a href="javascript:;" data-name="couponEsc" class="active">红包</a>
+        <a href="javascript:;" data-name="price" class="b0">价格</a>
+        <a href="javascript:;" data-name="sellShowNumber">销量</a>
+        <a href="javascript:;" data-name="collectNum">人气</a>
+    </div>
+    <div class="ind_sx_h clearfix" id="ui-goods-list">
+        <!--<div class="ind_sx_h_l">
+            <div class="ind_sx_lo"><img src="/images/buy/list_1.png" /></div>
+            <div class="ind_sx_l_img"><a href="javascript:;" class="ind_sx_img"><img src="/images/buy/47549894304100_C.jpg" /></a></div>
+            <h3><a href="javasctipt:;"><nobr>宾利凤凰赤霞珠红葡萄酒宾利凤凰赤红葡萄酒宾利凤凰赤霞珠红葡萄酒</nobr></a></h3>
+            <h4><a href="javasctipt:;"><nobr>Penley Estate Phoenix</nobr></a></h4>
+            <p class="dred"><a href="javasctipt:;">￥306<span>市场价:￥788</span></a></p>
+        </div>
+        <div class="ind_sx_h_l">
+            <div class="ind_sx_l_img"><a href="javascript:;" class="ind_sx_img"><img src="/images/buy/47549894304100_C.jpg" /></a></div>
+            <h3><a href="javasctipt:;"><nobr>宾利凤凰赤霞珠红葡萄酒宾利凤凰赤红葡萄酒宾利凤凰赤霞珠红葡萄酒</nobr></a></h3>
+            <h4><a href="javasctipt:;"><nobr>Penley Estate Phoenix</nobr></a></h4>
+            <p class="dred"><a href="javasctipt:;">￥306<span>市场价:￥788</span></a></p>
+        </div>
+        <div class="ind_sx_h_l">
+            <div class="ind_sx_lo"><img src="/images/buy/list_2.png" /></div>
+            <div class="ind_sx_l_img"><a href="javascript:;" class="ind_sx_img"><img src="/images/buy/47549894304100_C.jpg" /></a></div>
+            <h3><a href="javasctipt:;"><nobr>宾利凤凰赤霞珠红葡萄酒宾利凤凰赤红葡萄酒宾利凤凰赤霞珠红葡萄酒</nobr></a></h3>
+            <h4><a href="javasctipt:;"><nobr>Penley Estate Phoenix</nobr></a></h4>
+            <p class="dred"><a href="javasctipt:;">￥306<span>市场价:￥788</span></a></p>
+        </div>
+        <div class="ind_sx_h_l">
+            <div class="ind_sx_l_img"><a href="javascript:;" class="ind_sx_img"><img src="/images/buy/47549894304100_C.jpg" /></a></div>
+            <h3><a href="javasctipt:;"><nobr>宾利凤凰赤霞珠红葡萄酒宾利凤凰赤红葡萄酒宾利凤凰赤霞珠红葡萄酒</nobr></a></h3>
+            <h4><a href="javasctipt:;"><nobr>Penley Estate Phoenix</nobr></a></h4>
+            <p class="dred"><a href="javasctipt:;">￥306<span>市场价:￥788</span></a></p>
+        </div>
+        <div class="ind_sx_h_l">
+            <div class="ind_sx_l_img"><a href="javascript:;" class="ind_sx_img"><img src="/images/buy/47549894304100_C.jpg" /></a></div>
+            <h3><a href="javasctipt:;"><nobr>宾利凤凰赤霞珠红葡萄酒宾利凤凰赤红葡萄酒宾利凤凰赤霞珠红葡萄酒</nobr></a></h3>
+            <h4><a href="javasctipt:;"><nobr>Penley Estate Phoenix</nobr></a></h4>
+            <p class="dred"><a href="javasctipt:;">￥306<span>市场价:￥788</span></a></p>
+        </div>
+        <div class="ind_sx_h_l">
+            <div class="ind_sx_l_img"><a href="javascript:;" class="ind_sx_img"><img src="/images/buy/47549894304100_C.jpg" /></a></div>
+            <h3><a href="javasctipt:;"><nobr>宾利凤凰赤霞珠红葡萄酒宾利凤凰赤红葡萄酒宾利凤凰赤霞珠红葡萄酒</nobr></a></h3>
+            <h4><a href="javasctipt:;"><nobr>Penley Estate Phoenix</nobr></a></h4>
+            <p class="dred"><a href="javasctipt:;">￥306<span>市场价:￥788</span></a></p>
+        </div>
+-->
+    </div>
+            <div id="return_top"></div>
+    <script src="/js/lib/require.js" data-main="/js/buy/goodslist"></script>

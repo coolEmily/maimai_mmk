@@ -1,0 +1,52 @@
+{{#extend "header"}}
+    <title>零元购活动分享</title>
+     <link type="text/css" rel="stylesheet" href="/css/common_seller.css" />
+    <link type="text/css" rel="stylesheet" href="/css/hongbao.css" />
+<style>
+    .dealBtn #shareBtn {width: 100%;}
+    .dealBtn #createQR {display:none;}
+
+</style>
+{{/extend}}
+
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>零元购活动分享</nav>
+    </header>
+</div>
+
+<div class="packet_list">
+    <ul class="pocket_pic" id="pocket_pic">
+        <!--<li><img src="/images/hongbao.png" alt=""/></li>-->
+        <!--<li class="cur"><img src="/images/hongbao.png" alt=""/></li>-->
+    </ul>
+</div>
+
+<!--<div class="ui-seller_qr_code" id="ui-seller_qr_code">-->
+    <!--<div style="height: 100%">-->
+            <!--<img src="" id="qrImg"></div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="dealBtn">
+    <ul>
+        <li id="shareBtn">分享</li>
+        <li id="createQR">生成</li>
+    </ul>
+</div>
+
+<div class="ui-nothing-find1" id="noneList" style="display:none">
+    <div>
+        <dl>
+            <dd style=""></dd>
+            <dt style="">暂无信息</dt>
+        </dl>
+    </div>
+</div>
+
+<div class="fixed" id="fixed">
+    <img src="/images/fenxiang2.png" />
+</div>
+{{>loading}}
+<script src="/js/lib/require.js" data-main="/js/fxhuodong"></script>
+

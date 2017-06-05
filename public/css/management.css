@@ -1,0 +1,188 @@
+.button {
+	margin: 0;
+}
+.main_bg {
+	background: #f1f1f1;
+}
+.mana_gl {
+	background: #fff;
+	border-bottom: 1px solid #d3d3d3;
+	-webkit-box-shadow: 0px 3px 2px #eaeaea;
+	box-shadow: 0px 3px 2px #eaeaea;
+}
+.mana_gl_6 {
+	padding: 3%;
+	width: 94%;
+	overflow: hidden;
+}
+.mana_gl_1 {
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.mana_gl_1 .mana_gl_l {
+	float: left;
+	width: 120px;
+	min-height: 80px;
+
+}
+.mana_gl_1 .mana_gl_r {
+	overflow: hidden;
+	height: 100%;
+	margin-left: 3%;
+}
+.mana_gl_1 .mana_gl_r h2, .mana_gl_1 .mana_gl_r h3 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	height: 20px;
+	line-height: 20px;
+	overflow:hidden;
+	text-overflow:ellipsis; 
+}
+.mana_gl_1 .mana_gl_r h2 a, .mana_gl_1 .mana_gl_r h3 a {
+	color: #333;
+}
+.mana_gl_1 .mana_gl_r h3 a {
+	color: #999;
+	font-size: 12px;
+}
+.mana_gl_1 .mana_gl_r p.dred {
+	font-size: 18px;
+	position: absolute;
+	bottom: 10px;
+}
+.mana_gl_1 .mana_gl_r p.dred a {
+	color: #ff3c3c;	
+}
+.mana_gl_2 {
+	color: #ff3c3c;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ddd;
+}
+.mana_gl_3 {
+	border-bottom: 1px solid #ddd;
+}
+.mana_gl_3 .mana_gl_l {
+	float: left;
+	color: #999;
+	line-height: 20px;
+}
+.mana_gl_3 .mana_gl_r {
+	overflow: hidden;
+	height: 100%;
+	line-height: 20px;
+	padding-left: 10px;
+}
+.mana_gl_4 {
+	border-bottom: 1px solid #ddd;
+}
+.mana_gl_4 .mana_gl_i {
+	float: left;
+	color: #999;
+	line-height: 20px;
+}
+.mana_gl_4 .mana_gl_img {
+	overflow: hidden;
+	height: 100%;
+	line-height: 20px;
+}
+.mana_gl_4 .mana_gl_img p {
+	width: 35%;
+	float: left;
+	margin:0 10px;
+}
+.mana_gl_5 {
+	text-align: center;
+}
+.mana_gl_5 a {
+	display: inline-block;
+	width: 44%;
+	height: 36px;
+	line-height: 36px;
+	color: #fff;
+	border-radius: 5px;
+	margin: 0 2%;
+}
+.mana_gl_t {
+	background: #666;
+	letter-spacing: 2px;
+}
+.mana_gl2 {
+	margin-top: 3%;
+}
+.mana_gl_7 {
+	margin: 3%;
+	padding: 0;
+}
+.mana_gl_8 {
+	margin: 3%;
+	padding: 0;
+	background: #999;
+}
+.mana_gl3 {
+	height: 30px;
+}
+.mana_gl_text {
+    overflow: hidden;
+    margin-left: 10px;
+    width: 75%;
+    border: 1px solid #ccc;
+}
+
+/*退款流程t_process.html*/
+.refund_schedule {
+	background: #fff;
+	box-shadow: 0px 2px 2px #ccc;
+	margin:10px 0 30px 0;
+	padding-top: 5%;
+}
+.refund_schedule ul {
+	margin-left: 4%;
+}
+.refund_schedule ul li {
+	border-left:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding: 5px 0;
+	position: relative;
+	padding-left: 20px;
+	line-height: 20px;
+}
+.refund_schedule ul li:after{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px; 
+	background: #ddd;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -6px;
+	top: 10px;
+}
+.refund_schedule ul li.new {
+	color: #ff3c3c;
+	padding-left: 70px;
+}
+.refund_schedule ul li.new i:before {
+	background: url(../images/refund.png) no-repeat;
+	background-size: 100% 100%;
+	width: 35px;
+	display: inline-block;
+	height: 15px;
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 9px;
+}
+.refund_schedule ul li.new:after{
+	border-radius: 50%;
+	width: 13px;
+	height: 13px; 
+	background: #ff3c3c;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -7px;
+	top: 0;
+}
+

@@ -1,0 +1,71 @@
+{{#extend "header"}}
+<title>商品库商品列表</title>
+<link type="text/css" rel="stylesheet" href="/css/common_seller.css">
+<link type="text/css" rel="stylesheet" href="/css/order.css">
+<script data-main="/js/tianjiaspk.js" src="/js/lib/require.js" defer async="true"></script>
+<style type="text/css">
+	.header a{color:#333;}
+	.header1{margin-bottom:1px}
+	.ui-transd-999:before{right:5px;top:15px}
+	.ui-transd-999:after{right:5px;top:14px}
+
+	.goodslist{background:#fff;display:none}
+	.goodslist dd>a{color:#333;
+	                font-size:14px;
+	                line-height:30px;
+					margin-top: 21px;
+					display: block;}
+
+	.button{height: 35px;
+			line-height:35px;
+		    margin: 15px 40% 0 0;}
+
+    .noneMore{line-height:30px;
+	          text-align:center;
+	          display:none}
+	.goodslist dt:before{display:none}
+</style>
+{{/extend}}
+<body>
+<div class="main">
+	<header class="main_head" headId="goods_list">
+		<nav class="nav"><a href="javascript:;" class="back _goback"></a>
+			<div class="titword">
+				<span>Title</span>
+			</div>
+		</nav>
+	</header>
+</div>
+<div class="container">
+	<div class="header header1 ui-transd-999">
+		<div>商品品牌：</div>
+		<select name="" id="brandSelect">
+			<option value="">全部</option>
+		</select>
+    </div>
+	<div class="header ui-transd-999">
+		<div>商品产地：</div>
+		<select name="" id="areaSelect">
+			<option value="">全部</option>
+		</select>
+	</div>
+	<div class="ui-nothing-find" id="noneList">
+		<div>
+			<dl>
+				<dd style=""></dd>
+				<dt style="">无此类商品</dt>
+			</dl>
+		</div>
+	</div>
+	<div id="goodsWrap" class="goodslist">
+         <!--<dl>-->
+			 <!--<dt><a href="#"><img src="http://mi.maim9.com/img/20160427/185264969525762" alt=""></a></dt>-->
+			 <!--<dd>-->
+				 <!--<a href="#">杜夫圣达美莉安红葡萄酒</a>-->
+				 <!--<div class="button">我要售卖</div>-->
+			 <!--</dd>-->
+		 <!--</dl>-->
+	</div>
+	<div class="noneMore" id="noneMore">无更多商品……</div>
+</body>
+</html>

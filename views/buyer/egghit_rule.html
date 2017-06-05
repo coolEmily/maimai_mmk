@@ -1,0 +1,47 @@
+{{#extend "header"}}
+<title></title>
+<style type="text/css">
+    .container{ width:100%;
+        margin:0 auto;
+        overflow:hidden;
+    }
+
+    .container img{width:100%;}
+
+    .linkBtn{height:48px;
+        padding-top:8px;
+        position:fixed;
+        bottom:0;
+        background:#ffeec0;
+        width:92%;
+        padding: 0 4%;
+        padding-top:8px;
+      }
+
+    .linkBtn a{width:48%;
+        height:40px;
+        border-radius:5px;
+        display:block;
+        float:left;
+        font-size:14px;
+        color:#fff;
+        line-height:40px;
+        text-align:center;}
+
+    .linkBtn a:first-child{margin-right: 4%;background:#ff3c3c}
+    .linkBtn a:last-child{background:-webkit-linear-gradient(top,#ff7900,#ff9f00);float: none;overflow: hidden;width: auto;margin: 0;}
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>活动规则</nav>
+</header>
+<div class="container" id="container"  htmlT="1">
+    <div>
+        <img id="imgBg" src="" alt="">
+    </div>
+    <div class="linkBtn">
+        <a class="ui-app-hide" style="display: none;" href="http://a.app.qq.com/o/simple.jsp?pkgname=com.example.maimai">下载APP</a>
+        <a href="/buyer/follow_wechat.html">关注公众号</a>
+    </div>
+</div>
+<script src="/js/lib/require.js" data-main="/js/buy/egghit.js"></script>

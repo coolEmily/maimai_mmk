@@ -1,0 +1,19 @@
+{{#extend "header"}}
+    <title>抱歉，页面找不到了</title>
+{{/extend}}
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="" id="back_a" class="back _goback"></a>404</nav>
+    </header>
+    <div>
+        <img src="/images/zbd_01.jpg" />
+        <img src="/images/zbd_02.jpg" />
+    </div>
+</div>
+<script type="text/javascript">
+	if(document.referrer){
+  		 document.getElementById("back_a").setAttribute("href", "javascript:history.go(-1)");
+	}else{
+		 document.getElementById("back_a").setAttribute("href", "/buyer/shouye.html");
+	}
+</script>

@@ -1,0 +1,30 @@
+{{#extend "header"}}
+    <title>买买电商</title>
+    <meta name="keywords" content="{{title}}">
+    <meta name="description" content="{{title}}" >
+    <link rel="stylesheet" type="text/css" href="/css/buy/index.css" />
+    <style>
+        .ui-per-goods {
+            margin-bottom: 5px;
+        }
+        .more{
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            top: 62px;
+            right: 32px;
+            display: none;
+            background-color: transparent;
+        }
+    </style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a><span id="title"></span></nav>
+</header>
+<div class="ind_sx">
+</div>
+<div class="more"></div>
+<div class="fixed_index">
+    <a href="/buyer/shouye.html"><img src="/images/buy/fixed_top.png" /></a>
+</div>
+<script src="/js/lib/require.js" data-main="/js/buy/shangpinquan"></script>

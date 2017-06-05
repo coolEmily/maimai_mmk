@@ -1,0 +1,14 @@
+<div class="slideWrap">
+{{#if rollImgMap.title}}
+    {{#each rollImgMap.title}}
+        <p class="titP"><a href="{{htmlUrl}}"><img src="http://image.maimaicn.com/{{designImgUrl}}" alt=""></a></p>
+    {{/each}}
+{{/if}}
+    <div class="container-swiper" id="{{id}}" size="{{size}}">
+        <ul class="swiper-wrapper">
+            {{#each rollImgMap.list}}
+                <li class="swiper-slide"><a href="{{htmlUrl}}"><img src="http://image.maimaicn.com/{{designImgUrl}}" alt=""></a></li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

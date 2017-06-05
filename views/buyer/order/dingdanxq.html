@@ -1,0 +1,125 @@
+{{#extend "header"}}
+<title id="title">订单详情</title>
+<link type="text/css" rel="stylesheet" href="/css/buy/addr.css">
+<link type="text/css" rel="stylesheet" href="/css/buy/confirm_receipt.css">
+<link type="text/css" rel="stylesheet" href="/css/buy/orderdetail.css">
+<script src="/js/lib/require.js" defer async="true" data-main="/js/buy/dingdanxq.js"></script>
+{{/extend}}
+<style>
+
+</style>
+<body>
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>订单详情</nav>
+    </header>
+</div>
+<div class="ui-body main" style="padding-bottom: 50px;">
+    <div class="ui-order-info">
+        <!--<div class="ui-detail-icon">卖家已经发货，还剩3天9个小时自动确认。</div>-->
+        <!--<div class="ui-detail-icon" >欧阳夏星已签收，感谢使用申通快递。</div>-->
+    </div>
+
+    <div class="ui-show-address">
+        <div><span>收货电话:&nbsp;</span><span id="phone_num"></span></div>
+        <div><span>收货人:&nbsp;</span><span id="peo_name"></span></div>
+        <div><span>收货地址:&nbsp;</span><span id="peo_place"> </span></div>
+    </div>
+
+    <div class="ui-order-list" id="order_info">
+        <div class="ui-detail-order" id="number_time">订单号：
+            <span>201613100001</span><span>2016-1-31  11:21:12</span></div>
+        <div class="ui-order-detail" id="ui-order-detail">
+            <!--<div class="ui-detail-icon">买买伽官方旗舰店<span>出库中</span></div>-->
+            <!--&lt;!&ndash;每一个商品展示&ndash;&gt;-->
+            <!--<div class="ui-per-goods">-->
+                <!--<div class="ui-goods-img">-->
+                    <!--<a href="#"><img src="/images/47549894304100_B.jpg" /></a>-->
+                <!--</div>-->
+                <!--<div class="ui-goods-price">-->
+                    <!--<p class="ui-now-p">￥306</p>-->
+                    <!--<del class="ui-org-p">￥799</del>-->
+                <!--</div>-->
+                <!--<div class="ui-goods-desc">-->
+                    <!--<p><a href="#">宾利凤凰赤霞珠红葡萄酒</a></p>-->
+                    <!--<p><a href="#">Penley Estate Phoenix</a></p>-->
+                    <!--<p>x99</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="gift_box">【买赠】 10元电子券仅可购买  买买店铺的商品<br/>（订单完成后自动发放） X1</div>-->
+            <!--<div class="ui-per-goods">-->
+                <!--<div class="ui-goods-img">-->
+                    <!--<a href="#"><img src="/images/47549894304100_B.jpg" /></a>-->
+                <!--</div>-->
+                <!--<div class="ui-goods-price">-->
+                    <!--<p class="ui-now-p">￥306</p>-->
+                    <!--<del class="ui-org-p">￥799</del>-->
+                <!--</div>-->
+                <!--<div class="ui-goods-desc">-->
+                    <!--<p><a href="#">宾利凤凰赤霞珠红葡萄酒</a></p>-->
+                    <!--<p><a href="#">Penley Estate Phoenix</a></p>-->
+                    <!--<p>x99</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="gift_box">【买赠】 10元电子券仅可购买  买买店铺的商品<br/>（订单完成后自动发放） X1</div>-->
+        </div>
+        <div class="payWay">
+            <div>
+                <span>支付方式</span>
+                <span id="payTypeName"></span>
+            </div>
+        </div>
+        <div class="ui-settlement">
+            <div class="ui-settlement-detail"></div>
+
+             <div class="ui-wrap">
+                 <div class="ui-payNub">
+                     <span style="color:#333">订单金额：</span>
+                     <span id="pay_money" style="color:#ff3c3c"></span>
+                 </div>
+                 <div class="ui-settlement-freight" style="display:none">
+                     <span>商品总计</span>
+                     <span id="all_money"></span>
+                 </div>
+                 <div class="ui-settlement-freight ui-settlement-freight-1">
+                     <span>运费</span>
+                     <span id="deliver_pay"></span>
+                 </div>
+                 <div class="ui-settlement-freight" style="display:none">
+                     <span>红包立减</span>
+                     <span id="wallet"></span>
+                 </div>
+                 <div class="ui-settlement-freight" style="display:none">
+                     <span>金豆支付</span>
+                     <span id="payVirtual"></span>
+                 </div>
+                 <div class="ui-settlement-freight" style="display:none">
+                     <span>余额支付</span>
+                     <span id="payBalance"></span>
+                 </div>
+                 <div class="ui-settlement-freight" style="display:none">
+                     <span>满减金额</span>
+                     <span id="minus_money"></span>
+                 </div>
+                 <div class="ui-settlement-freight" style="display:none">
+                     <span>优惠券</span>
+                     <span id="couPon"></span>
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="confirm">确认收货</div>
+    <div id="payOnce">立即支付</div>
+    <div id="applyBack" class="ui-hide-tihuo">退款/退货</div>
+    <div id="delivery">查看物流</div>
+    <div id="cancel" class="ui-hide-tihuo">取消订单</div>
+    <div id="deliverNum">填写运单号</div>
+    <div id="processBack">退货进度</div>
+    <div id="platform" class="ui-hide-tihuo">平台介入</div>
+    <div id="dealPlatform">平台处理中</div>
+</footer>
+</body>
+</html>

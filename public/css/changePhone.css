@@ -1,0 +1,190 @@
+body{
+	background: #f8f8f8;  
+}
+.main_head {
+	background: #f8f8f8;	
+	margin-bottom: 0;
+}
+.main_head nav {
+	box-shadow: none;
+}
+.main_head nav:after {
+	border-color:transparent #f8f8f8 transparent transparent;
+}
+.succ_login, .succ_change, .new_change  {	
+     display: none;  
+}
+.old_change, .new_change, .succ_change, .succ_login {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 35px;
+    height: 84%;
+}
+
+.change_p p {
+	text-align: center;
+}
+.change_p p.p1 {
+	font-size: 13px;
+	color: #999;
+}
+.change_p p.p2 {
+	font-size: 15px;
+	color: #666;
+	margin-top: 10px;
+}
+.change_p p.p3 {
+	font-size: 16px;
+	color: #cc3333;
+	margin-top: 10px;
+}
+.formList {
+	height: 44px;
+	border-bottom: 1px solid #999;
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.formList .get_icon, .new_code .code_icon, .new_phone .phone_icon {
+	background: url(/images/buy/gb_icon.png) no-repeat;
+	width: 19px;
+	height: 19px;
+	background-size: 77px auto;
+	display: inline-block;
+	margin: 13px 15px 0 15px;
+	float: left;
+}
+.formList .get_txt {
+	height: 18px;
+	background: #f8f8f8;
+	float: left;
+	width: 40%;
+	margin-top: 13px;
+	color:#666;
+	font-size: 15px;
+}
+.formList .get_btn {
+	float: right;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background: #cc3333;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.message, .new_error {
+	height: 30px;
+	line-height: 30px;
+	color: #cc3333;
+	text-align: left;
+	overflow: hidden;
+	font-size: 12px;
+	width: 66%;
+    margin: 0 auto;
+    padding-left: 14%;
+}
+.next_btn {
+	width: 80%;
+	margin: 0 auto;
+	background: #cc3333;
+	text-align: center;
+	overflow: hidden;
+	height: 44px;
+	line-height: 44px;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 4px;
+	margin-top: 25px;
+}
+.change_mess {
+	width: 80%;
+	height: 50px;
+	background: #3a3a3a;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	border-radius: 4px;
+	font-size: 16px;
+	display: none;
+	position: fixed;
+    bottom: 150px;
+    left: 50%;
+    margin-left: -40%;
+}
+.new_phone, .new_code {
+	border-bottom: 1px solid #999;
+	height: 44px;
+	line-height: 44px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.get_phone, .get_code {
+	height: 18px;
+    background: #f8f8f8;
+    float: left;
+    width: 50%;
+    margin-top: 13px;
+    color: #666;
+    font-size: 15px;
+}
+.new_phone .phone_icon {
+	width: 24px;
+	height: 24px;
+	background-position: -43px 1px;
+}
+.new_code .code_icon {
+	width: 24px;
+	height: 24px;
+	background-position: -19px 1px;
+}
+.n_get_code {
+	width: 58px;
+	height: 20px;
+	float: right;
+	margin-top: 13px;
+	margin-right: 15px;
+}
+.n_get_code img {
+	width: 58px;
+	height: 20px;
+}
+.n_next_btn {
+	width: 80%;
+	margin: 0 auto;
+	background: #cc3333;
+	text-align: center;
+	overflow: hidden;
+	height: 44px;
+	line-height: 44px;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 4px;
+	margin-top: 25px;
+}
+.formList .get_btn_h, .next_btn_h {
+	background: #ccc;
+}
+.succ_txt {
+	text-align: center;
+	font-size: 17px;
+	color: #cc3333;
+	margin-top: 25px;
+}
+.succ_img {
+	width: 93px;
+	height: 101px;
+	margin: 50px auto;
+}
+#gt {
+	float: right;
+	width: 15px;
+	height: 15px;
+	margin-top: 13px;
+	margin-right: 15px;
+	display: none;
+}

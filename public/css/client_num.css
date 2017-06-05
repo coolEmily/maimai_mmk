@@ -1,0 +1,188 @@
+.container{max-width:640px;
+	       min-width:320px; 
+           margin:0 auto;
+           overflow-x: hidden;}
+
+.numbox{height:80px;
+        background:#fff;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 2px 2px #ccc;}
+
+.number{height: 100%;
+        padding:10px;
+        overflow: hidden;
+        line-height:23px;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+}
+.number:first-child{
+    border-right: 1px #f1f1f1 solid;
+}
+.number span{
+             font-size:20px;}
+.number.cur{
+    color: #ff3d3d;
+}
+.number span.small{font-size: 12px;}
+.select{position: relative;width: 110px;float: right;}
+.select select{color: #666;
+			   border: none;
+			   appearance:none;
+               -moz-appearance:none;
+               -webkit-appearance:none;
+			   width: 90px;
+			   position: relative;
+			   }
+.ui-transd-999:before{
+    top: 4px;
+    right: 31px;
+}
+.ui-transd-999:after{
+    top: 2px;
+    right: 31px;
+}
+.phonenum{overflow:hidden;
+          background:#fff;
+          margin-top:10px;}
+
+.select{margin-top:30px;}
+
+.tabselect{height:35px;
+           line-height:35px;
+           border-bottom:solid #f1f1f1 1px;
+           overflow:hidden;
+           padding:0 4%;}
+
+.tabselect p{float:left;
+             font-size:14px;}
+
+.tabselect ul{float:right;
+              font-size:12px;
+              color:#999;
+              width:45%;}
+
+.tabselect ul li{float:left;
+                 width:30%;
+                 text-align:center;
+                 height:34px;
+                 border-bottom:solid transparent 1px;}
+
+.tabselect ul li.cur{color:#ff3c3c;
+                     border-bottom:solid #ff3c3c 1px;}
+
+.phoneinput{margin: 15px 4% 30px 4%;
+            border:solid #ddd 1px;
+            border-radius:4px;
+            height:35px;}
+
+.phoneinput span:before{content: "";
+    background: url(../images/op_icon.png) no-repeat -118px -128px;
+    background-size: 150px auto;
+    width: 16px;
+    height: 21px;
+    margin: 7px auto 0;
+    display: block;}
+
+.phoneinput span{display:block;
+                 width:20%;
+                 border-right:solid #ddd 1px;
+                 height:35px;
+                 float:left;}
+.phoneinput > div:nth-of-type(2){
+    overflow: hidden;
+}
+.phoneinput > div:nth-of-type(1){
+    float: right;
+    height: 35px;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 35px;
+    border-radius: 3px;
+}
+.phoneinput > div:nth-of-type(2) input{
+                  padding:10px 10px;
+                  border:none;
+                  font-size: 12px;
+                  width: 100%;
+                  box-sizing: border-box;
+                  color: #333;}
+
+.datalist{background: #fff;
+          overflow: hidden;
+          padding: 25px 4% 30px 4%;
+          box-shadow: 0px 2px 2px #ccc;}
+
+.titp{overflow:hidden;padding: 0 20px;}
+
+.titp p{float:left;
+        text-align: left;
+	    width: 40%;
+	    line-height: 50px;
+	    color:#999;}
+.titp > p:last-of-type{float: none;width: auto;overflow: hidden;text-align: center;}
+
+.listul li{height:28px;
+           line-height:28px;padding: 0 20px;}
+
+.listul li span{display:block;
+                width:40%;
+                float:left;
+                text-align: left;}
+
+.listul li > span:last-of-type{
+                width:auto;
+                text-align: center;
+                float:none;overflow: hidden;}
+/*奖金明细 prize.html*/
+.itemul li{
+    padding: 5px 0;
+    height: 50px;
+    line-height: 25px;
+    color: #333;
+    background-color: white;
+    border-bottom: 1px solid #f1f1f1;
+}
+.itemul li > div:first-child{
+    float: left;
+    padding: 0 10px 0 20px;
+    font-size: 14px;
+}
+.itemul li > div:first-child > span{
+    color: #999;
+    font-size: 12px;
+}
+
+.itemul li > div:last-child{
+    overflow: hidden;
+    text-align: right;
+    padding: 0 20px 0 10px;
+}
+.itemul li > div:last-child > span{
+    color: #46c364;
+}
+.ui-date-list{
+    border-bottom: 1px solid #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 0 0 2px #ccc;
+}
+.ui-date-list > li{
+    float: left;
+    width: 33.3%;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    text-align: center;
+    border-right: 1px solid #f1f1f1 ;
+}
+.ui-date-list > li:last-of-type{
+    float: none;
+    width: auto;
+    overflow: hidden;
+    border-right: none;
+}
+.ui-date-list > li.cur{
+    color: #ff3d3d;
+}

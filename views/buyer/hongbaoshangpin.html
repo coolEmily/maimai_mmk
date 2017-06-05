@@ -1,0 +1,71 @@
+{{#extend "header"}}
+    <title>红包立减商品</title>
+<link type="text/css" rel="stylesheet" href="/css/common.css" />
+<link type="text/css" rel="stylesheet" href="/css/red_packet.css">
+<link rel="stylesheet" type="text/css" href="/css/swiper.min.css" />
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+{{/extend}}
+<header class="header">
+    <a class="return" href="javascript:history.go(-1);"></a>
+    <nav class="nav_shop">
+    <div class="he_tilte"></div>
+</nav></header>
+<section class="main_h">
+    <div class="banner">
+        <div class="swiper-wrapper" id="box_sw">
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--**************食品酒水****************************-->
+    <div id="select">
+        <div class="s_title"><span>商品分类:</span><strong>全部商品</strong></div>
+        <div class="s_con"></div>
+    </div>
+    <!--*********************************************-->
+    <div id="nav">
+        <span data-vue="couponEsc" class="nav_con active">红包立减</span>
+        <span data-vue="collectNum" class="nav_con">人气</span>
+        <span data-vue="sellShowNumber" class="nav_con">销量</span>
+        <span data-vue="price" class="nav_con">价格</span>
+    </div>
+    <!--*******************正文**************************-->
+    <article class="article clear" id="article">
+    </article>
+</section>
+<div class="ind_search">
+    <div class="ind_search_1 clearfix">
+        <div class="ind_search_list" style="display: none;">
+            <a href="javascript:void(0);"><img src="/images/buy/index_icon6.png"></a>
+        </div>
+        <div class="ind_search_left">
+            <i class="ind_search_s"></i>
+            <a href="javascript:void(0);" class="ind_search_r">搜索</a>
+            <div class="ind_search_cen">
+                <form action="javascript:return true" method="get" id="searchForm">
+                    <input type="search" class="txt" placeholder="请输入关键字">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="ind_search_bg"> </div>
+</div>
+<div id="return_top"></div>
+<script src="/js/lib/require.js" data-main="/js/buy/red_packer.js"></script>

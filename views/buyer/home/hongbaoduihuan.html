@@ -1,0 +1,23 @@
+{{#extend "header"}}    
+    <title>激活红包</title>
+    <link rel="stylesheet" href="/css/buy/tihuoka.css" />
+{{/extend}}
+<div class="main">
+    <header class="main_head">
+        <nav class="nav"><a href="javascript:;" class="back _goback"></a>激活红包</nav>
+    </header>
+    <div class="tihuoka">
+        <input type="text" value="" placeholder="请输入红包兑换码" id="userCardNo"/>
+        <div class="thk_btn" style="margin-top: 8%;">兑换</div>
+    </div>
+    <div id="thk_prompt" style="display: none;background-color: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;width: 100%;height:100%">
+      <div style="position: relative;padding-bottom: 20px;overflow: hidden;width: 85%;background-color: white;border-radius: 10px;position: absolute;top:50%;left:50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
+        <div style="height:30px;position: relative;">
+          <!--<i class="ui-close-dialog" style="background: url(/images/addr_box.png) no-repeat;background-position: -21px 0;background-size: auto 20px;position: absolute;width: 20px;height: 20px;bottom: 0;right: 10px;"></i>-->
+        </div>
+        <div class="ui-message-show" style="margin: 20px 10%;line-height: 25px;font-size: 16px;text-align: center;"></div>
+        <div class="ui-close-dialog" style="height: 40px;border-radius: 10px;width: 100px;background-color: #E62828;color: white;font-size: 14px;line-height: 40px;text-align: center;margin: 0 auto;">确定</div>
+      </div>
+    </div>
+</div>
+<script  data-main="/js/buy/hongbaoduihuan" src="/js/lib/require.js" ></script>

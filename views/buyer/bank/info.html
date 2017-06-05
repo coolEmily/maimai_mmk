@@ -1,0 +1,162 @@
+{{#extend "header"}}
+<title id="title">客户专区</title>
+<style type="text/css">
+body{
+		overflow: hidden;
+}
+	.box{
+		height:100%;
+		width:100%;
+	
+		background:#fff;
+		position: relative;
+	}
+	input{
+		display: block;
+		border:1px solid #cbcbcd;
+		width:100%;
+		height:40px;
+		line-height: 40px;
+		-moz-border-radius:8px;
+    	-webkit-border-radius:8px;
+		border-radius: 8px;
+		padding-left:18px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; /* Firefox */
+		-webkit-box-sizing:border-box; /* Safari */
+		overflow: hidden;
+	}
+	.cont{
+		position: absolute;
+		margin-top:270px;
+		height:250px;
+		width:100%;
+		overflow: hidden;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; /* Firefox */
+		-webkit-box-sizing:border-box; /* Safari */
+		padding:0 17px;
+	}
+	.btn{
+		display: block;
+		margin:39px auto 0px ;
+		width:95%;
+		border:1px solid #cbcbcb;
+		height:40px;
+		line-height:40px;
+		text-align: center;
+		font-size: 18px;
+		color:#fff;
+		background: #e9251d;
+		-moz-border-radius:20px;
+    	-webkit-border-radius:20px;
+		border-radius: 20px;
+	}
+	.alert{
+		width: 100%;
+		height:100%;
+		background: rgba(0,0,0,0.3);
+		position: relative;
+	}
+	.success,.warning,.error{
+			display:none;
+			position: absolute;
+			left:0;
+			top:150px;
+			right:0;
+			margin:0px auto;
+			min-height:100px;
+			width:80%;
+			background: #fff;
+			-moz-border-radius:15px;
+    		-webkit-border-radius:15px;
+			border-radius: 15px;
+			overflow: hidden;
+			padding:0 22px;
+			box-sizing:border-box;
+		-moz-box-sizing:border-box; /* Firefox */
+		-webkit-box-sizing:border-box; /* Safari */
+	}
+	.cha{
+		height:15px;
+		width:15px;
+		display:block;
+		background: url("/images/addr_box.png") no-repeat -16px center;
+		background-size:30px 15px;
+		float: right;
+		margin-top: 15px;
+		margin-right:-5px;
+		color:#333;
+	}
+	.neirong{
+		font-size:13px;
+		line-height: 24px;
+		height:48px;
+		text-align: center;
+	}
+	.btn1{
+		width:176px;
+		margin:17px auto;
+		display: block;
+		height:35px;
+		line-height: 35px;
+		background: #e9251d;
+		color:#fff;
+		text-align: center;
+		-moz-border-radius:5px;
+    	-webkit-border-radius:5px;
+		border-radius: 5px;
+	}
+	.title{
+		position: absolute;
+		background: #47484b;
+		color:#fff;
+		top:48px;
+		font-size:12px;
+		padding:3px;
+		left:0;
+		right:0;
+		margin:0 auto;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box; /* Firefox */
+		-webkit-box-sizing:border-box; /* Safari */
+		width:139px;
+		text-align: center;
+		-moz-border-radius:10px;
+    	-webkit-border-radius:10px;
+		border-radius: 10px;
+		display: none;
+	}
+</style>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:;" class="back _goback"></a>客户专区</nav>
+</header>
+<section class="box">
+	<section class="cont">
+		<input type='text' value='' placeholder="请输入9位银行卡号"/>
+		<span class="title"></span>
+		<a class="btn" href="javascript:void(0);">提交</a>
+	</section>
+	<div class="alert" style="display: none;">
+	<div class="warning">
+		<a class="cha" href="javascript:void(0);"></a>
+			<div class="clearfix"></div>
+			<p class="neirong">每位会员仅限领一次哦！</p>
+			<a class="btn1" href="/">逛买买商城</a>
+		</div>
+		<div class="error">
+			<a class="cha" href="javascript:void(0);"></a>
+			<div class="clearfix"></div>
+			<p class="neirong">很遗憾，您还不是兴业银行特权用户,不过买买为您精选了值得买的好货！</p>
+			<a class="btn1" href="/">逛买买商城</a>
+		</div>
+		<div class="success">
+			<a class="cha" href="javascript:void(0);"></a>
+			<div class="clearfix"></div>
+			<p class="neirong">身份验证已成功,赶快领百万红包！</p>
+			<a class="btn1 btn2" href="javascript:void(0);">立即领取</a>
+		</div>
+	</div>
+</section>
+<script src="/js/lib/require.js" data-main="/js/buy/xyyhf"></script>

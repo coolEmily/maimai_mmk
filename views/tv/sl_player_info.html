@@ -1,0 +1,104 @@
+{{#extend "header"}}
+    <title>世界旅游小姐大赛</title>
+    <link rel="stylesheet" href="/css/miss_world/sl_player_info.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px';
+        window.onresize = function() {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.75 + 'px';
+        };
+    </script>
+{{/extend}}
+<header class="main_head">
+    <nav class="nav"><a href="javascript:void(0);" class="back _goback"></a><samp></samp></nav>
+</header>
+<div class="main">
+    <div class="head_box">
+        <div class="player_photo" id="cover_photo">
+            <span id="flower_number"></span>
+            <span id="vote_number"></span>
+        </div>
+        <div class="player_btn">
+            <a href="javascript:void(0);" id="flower_btn"></a>
+            <a href="javascript:void(0);" id="vote_btn"></a>
+        </div>
+    </div>
+    <div class="player_info_box">
+        <div class="basic clearfix">
+            <span class="title">基本信息</span>
+            <div class="info">
+                <div>
+                    <span id="player_name">姓名：</span>
+                    <span id="nationality">国籍：</span>
+                    <span id="weight">体重：</span>
+                </div>
+                <div>
+                    <span id="age">年龄：</span>
+                    <span id="player_height">身高：</span>
+                    <span id="threeDimensional">三围：</span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix" id="introduce">
+            <span class="title">介绍</span>
+            <div class="info"></div>
+            <span id="show_more">更多</span>
+        </div>
+        <div class="photo clearfix">
+            <span class="title">我的照片</span>
+            <div class="info">
+                <a class="more_q photo_q" id="photo_pre"></a>
+                <div class="smalpic">
+                    <div class="smallbox"></div>
+                </div>
+                <a class="more_h photo_h" id="photo_next"></a>
+            </div>
+        </div>
+        <div class="video clearfix">
+            <span class="title">我的视频</span>
+            <div class="info">
+                <a class="more_q video_q" id="video_pre"></a>
+                <div class="smalpic">
+                    <div class="smallbox"></div>
+                </div>
+                <a class="more_h video_h" id="video_next"></a>
+            </div>
+        </div>
+        <div class="partners clearfix">
+            <span class="title">合作伙伴</span>
+            <div class="info">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog_box">
+        <!--未登录-->
+        <div class="b1">
+            <span>您还没有登录！</span>
+            <div class="login">
+                <a id="close_btn"></a>
+                <a id="go_login"></a>
+            </div>
+        </div>
+        <!--确定投票-->
+        <div class="b2">
+            <span></span>
+            <div class="v_confirm">
+                <a id="cancel"></a>
+                <a id="confirm"></a>
+            </div>
+        </div>
+        <!--每人只有一次投票-->
+        <div class="b3">
+            <span>每人每日只能投 1 票，明天继续!</span>
+            <div class="v_determine">
+                <a id="determine"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--投票成功-->
+    <div class="b4"></div>
+</div>
+<script src="/js/lib/require.js" data-main="/js/tv/miss_world/sl_player_info.js"></script>

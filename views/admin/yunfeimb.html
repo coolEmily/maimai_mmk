@@ -1,0 +1,61 @@
+{{#extend "header"}}
+    <title>修改运费模板</title>
+    <link rel="stylesheet" href="/css/yunfei.css" />
+    <style>
+        .type-name{
+            border: none;
+            background: white;
+        }
+        .ui-template{
+            height: 50px;
+            line-height: 50px;
+            color: #333;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+{{/extend}}
+        <div class="main">
+            <header class="main_head" style="position: relative;">
+                <nav class="nav"><a href="javascript:;" class="back _goback"></a><span>修改运费模板</span></nav>
+                <div class="ui-update-op" style="display:none;position: absolute;width: 30px;height: 100%;color: #333;font-size: 14px;top:0;right: 20px;">完成</div>
+            </header>
+        </div>
+        <div class="ui-body main" style="padding-bottom: 30px;z-index: 998;overflow: hidden">
+            <div id="default-postage-set" class="ui-postage-set">
+                <div class="ui-template">运费模板名称：<input class="type-name" type="text" placeholder="请输入运费模板名称"></div>
+                <div class="ui-title">默认运费（除指定地区）运费：</div>
+                <div class="ui-base-set">
+                    <div>
+                        <div>商品数目（以内）</div>
+                        <div>件</div>
+                        <div><input class="bNum" type="tel" value="0"></div>
+                    </div>
+                    <div>
+                        <div>运费</div>
+                        <div>元</div>
+                        <div><input class="bNumP" type="tel" value="0"></div>
+                    </div>
+                </div>
+                <div class="ui-base-set">
+                    <div>
+                        <div>新增商品（以上）</div>
+                        <div>件</div>
+                        <div><input class="gNum" type="tel" value="0"></div>
+                    </div>
+                    <div>
+                        <div>运费增加</div>
+                        <div>元</div>
+                        <div><input class="gNumP" type="tel" value="0"></div>
+                    </div>
+                </div>
+            </div>
+           <div class="button ui-add-button" style="margin-top: 30px;">修改运费</div>
+        </div>
+        <div class="ui-area-list" style="padding-bottom: 30px;z-index: 999;position: absolute;width:100%;top:40px;background: rgba(0,0,0,0.5);min-height: 100%;display: none">
+            <div class="ui-body main" style="background: #f1f1f1;">
+            </div>
+        </div>
+        <script src="/js/lib/require.js"  data-main="/js/yunfeimb.js"></script>

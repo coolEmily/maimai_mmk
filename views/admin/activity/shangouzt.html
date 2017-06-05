@@ -1,0 +1,103 @@
+{{#extend "header"}}
+    <title>我的闪购</title>
+    <link type="text/css" rel="stylesheet" href="/css/shangou.css" />
+    <style>
+        .orderunit {
+            margin-bottom: 50px;
+        }
+    </style>
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>我的闪购</nav>
+        </header>
+    </div>
+    <div class="container">
+      <div class="titword" id="titword">
+          <span id="titword_text">全部商品</span>
+          <div class="triangle" id="triangle">
+              <span class="triangle_s1"></span>
+              <span class="triangle_s2"></span>
+          </div>
+          <div class="trianglered" id="trianglered">
+              <span class="triangle_s1"></span>
+              <span class="triangle_s2"></span>
+          </div>
+      </div>
+      <div class="select_box" id="select_box">
+          <div class="itemcon" id="itemcon">
+              <ul>
+                  <li class="cur">全部商品<span class="radioimg"></span></li>
+                  <li>审核通过</li>
+                  <li>审核未通过</li>
+                  <li>审核中</li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- 115.我的闪购丶暂无商品参加 -->
+      <div class="ui-nothing-find" style="display:none">
+          <div style="margin-top: 10vh;">
+              <dl>
+                  <dd></dd>
+                  <dt>您还没有任何商品参加闪购活动</dt>
+              </dl>
+          </div>
+      </div>
+
+      <div class="orderunit" id="orderunit">
+         <!--119.我的闪购丶审核商品   120.我的闪购丶审核弹窗 -->
+          <!--<div class="goodslist">-->
+              <!--<dl>-->
+                  <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                  <!--<dd>-->
+                      <!--<ul>-->
+                          <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                          <!--<li><a href="#">LES VENTURONS</a></li>-->
+                          <!--<li><a href="#">市场价：￥888</a></li>-->
+                          <!--<li class="ui-goods-p">闪购价：￥999 <span>数量：20件</span></li>-->
+                      <!--</ul>-->
+                  <!--</dd>-->
+              <!--</dl>-->
+              <!--<div class="sg_list">-->
+                  <!--<span>审核中</span>-->
+              <!--</div>-->
+          <!--</div>-->
+          <!--<div class="goodslist">-->
+              <!--<dl>-->
+                  <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                  <!--<dd>-->
+                      <!--<ul>-->
+                          <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                          <!--<li><a href="#">LES VENTURONS</a></li>-->
+                          <!--<li><a href="#">市场价：￥888</a></li>-->
+                          <!--<li class="ui-goods-p">闪购价：￥999 <span>数量：20件</span></li>-->
+                      <!--</ul>-->
+                  <!--</dd>-->
+              <!--</dl>-->
+              <!--<div class="sg_list">-->
+                  <!--<span>审核未通过</span>-->
+                  <!--<a href="javascript:;">查看</a>-->
+              <!--</div>-->
+          <!--</div>-->
+          <!--<div class="goodslist">-->
+              <!--<dl>-->
+                  <!--<dt><a href="#"><img src="../buyer/images/index_l7.jpg"></a></dt>-->
+                  <!--<dd>-->
+                      <!--<ul>-->
+                          <!--<li><a href="#">维图干红葡萄酒</a></li>-->
+                          <!--<li><a href="#">LES VENTURONS</a></li>-->
+                          <!--<li><a href="#">市场价：￥888</a></li>-->
+                          <!--<li class="ui-goods-p">闪购价：￥999 <span>数量：20件</span></li>-->
+                      <!--</ul>-->
+                  <!--</dd>-->
+              <!--</dl>-->
+              <!--<div class="sg_list">-->
+                  <!--<span class="hs">审核通过</span>-->
+              <!--</div>-->
+          <!--</div>-->
+      </div>
+      <div class="wd_btn fixed-bottom">添加商品</div>
+    </div>
+     <!--<script type="text/javascript" src="/js/zepto.qrcode.min.js" ></script>-->
+    <script src="/js/lib/require.js" data-main="/js/shangouzt.js"></script>

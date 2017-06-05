@@ -1,0 +1,98 @@
+{{#extend "header"}}
+    <title>添加捆绑商品</title>
+    <link type="text/css" rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/apply.css" />
+    <link type="text/css" rel="stylesheet" href="/css/shangou.css">
+{{/extend}}
+    <div class="main">
+        <header class="main_head">
+            <nav class="nav"><a href="javascript:;" class="back _goback" ></a>添加捆绑商品</nav>
+        </header>
+        <div class="orderunit not_pass" style="display: none;">
+            <p>尊敬的用户，由于赠送的商品价值远远高于商品，审核未通过，请重新修改后提交。</p>
+        </div>
+        <div class="add_goods">
+            <ul class="ul">
+                <li class="ui-choose-goods"><span>添加商品：</span>请选择添加的商品</li>
+                <li><span>商品数量：</span><input type="tel" value="" class="txt ui-goods-num" placeholder="请输入商品数量" /></li>
+            </ul>
+        </div>
+        <div class="add_goods">
+            <ul class="ul">
+                <li class="ui-choose-goods"><span>添加商品：</span>请选择添加的商品</li>
+                <li><span>商品数量：</span><input type="tel" value="" class="txt ui-goods-num" placeholder="请输入商品数量" /> </li>
+            </ul>
+        </div>
+        <div class="add_goods" id="add_goods_button">
+            <div class="add_goods_img">
+                <span>继续添加商品</span>
+            </div>
+        </div>
+        <div class="add_goods">
+            <div class="add_deil">
+                <span>上传详情：</span>
+                <p>商品详情500X500（支持jpg、jpeg格式图片大小不超过2M，最多上传1张图片，图片重传会覆盖之前的图）</p>
+            </div>
+            <div class="ui-img-type-tishi ui-upload-img" style="border-bottom: 1px solid #ddd;">
+                <div class="ui-t" style="float: left;">上传图片</div>
+                <div class="ui-input ui-add-img-button">
+                    <div class="ui-add-button">
+                        <input name="playPicture_input" id="" data-width="500" data-target=".playPicture" type="file" accept="image/*" name="file1"/>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="add_kunb">
+                <span>捆绑商品名称：</span>
+                <input type="text" name="kunbang_bindCNName" value="" class="txt" placeholder="请输入捆绑商品名称" /> 
+            </div>
+            <div class="add_kunb">
+                <span>捆绑商品售价：</span>
+                <input type="text" name="kunbang_bindPrice" value="" class="txt" placeholder="请输入商品售价" /> 
+            </div>
+            <div class="add_kunb">
+                <span>捆绑商品数量：</span>
+                <input type="text" name="kunbang_remain" value="" class="txt" placeholder="请输入商品数量" /> 
+            </div>
+            <div class="add_kunb">
+                <span>捆绑广告语：</span>
+                <input type="text" name="kunbang_slogan" value="" class="txt" placeholder="请输入广告语" /> 
+            </div>
+        </div>
+        <div class="add_goods">
+            <div class="add_scale">
+                <span>推手返佣比例</span>
+                <div class="add_scale1 ui-fanli-list">
+                    <select>
+                    </select>
+                </div>
+            </div>
+            <div class="add_scale">
+                <span>运费模板选择</span>
+                <div class="add_scale1 ui-yunfei-list">
+                    <select>
+                    </select>
+                </div>
+            </div>
+            <div class="add_scale">
+                <span>平台返佣比例</span>
+                <div class="add_scale2">
+                    <ul>
+                        <li class="cur" value="0.00">0%</li>
+                        <li value="1">1%</li>
+                        <li value="3">3%</li>
+                        <li value="5">5%</li>
+                        <li value="7">7%</li>
+                        <li value="9">9%</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="not_pass3">
+            <i></i>是否支持优惠券
+        </div>
+        <div class="wd_btn">提交审核</div>
+    </div>
+    <script data-main="/js/kunbangtj" src="/js/lib/require.js"></script>
