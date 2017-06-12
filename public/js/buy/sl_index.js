@@ -104,11 +104,19 @@ require(['zepto', 'lib', 'swiper'], function ($, lib, swiper) {
             var _t = this;
             var loginState = true;
             //绑定跳转链接和参数
-            var forwardUrl = "/buyer/shouye.html?sId=" + ($.cookie('maimaicn_s_id') ? $.cookie('maimaicn_s_id') : '1') + "&activeId=" + lib.getUrlParam('activeId');
             $('.navs_icon > a').each(function () {
                 $(this).attr('href', $(this).attr('href') + '?activeMissVoteTypeId=' + activeMissVoteTypeId)
             });
-            $('.sl_shop').attr('href', forwardUrl);
+            //判断是否是app进入的商城并绑定跳转链接；
+            $('.sl_shop').on('click',function(){
+                var forwardUrl = "/buyer/shouye.html?sId=" + ($.cookie('maimaicn_s_id') ? $.cookie('maimaicn_s_id') : '1') + "&activeId=" + lib.getUrlParam('activeId');
+                if(window.isApp !== 0){
+                    $('.sl_shop').attr('href','');
+                    push.pushViewController("回首页");
+                }else{
+                    $('.sl_shop').attr('href', forwardUrl);
+                }
+            })
             //检验登陆状态
             var checkedLogin = function () {
                 if (!$.cookie("member_loginName") || ($.cookie("member_loginName").length !== 11)) {
